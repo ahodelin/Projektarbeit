@@ -1,0 +1,89 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+%\usepackage{math}
+%\usepackage{amsmath}
+\usepackage{version}
+\usepackage{hyperref}
+\usepackage{graphicx}
+%\usepackage{svg}
+\usepackage{longtable}
+\usepackage[printonlyused, withpage, nohyperlinks, smaller]{acronym}
+\usepackage{fancyhdr}
+\usepackage[type={CC}, modifier={by-sa},version={4.0},]{doclicense}
+\usepackage{listings}
+\usepackage[table]{xcolor}
+\usepackage{xcolor}
+\usepackage{ccicons}
+\usepackage{array,multirow,graphicx}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{scalerel}
+%\usepackage{apacite}
+\usepackage{ragged2e}
+\usepackage{orcidlink}
+\usepackage{pdflscape}
+\usepackage{booktabs}
+\usepackage[babel,german=quotes]{csquotes}
+\usepackage[style=numeric,maxbibnames=100,backend=biber]{biblatex}
+
+\DeclareFieldFormat{url}{ \url{#1}}                              % Standard: url: ...
+\addbibresource{bibliography/biblio.bib}  
+
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[R]{\thepage}
+\fancyfoot[C]{\href{https://creativecommons.org/licenses/by-sa/4.0/}{\ccbysa}}
+\renewcommand{\headrulewidth}{0pt}
+
+\fancypagestyle{firstpage}
+{	
+	\fancyhf{}
+	\chead{ \includegraphics[width=\textwidth]{figures/master_bild.png}}
+	\renewcommand{\headrulewidth}{0pt}
+}
+
+\renewcommand{\footrulewidth}{0pt}
+\setlength\headheight{90.0pt}
+\chead{\includegraphics[width=\textwidth]{figures/master_bild.png}}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\begin{document} 
+	\include{titelpage}
+	\newpage
+	\pagenumbering{roman}
+	\input{0acro}
+	
+	\newpage
+	
+	\listoffigures
+	
+	\listoftables
+	
+	\newpage
+	\tableofcontents	  
+	\newpage
+	\pagenumbering{arabic}
+	\input{1introduction}
+	\input{2icd10}
+	%\newpage
+	\input{3db}
+	%\newpage
+	\input{4etl}
+	\newpage
+	\input{5data}
+	\newpage
+	\newpage
+
+
+\nocite{*}           %  Die gesamte Literaturbibliothek wird eingefügt
+\printbibliography 
+
+\end{document}

@@ -1,0 +1,153 @@
+"ver";"ebene";"ort";"art";"kapnr";"grvon";"code";"normcode";"codeohnepunkt";"titel";"dreisteller";"viersteller";"fuenfsteller";"p295";"p301";"mortl1code";"mortl2code";"mortl3code";"mortl4code";"morblcode";"sexcode";"sexfehlertyp";"altunt";"altob";"altfehlertyp";"exot";"belegt";"ifsgmeldung";"ifsglabor";"vermodif";"verevent"
+"2007";"4";T;X;"04";E65;E66.1;E66.1;E661;Arzneimittelinduzierte Adipositas;;;;P;P;"1-054";"2-072";"3-025";"4-044";"109";"9";"9";t028;j124;K;N;J;N;N;"2008";D
+"2007";"4";T;X;"04";E65;E66.2;E66.2;E662;Übermäßige Adipositas mit alveolärer Hypoventilation;;;;P;P;"1-054";"2-072";"3-025";"4-044";"109";"9";"9";t028;j124;K;N;J;N;N;"2008";D
+"2007";"4";T;X;"04";E65;E66.8;E66.8;E668;Sonstige Adipositas;;;;P;P;"1-054";"2-072";"3-025";"4-044";"109";"9";"9";t028;j124;K;N;J;N;N;"2008";D
+"2007";"4";T;X;"04";E65;E66.9;E66.9;E669;Adipositas, nicht näher bezeichnet;;;;P;P;"1-054";"2-072";"3-025";"4-044";"109";"9";"9";t028;j124;K;N;J;N;N;"2008";D
+"2007";"4";T;X;"04";E70;E83.5;E83.5;E835;Störungen des Kalziumstoffwechsels;;;;P;P;"1-054";"2-072";"3-025";"4-044";"111";"9";"9";"9999";"9999";"9";N;J;N;N;"2008";D
+"2007";"4";T;X;"14";N10;N15.1;N15.1;N151;Nierenabszess und perinephritischer Abszess;;;;P;P;"1-085";"2-065";UNDEF;"4-044";"213";"9";"9";"9999";"9999";"9";N;J;N;N;"2008";D
+"2007";"4";T;X;"14";N40;N48.3;N48.3;N483;Priapismus;;;;P;P;"1-086";"2-072";UNDEF;"4-044";"222";M;M;"9999";"9999";"9";N;J;N;N;"2008";D
+"2007";"4";T;X;"17";Q20;Q21.8;Q21.8;Q218;Sonstige angeborene Fehlbildungen der Herzsepten;;;;P;P;UNDEF;"2-070";"3-052";"4-038";"256";"9";"9";"9999";"9999";"9";N;J;N;N;"2008";D
+"2007";"4";T;X;"01";B25;B25.8;B25.8;B258;Sonstige Zytomegalie;;;;P;P;"1-025";"2-024";"3-013";"4-012";"041";"9";"9";"9999";"9999";"9";N;J;N;N;"2008";D
+"2007";"4";T;X;"03";D70;D76.0;D76.0;D760;Langerhans-Zell-Histiozytose, anderenorts nicht klassifiziert;;;;P;P;"1-050";"2-072";"3-022";"4-018";"099";"9";"9";"9999";"9999";"9";N;J;N;N;"2008";D
+"2007";"4";T;X;"04";E65;E66.0;E66.0;E660;Adipositas durch übermäßige Kalorienzufuhr;;;;P;P;"1-054";"2-072";"3-025";"4-044";"109";"9";"9";t028;j124;K;N;J;N;N;"2008";D
+"2007";"5";T;S;"04";E10;E12.71;E12.71;E1271;Diabetes mellitus in Verbindung mit Fehl- oder Mangelernährung [Malnutrition] mit multiplen Komplikationen: Als entgleist bezeichnet;;;;P;P;"1-052";"2-046";"3-025";"4-044";"104";"9";"9";t028;j124;K;J;J;N;N;"2009";D
+"2007";"5";T;S;"04";E10;E13.70;E13.70;E1370;Sonstiger näher bezeichneter Diabetes mellitus mit multiplen Komplikationen: Nicht als entgleist bezeichnet;;;;P;P;"1-052";"2-046";"3-025";"4-044";"104";"9";"9";t028;j124;K;N;J;N;N;"2009";D
+"2007";"5";T;S;"04";E10;E13.71;E13.71;E1371;Sonstiger näher bezeichneter Diabetes mellitus mit multiplen Komplikationen: Als entgleist bezeichnet;;;;P;P;"1-052";"2-046";"3-025";"4-044";"104";"9";"9";t028;j124;K;N;J;N;N;"2009";D
+"2007";"5";T;S;"04";E10;E14.70;E14.70;E1470;Nicht näher bezeichneter Diabetes mellitus mit multiplen Komplikationen: Nicht als entgleist bezeichnet;;;;P;P;"1-052";"2-046";"3-025";"4-044";"104";"9";"9";t028;j124;K;N;J;N;N;"2009";D
+"2007";"5";T;S;"04";E10;E14.71;E14.71;E1471;Nicht näher bezeichneter Diabetes mellitus mit multiplen Komplikationen: Als entgleist bezeichnet;;;;P;P;"1-052";"2-046";"3-025";"4-044";"104";"9";"9";t028;j124;K;N;J;N;N;"2009";D
+"2007";"4";T;X;"06";G20;G25.8;G25.8;G258;Sonstige näher bezeichnete extrapyramidale Krankheiten und Bewegungsstörungen;;;;P;P;"1-061";"2-072";"3-028";"4-021";"129";"9";"9";"9999";"9999";"9";N;J;N;N;"2009";D
+"2007";"4";T;X;"15";O85;O88.2;O88.2;O882;Thromboembolie während der Gestationsperiode;;;;P;P;"1-089";"2-067";UNDEF;UNDEF;"244";W;M;j012;j055;K;N;J;N;N;"2009";D
+"2007";"4";T;X;"21";Z40;Z43.8;Z43.8;Z438;Versorgung sonstiger künstlicher Körperöffnungen;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"297";"9";"9";"9999";"9999";"9";N;J;N;N;"2009";D
+"2007";"4";N;X;"21";Z70;Z75.2-;Z75.2;Z752;Wartezeit auf eine Untersuchung oder Behandlung;;;;P;V;UNDEF;UNDEF;UNDEF;UNDEF;"298";"9";"9";"9999";"9999";"9";N;J;N;N;"2009";D
+"2007";"5";T;X;"21";Z70;Z75.21;Z75.21;Z7521;Erfolgte Registrierung zur Lebertransplantation mit Dringlichkeitsstufe T1;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"298";"9";"9";"9999";"9999";"9";N;J;N;N;"2009";D
+"2007";"5";T;X;"21";Z70;Z75.22;Z75.22;Z7522;Erfolgte Registrierung zur Lebertransplantation mit Dringlichkeitsstufe T2;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"298";"9";"9";"9999";"9999";"9";N;J;N;N;"2009";D
+"2007";"5";T;X;"21";Z70;Z75.23;Z75.23;Z7523;Erfolgte Registrierung zur Lebertransplantation mit Dringlichkeitsstufe T3;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"298";"9";"9";"9999";"9999";"9";N;J;N;N;"2009";D
+"2007";"5";T;X;"21";Z70;Z75.24;Z75.24;Z7524;Erfolgte Registrierung zur Lebertransplantation mit Dringlichkeitsstufe T4;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"298";"9";"9";"9999";"9999";"9";N;J;N;N;"2009";D
+"2007";"4";T;X;"21";Z80;Z93.8;Z93.8;Z938;Vorhandensein von sonstigen künstlichen Körperöffnungen;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"298";"9";"9";"9999";"9999";"9";N;J;N;N;"2009";D
+"2007";"5";T;X;"21";Z70;Z75.29;Z75.29;Z7529;Sonstige und nicht näher bezeichnete Wartezeit auf eine Untersuchung oder Behandlung;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"298";"9";"9";"9999";"9999";"9";N;J;N;N;"2009";D
+"2007";"4";T;X;"02";C40;C41.3;C41.3;C413;Bösartige Neubildung des Knochens und des Gelenkknorpels: Rippen, Sternum und Klavikula;;;;P;P;"1-046";"2-044";"3-018";"4-016";"069";"9";"9";"9999";"9999";"9";N;J;N;N;"2009";D
+"2007";"4";T;X;"02";D10;D16.7;D16.7;D167;Gutartige Neubildung des Knochens und des Gelenkknorpels: Rippen, Sternum und Klavikula;;;;P;P;"1-047";"2-072";"3-019";"4-044";"096";"9";"9";"9999";"9999";"9";N;J;N;N;"2009";D
+"2007";"4";N;X;"03";D65;D69.3-;D69.3;D693;Idiopathische thrombozytopenische Purpura;;;;P;V;"1-050";"2-072";"3-022";"4-018";"099";"9";"9";"9999";"9999";"9";N;J;N;N;"2009";D
+"2007";"5";T;S;"03";D65;D69.30;D69.30;D6930;Idiopathische thrombozytopenische Purpura: Als transfusionsrefraktär bezeichnet;;;;P;P;"1-050";"2-072";"3-022";"4-018";"099";"9";"9";"9999";"9999";"9";N;J;N;N;"2009";D
+"2007";"5";T;S;"03";D65;D69.31;D69.31;D6931;Idiopathische thrombozytopenische Purpura: Nicht als transfusionsrefraktär bezeichnet;;;;P;P;"1-050";"2-072";"3-022";"4-018";"099";"9";"9";"9999";"9999";"9";N;J;N;N;"2009";D
+"2007";"5";T;S;"04";E10;E10.70;E10.70;E1070;Primär insulinabhängiger Diabetes mellitus [Typ-1-Diabetes] mit multiplen Komplikationen: Nicht als entgleist bezeichnet;;;;P;P;"1-052";"2-046";"3-025";"4-044";"104";"9";"9";"9999";"9999";"9";N;J;N;N;"2009";D
+"2007";"5";T;S;"04";E10;E10.71;E10.71;E1071;Primär insulinabhängiger Diabetes mellitus [Typ-1-Diabetes] mit multiplen Komplikationen: Als entgleist bezeichnet;;;;P;P;"1-052";"2-046";"3-025";"4-044";"104";"9";"9";"9999";"9999";"9";N;J;N;N;"2009";D
+"2007";"5";T;S;"04";E10;E11.70;E11.70;E1170;Nicht primär insulinabhängiger Diabetes mellitus [Typ-2-Diabetes] mit multiplen Komplikationen: Nicht als entgleist bezeichnet;;;;P;P;"1-052";"2-046";"3-025";"4-044";"104";"9";"9";"9999";"9999";"9";N;J;N;N;"2009";D
+"2007";"5";T;S;"04";E10;E11.71;E11.71;E1171;Nicht primär insulinabhängiger Diabetes mellitus [Typ-2-Diabetes] mit multiplen Komplikationen: Als entgleist bezeichnet;;;;P;P;"1-052";"2-046";"3-025";"4-044";"104";"9";"9";"9999";"9999";"9";N;J;N;N;"2009";D
+"2007";"5";T;S;"04";E10;E12.70;E12.70;E1270;Diabetes mellitus in Verbindung mit Fehl- oder Mangelernährung [Malnutrition] mit multiplen Komplikationen: Nicht als entgleist bezeichnet;;;;P;P;"1-052";"2-046";"3-025";"4-044";"104";"9";"9";t028;j124;K;J;J;N;N;"2009";D
+"2007";"4";N;X;"01";B95;B96.8-!;B96.8;B968;Sonstige näher bezeichnete Bakterien als Ursache von Krankheiten, die in anderen Kapiteln klassifiziert sind;;;;Z;V;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;J;N;N;"2010";D
+"2007";"3";T;X;"01";A00;A09;A09;A09;Diarrhoe und Gastroenteritis, vermutlich infektiösen Ursprungs;;;;P;P;"1-003";"2-002";"3-002";"4-001";"005";"9";"9";"9999";"9999";"9";N;J;N;N;"2010";D
+"2007";"5";T;X;"01";B95;B96.81!;B96.81;B9681;Helicobacter pylori [H. pylori] als Ursache von Krankheiten, die in anderen Kapiteln klassifiziert sind;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;J;N;N;"2010";D
+"2007";"5";T;X;"01";B95;B96.88!;B96.88;B9688;Sonstige näher bezeichnete Bakterien als Ursache von Krankheiten, die in anderen Kapiteln klassifiziert sind;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;J;N;N;"2010";D
+"2007";"3";T;X;"02";C76;C80;C80;C80;Bösartige Neubildung ohne Angabe der Lokalisation;;;;P;P;"1-046";"2-044";"3-018";"4-016";"084";"9";"9";"9999";"9999";"9";N;J;N;N;"2010";D
+"2007";"4";T;X;"03";D65;D68.3;D68.3;D683;Hämorrhagische Diathese durch Antikoagulanzien und Antikörper;;;;P;P;"1-050";"2-072";"3-022";"4-018";"099";"9";"9";"9999";"9999";"9";N;J;N;N;"2010";D
+"2007";"4";T;X;"10";J95;J98.5;J98.5;J985;Krankheiten des Mediastinums, anderenorts nicht klassifiziert;;;;P;P;"1-077";"2-062";"3-034";"4-044";"179";"9";"9";"9999";"9999";"9";N;J;N;N;"2010";D
+"2007";"3";T;X;"15";O94;O96;O96;O96;Tod infolge jeder gestationsbedingten Ursache nach mehr als 42 Tagen bis unter einem Jahr nach der Entbindung;;;;P;P;"1-091";"2-072";UNDEF;UNDEF;"244";W;M;j012;j055;K;N;J;N;N;"2010";D
+"2007";"3";T;X;"15";O94;O97;O97;O97;Tod an den Folgen direkt gestationsbedingter Ursachen;;;;P;P;"1-091";"2-072";UNDEF;UNDEF;"244";W;M;j012;j055;K;N;J;N;N;"2010";D
+"2007";"4";T;X;"10";J95;J96.9;J96.9;J969;Respiratorische Insuffizienz, nicht näher bezeichnet;;;;P;P;"1-077";"2-062";"3-034";"4-044";"179";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";T;X;"02";C81;C83.2;C83.2;C832;Non-Hodgkin-Lymphom: Gemischt klein- und großzellig (diffus);;;;P;P;"1-043";"2-041";"3-018";"4-016";"086";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";T;X;"02";C81;C83.4;C83.4;C834;Non-Hodgkin-Lymphom: Immunoblastisch (diffus);;;;P;P;"1-043";"2-041";"3-018";"4-016";"086";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";T;X;"02";C81;C83.6;C83.6;C836;Non-Hodgkin-Lymphom: Undifferenziert (diffus);;;;P;P;"1-043";"2-041";"3-018";"4-016";"086";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";T;X;"02";C81;C84.2;C84.2;C842;T-Zonen-Lymphom;;;;P;P;"1-043";"2-041";"3-018";"4-016";"086";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";T;X;"02";C81;C84.3;C84.3;C843;Lymphoepitheloides Lymphom;;;;P;P;"1-043";"2-041";"3-018";"4-016";"086";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";T;X;"02";C81;C85.0;C85.0;C850;Lymphosarkom;;;;P;P;"1-043";"2-041";"3-018";"4-016";"086";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";N;X;"02";C81;C88.1-;C88.1;C881;Alpha-Schwerkettenkrankheit;;;;P;V;"1-046";"2-044";"3-018";"4-016";"088";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"5";T;S;"02";C81;C88.11;C88.11;C8811;Alpha-Schwerkettenkrankheit: In kompletter Remission;;;;P;P;"1-046";"2-044";"3-018";"4-016";"088";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";N;X;"02";C81;C91.2-;C91.2;C912;Subakute lymphatische Leukämie;;;;P;V;"1-045";"2-043";"3-017";"4-015";"087";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"5";T;S;"02";C81;C91.21;C91.21;C9121;Subakute lymphatische Leukämie: In kompletter Remission;;;;P;P;"1-045";"2-043";"3-017";"4-015";"087";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"5";T;S;"02";C81;C93.21;C93.21;C9321;Subakute Monozytenleukämie: In kompletter Remission;;;;P;P;"1-045";"2-043";"3-017";"4-015";"087";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";N;X;"02";C81;C94.1-;C94.1;C941;Chronische Erythrämie;;;;P;V;"1-045";"2-043";"3-017";"4-015";"087";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"5";T;S;"02";C81;C94.11;C94.11;C9411;Chronische Erythrämie: In kompletter Remission;;;;P;P;"1-045";"2-043";"3-017";"4-015";"087";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";N;X;"02";C81;C94.5-;C94.5;C945;Akute Myelofibrose;;;;P;V;"1-045";"2-043";"3-017";"4-015";"087";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"5";T;S;"02";C81;C94.51;C94.51;C9451;Akute Myelofibrose: In kompletter Remission;;;;P;P;"1-045";"2-043";"3-017";"4-015";"087";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";N;X;"02";C81;C95.2-;C95.2;C952;Subakute Leukämie nicht näher bezeichneten Zelltyps;;;;P;V;"1-045";"2-043";"3-017";"4-015";"087";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"5";T;S;"02";C81;C95.21;C95.21;C9521;Subakute Leukämie nicht näher bezeichneten Zelltyps: In kompletter Remission;;;;P;P;"1-045";"2-043";"3-017";"4-015";"087";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";T;X;"02";C81;C96.1;C96.1;C961;Bösartige Histiozytose;;;;P;P;"1-046";"2-044";"3-018";"4-016";"088";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";T;X;"02";C81;C96.3;C96.3;C963;Echtes histiozytäres Lymphom;;;;P;P;"1-046";"2-044";"3-018";"4-016";"088";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";T;X;"02";D37;D37.7;D37.7;D377;Neubildung unsicheren oder unbekannten Verhaltens: Sonstige Verdauungsorgane;;;;P;P;"1-047";"2-072";"3-019";"4-044";"096";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";T;X;"02";D37;D46.3;D46.3;D463;Refraktäre Anämie mit Blastenüberschuss in Transformation;;;;P;P;"1-047";"2-072";"3-019";"4-044";"096";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";T;X;"03";D70;D75.2;D75.2;D752;Essentielle Thrombozytose;;;;P;P;"1-050";"2-072";"3-022";"4-018";"099";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";N;X;"02";C81;C93.2-;C93.2;C932;Subakute Monozytenleukämie;;;;P;V;"1-045";"2-043";"3-017";"4-015";"087";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";T;X;"10";J95;J96.0;J96.0;J960;Akute respiratorische Insuffizienz, anderenorts nicht klassifiziert;;;;P;P;"1-077";"2-062";"3-034";"4-044";"179";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";T;X;"10";J95;J96.1;J96.1;J961;Chronische respiratorische Insuffizienz, anderenorts nicht klassifiziert;;;;P;P;"1-077";"2-062";"3-034";"4-044";"179";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";T;X;"21";Z20;Z29.2;Z29.2;Z292;Sonstige prophylaktische Chemotherapie;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"292";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2008";"4";N;X;"03";D70;D76.0-;D76.0;D760;Langerhans-Zell-Histiozytose, anderenorts nicht klassifiziert;;;;P;V;"1-050";"2-072";"3-022";"4-018";"099";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2008";"5";T;X;"03";D70;D76.08;D76.08;D7608;Sonstige und nicht näher bezeichnete Langerhans-Zell-Histiozytose, anderenorts nicht klassifiziert;;;;P;P;"1-050";"2-072";"3-022";"4-018";"099";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2008";"5";T;X;"03";D70;D76.00;D76.00;D7600;Multifokale Langerhans-Zell-Histiozytose;;;;P;P;"1-050";"2-072";"3-022";"4-018";"099";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2008";"5";T;X;"03";D70;D76.01;D76.01;D7601;Unifokale Langerhans-Zell-Histiozytose;;;;P;P;"1-050";"2-072";"3-022";"4-018";"099";"9";"9";"9999";"9999";"9";N;J;N;N;"2011";D
+"2007";"4";T;X;"03";D65;D68.2;D68.2;D682;Hereditärer Mangel an sonstigen Gerinnungsfaktoren;;;;P;P;"1-050";"2-072";"3-022";"4-018";"099";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2007";"4";T;X;"22";U80;U80.0!;U80.0;U800;Staphylococcus aureus mit Resistenz gegen Oxacillin, Glykopeptid-Antibiotika, Chinolone, Streptogramine oder Oxazolidinone;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2007";"4";T;X;"22";U80;U80.1!;U80.1;U801;Streptococcus pneumoniae mit Resistenz gegen Penizillin, Oxacillin, Makrolid-Antibiotika, Oxazolidinone oder Streptogramine;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2007";"4";T;X;"22";U80;U80.2!;U80.2;U802;Enterococcus faecalis mit Resistenz gegen Glykopeptid-Antibiotika, Oxazolidinone, oder mit High-Level-Aminoglykosid-Resistenz;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2007";"4";T;X;"22";U80;U80.3!;U80.3;U803;Enterococcus faecium mit Resistenz gegen Glykopeptid-Antibiotika, Oxazolidinone, Streptogramine, oder mit High-Level-Aminoglykosid-Resistenz;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2007";"4";T;X;"21";Z40;Z45.0;Z45.0;Z450;Anpassung und Handhabung eines implantierten Herzschrittmachers und eines implantierten Kardiodefibrillators;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"297";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2007";"5";T;X;"21";Z40;Z45.83;Z45.83;Z4583;Anpassung und Handhabung eines herzunterstützenden Systems;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"297";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2007";"4";T;X;"21";Z40;Z52.8;Z52.8;Z528;Spender sonstiger Organe oder Gewebe;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"297";"9";"9";"9999";"9999";"9";N;J;N;N;"2014";D
+"2010";"4";T;X;"15";O94;O96.2;O96.2;O962;Tod infolge nicht näher bezeichneter gestationsbedingter Ursachen;;;;P;P;"1-091";"2-072";UNDEF;UNDEF;"244";W;M;j012;j055;K;N;J;N;N;"2014";D
+"2010";"4";T;X;"15";O94;O97.2;O97.2;O972;Tod an den Folgen nicht näher bezeichneter gestationsbedingter Ursachen;;;;P;P;"1-091";"2-072";UNDEF;UNDEF;"244";W;M;j012;j055;K;N;J;N;N;"2014";D
+"2007";"4";T;X;"03";D65;D68.0;D68.0;D680;Willebrand-Jürgens-Syndrom;;;;P;P;"1-050";"2-072";"3-022";"4-018";"099";"9";"9";"9999";"9999";"9";N;J;N;N;"2015";D
+"2007";"4";T;X;"15";O30;O42.2;O42.2;O422;Vorzeitiger Blasensprung, Wehenhemmung durch Therapie;;;;P;P;"1-089";"2-067";UNDEF;UNDEF;"239";W;M;j012;j055;K;N;J;N;N;"2015";D
+"2007";"4";T;X;"19";T79;T79.6;T79.6;T796;Traumatische Muskelischämie;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"288";"9";"9";"9999";"9999";"9";N;J;N;N;"2015";D
+"2007";"4";T;X;"03";D65;D69.8;D69.8;D698;Sonstige näher bezeichnete hämorrhagische Diathesen;;;;P;P;"1-050";"2-072";"3-022";"4-018";"099";"9";"9";"9999";"9999";"9";N;J;N;N;"2015";D
+"2007";"3";T;X;"10";J80;J80;J80;J80;Atemnotsyndrom des Erwachsenen [ARDS];;;;P;P;"1-077";"2-062";"3-034";"4-044";"179";"9";"9";j015;j124;K;N;J;N;N;"2015";D
+"2010";"5";T;X;"03";D65;D68.30;D68.30;D6830;Hämorrhagische Diathese durch Antikoagulanzien;;;;P;P;"1-050";"2-072";"3-022";"4-018";"099";"9";"9";"9999";"9999";"9";N;J;N;N;"2015";D
+"2013";"4";T;X;"13";M20;M21.6;M21.6;M216;Sonstige erworbene Deformitäten des Knöchels und des Fußes;Sonstige erworbene Deformitäten der Extremitäten;Sonstige erworbene Deformitäten des Knöchels und des Fußes;;P;P;"1-083";"2-072";"3-059";"4-044";"202";"9";"9";"9999";"9999";"9";N;J;N;N;"2015";D
+"2007";"4";N;X;"06";G80;G83.8-;G83.8;G838;Sonstige näher bezeichnete Lähmungssyndrome;;;;P;V;"1-061";"2-072";"3-028";"4-021";"128";"9";"9";"9999";"9999";"9";N;J;N;N;"2016";D
+"2007";"5";T;X;"06";G80;G83.80;G83.80;G8380;Locked-in-Syndrom;;;;P;P;"1-061";"2-072";"3-028";"4-021";"128";"9";"9";"9999";"9999";"9";N;J;N;N;"2016";D
+"2007";"5";T;X;"06";G80;G83.88;G83.88;G8388;Sonstige näher bezeichnete Lähmungssyndrome;;;;P;P;"1-061";"2-072";"3-028";"4-021";"128";"9";"9";"9999";"9999";"9";N;J;N;N;"2016";D
+"2007";"4";T;X;"06";G90;G90.3;G90.3;G903;Multisystem-Atrophie;;;;P;P;"1-061";"2-072";"3-028";"4-021";"129";"9";"9";"9999";"9999";"9";N;J;N;N;"2016";D
+"2007";"3";T;X;"01";A90;A91;A91;A91;Hämorrhagisches Dengue-Fieber;;;;P;P;"1-017";"2-016";"3-013";"4-012";"032";"9";"9";"9999";"9999";"9";J;J;J;J;"2016";D
+"2007";"5";T;X;"19";T80;T86.04;T86.04;T8604;Chronische Graft-versus-host-Krankheit, ausgeprägte Form;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"288";"9";"9";"9999";"9999";"9";N;J;N;N;"2016";D
+"2007";"4";T;X;"21";Z80;Z96.6;Z96.6;Z966;Vorhandensein von orthopädischen Gelenkimplantaten;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"298";"9";"9";"9999";"9999";"9";N;J;N;N;"2016";D
+"2007";"4";T;X;"01";A00;A04.7;A04.7;A047;Enterokolitis durch Clostridium difficile;;;;P;P;"1-004";"2-003";"3-003";"4-002";"006";"9";"9";"9999";"9999";"9";N;J;N;N;"2016";D
+"2007";"5";T;X;"19";T80;T86.03;T86.03;T8603;Chronische Graft-versus-host-Krankheit, begrenzte Form;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"288";"9";"9";"9999";"9999";"9";N;J;N;N;"2016";D
+"2007";"4";T;X;"22";U80;U80.5!;U80.5;U805;Enterobacter, Citrobacter und Serratia mit Resistenz gegen Carbapeneme, Chinolone oder Amikacin;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;J;N;N;"2017";D
+"2007";"4";T;X;"04";E70;E88.2;E88.2;E882;Lipomatose, anderenorts nicht klassifiziert;;;;P;P;"1-054";"2-072";"3-025";"4-044";"111";"9";"9";"9999";"9999";"9";N;J;N;N;"2017";D
+"2007";"3";T;X;"22";U80;U81!;U81;U81;Bakterien mit Multiresistenz gegen Antibiotika;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;J;N;N;"2017";D
+"2007";"4";T;X;"06";G90;G95.1;G95.1;G951;Vaskuläre Myelopathien;;;;P;P;"1-061";"2-072";"3-028";"4-021";"129";"9";"9";"9999";"9999";"9";N;J;N;N;"2017";D
+"2007";"4";T;X;"19";S10;S15.8;S15.8;S158;Verletzung sonstiger Blutgefäße in Höhe des Halses;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"281";"9";"9";"9999";"9999";"9";N;J;N;N;"2017";D
+"2007";"4";T;X;"19";S10;S19.8;S19.8;S198;Sonstige näher bezeichnete Verletzungen des Halses;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"281";"9";"9";"9999";"9999";"9";N;J;N;N;"2017";D
+"2007";"4";T;X;"19";S20;S25.8;S25.8;S258;Verletzung sonstiger Blutgefäße des Thorax;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"281";"9";"9";"9999";"9999";"9";N;J;N;N;"2017";D
+"2007";"4";T;X;"19";S20;S29.8;S29.8;S298;Sonstige näher bezeichnete Verletzungen des Thorax;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"281";"9";"9";"9999";"9999";"9";N;J;N;N;"2017";D
+"2007";"4";T;X;"19";S30;S35.8;S35.8;S358;Verletzung sonstiger Blutgefäße in Höhe des Abdomens, der Lumbosakralgegend und des Beckens;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"281";"9";"9";"9999";"9999";"9";N;J;N;N;"2017";D
+"2007";"4";T;X;"22";U80;U80.7!;U80.7;U807;Burkholderia und Stenotrophomonas mit Resistenz gegen Chinolone, Amikacin, Ceftazidim, Piperacillin/Tazobactam oder Cotrimoxazol;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;J;N;N;"2017";D
+"2007";"4";T;X;"22";U80;U80.6!;U80.6;U806;Pseudomonas aeruginosa und andere Nonfermenter mit Resistenz gegen Carbapeneme, Chinolone, Amikacin, Ceftazidim oder Piperacillin/Tazobactam;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;J;N;N;"2017";D
+"2013";"4";T;X;"22";U00;U06.0;U06.0;U060;Nicht belegte Schlüsselnummer U06.0;Nicht belegte Schlüsselnummer U06;Nicht belegte Schlüsselnummer U06.0;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2017";D
+"2013";"4";T;X;"22";U00;U06.1;U06.1;U061;Nicht belegte Schlüsselnummer U06.1;Nicht belegte Schlüsselnummer U06;Nicht belegte Schlüsselnummer U06.1;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2017";D
+"2013";"4";T;X;"22";U00;U06.3;U06.3;U063;Nicht belegte Schlüsselnummer U06.3;Nicht belegte Schlüsselnummer U06;Nicht belegte Schlüsselnummer U06.3;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2017";D
+"2013";"4";T;X;"22";U00;U06.4;U06.4;U064;Nicht belegte Schlüsselnummer U06.4;Nicht belegte Schlüsselnummer U06;Nicht belegte Schlüsselnummer U06.4;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2017";D
+"2013";"4";T;X;"22";U00;U06.5;U06.5;U065;Nicht belegte Schlüsselnummer U06.5;Nicht belegte Schlüsselnummer U06;Nicht belegte Schlüsselnummer U06.5;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2017";D
+"2013";"4";T;X;"22";U00;U06.6;U06.6;U066;Nicht belegte Schlüsselnummer U06.6;Nicht belegte Schlüsselnummer U06;Nicht belegte Schlüsselnummer U06.6;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2017";D
+"2013";"4";T;X;"22";U00;U06.7;U06.7;U067;Nicht belegte Schlüsselnummer U06.7;Nicht belegte Schlüsselnummer U06;Nicht belegte Schlüsselnummer U06.7;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2017";D
+"2013";"4";T;X;"22";U00;U06.8;U06.8;U068;Nicht belegte Schlüsselnummer U06.8;Nicht belegte Schlüsselnummer U06;Nicht belegte Schlüsselnummer U06.8;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2017";D
+"2007";"4";T;X;"19";T80;T84.2;T84.2;T842;Mechanische Komplikation durch eine interne Osteosynthesevorrichtung an sonstigen Knochen;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"288";"9";"9";"9999";"9999";"9";N;J;N;N;"2018";D
+"2007";"4";T;X;"19";T80;T84.0;T84.0;T840;Mechanische Komplikation durch eine Gelenkendoprothese;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"288";"9";"9";"9999";"9999";"9";N;J;N;N;"2018";D
+"2007";"4";T;X;"19";T80;T84.1;T84.1;T841;Mechanische Komplikation durch eine interne Osteosynthesevorrichtung an Extremitätenknochen;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"288";"9";"9";"9999";"9999";"9";N;J;N;N;"2018";D
+"2007";"4";T;X;"06";G50;G56.4;G56.4;G564;Kausalgie;;;;P;P;"1-061";"2-072";"3-028";"4-021";"127";"9";"9";"9999";"9999";"9";N;J;N;N;"2019";D
+"2007";"4";T;X;"21";Z20;Z22.5;Z22.5;Z225;Keimträger der Virushepatitis;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"292";"9";"9";"9999";"9999";"9";N;J;N;N;"2019";D
+"2007";"4";T;X;"01";B15;B18.1;B18.1;B181;Chronische Virushepatitis B ohne Delta-Virus;;;;P;P;"1-019";"2-018";"3-013";"4-012";"038";"9";"9";"9999";"9999";"9";N;J;N;N;"2019";D
+"2007";"3";T;X;"01";B50;B59;B59;B59;Pneumozystose;;;;P;P;"1-025";"2-024";"3-015";"4-014";"057";"9";"9";"9999";"9999";"9";N;J;N;N;"2019";D
+"2007";"4";T;X;"19";S20;S22.2;S22.2;S222;Fraktur des Sternums;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"272";"9";"9";"9999";"9999";"9";N;J;N;N;"2019";D
+"2007";"5";T;X;"19";S30;S32.83;S32.83;S3283;Fraktur: Becken, Teil nicht näher bezeichnet;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"272";"9";"9";"9999";"9999";"9";N;J;N;N;"2019";D
+"2007";"4";T;X;"19";T80;T85.5;T85.5;T855;Mechanische Komplikation durch gastrointestinale Prothesen, Implantate oder Transplantate;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"288";"9";"9";"9999";"9999";"9";N;J;N;N;"2019";D
+"2010";"4";N;X;"11";K55;K55.8-;K55.8;K558;Sonstige Gefäßkrankheiten des Darmes;;;;P;V;"1-081";"2-072";"3-035";"4-024";"192";"9";"9";"9999";"9999";"9";N;J;N;N;"2019";D
+"2010";"5";T;X;"11";K55;K55.81;K55.81;K5581;Angiodysplasie des Dünndarmes ohne Angabe einer Blutung;;;;P;P;"1-081";"2-072";"3-035";"4-024";"192";"9";"9";"9999";"9999";"9";N;J;N;N;"2019";D
+"2010";"5";T;X;"11";K55;K55.82;K55.82;K5582;Angiodysplasie des Dünndarmes mit Blutung;;;;P;P;"1-081";"2-072";"3-035";"4-024";"192";"9";"9";"9999";"9999";"9";N;J;N;N;"2019";D
+"2010";"5";T;X;"11";K55;K55.88;K55.88;K5588;Sonstige Gefäßkrankheiten des Darmes;;;;P;P;"1-081";"2-072";"3-035";"4-024";"192";"9";"9";"9999";"9999";"9";N;J;N;N;"2019";D
+"2007";"5";T;S;"19";S20;S20.85;S20.85;S2085;Oberflächliche Verletzung sonstiger und nicht näher bezeichneter Teile des Thorax: Prellung;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"281";"9";"9";"9999";"9999";"9";N;J;N;N;"2021";D
+"2007";"3";T;X;"06";G90;G92;G92;G92;Toxische Enzephalopathie;;;;P;P;"1-061";"2-072";"3-028";"4-021";"129";"9";"9";"9999";"9999";"9";N;J;N;N;"2021";D
+"2007";"5";T;S;"19";S30;S30.80;S30.80;S3080;Sonstige oberflächliche Verletzungen des Abdomens, der Lumbosakralgegend und des Beckens: Art der Verletzung nicht näher bezeichnet;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"281";"9";"9";"9999";"9999";"9";N;J;N;N;"2021";D
+"2007";"4";N;X;"19";S30;S30.9-;S30.9;S309;Oberflächliche Verletzung des Abdomens, der Lumbosakralgegend und des Beckens, Teil nicht näher bezeichnet;;;;P;V;UNDEF;UNDEF;UNDEF;UNDEF;"281";"9";"9";"9999";"9999";"9";N;J;N;N;"2021";D
+"2007";"5";T;S;"19";S30;S30.90;S30.90;S3090;Oberflächliche Verletzung des Abdomens, der Lumbosakralgegend und des Beckens, Teil nicht näher bezeichnet: Art der Verletzung nicht näher bezeichnet;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"281";"9";"9";"9999";"9999";"9";N;J;N;N;"2021";D
+"2007";"5";T;S;"19";S30;S30.91;S30.91;S3091;Oberflächliche Verletzung des Abdomens, der Lumbosakralgegend und des Beckens, Teil nicht näher bezeichnet: Schürfwunde;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"281";"9";"9";"9999";"9999";"9";N;J;N;N;"2021";D
+"2007";"5";T;S;"19";S30;S30.92;S30.92;S3092;Oberflächliche Verletzung des Abdomens, der Lumbosakralgegend und des Beckens, Teil nicht näher bezeichnet: Blasenbildung (nichtthermisch);;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"281";"9";"9";"9999";"9999";"9";N;J;N;N;"2021";D
+"2007";"5";T;S;"19";S30;S30.93;S30.93;S3093;Oberflächliche Verletzung des Abdomens, der Lumbosakralgegend und des Beckens, Teil nicht näher bezeichnet: Insektenbiss oder -stich (ungiftig);;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"281";"9";"9";"9999";"9999";"9";N;J;N;N;"2021";D
+"2007";"5";T;S;"19";S30;S30.94;S30.94;S3094;Oberflächliche Verletzung des Abdomens, der Lumbosakralgegend und des Beckens, Teil nicht näher bezeichnet: Oberflächlicher Fremdkörper (Splitter);;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"281";"9";"9";"9999";"9999";"9";N;J;N;N;"2021";D
+"2007";"5";T;S;"19";S30;S30.95;S30.95;S3095;Oberflächliche Verletzung des Abdomens, der Lumbosakralgegend und des Beckens, Teil nicht näher bezeichnet: Prellung;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"281";"9";"9";"9999";"9999";"9";N;J;N;N;"2021";D
+"2007";"5";T;S;"19";S30;S30.98;S30.98;S3098;Oberflächliche Verletzung des Abdomens, der Lumbosakralgegend und des Beckens, Teil nicht näher bezeichnet: Sonstige;;;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;"281";"9";"9";"9999";"9999";"9";N;J;N;N;"2021";D
+"2013";"4";T;X;"22";U00;U07.0;U07.0;U070;Nicht belegte Schlüsselnummer U07.0;Nicht belegte Schlüsselnummer U07;Nicht belegte Schlüsselnummer U07.0;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2021";D
+"2013";"4";T;X;"22";U00;U07.1;U07.1;U071;Nicht belegte Schlüsselnummer U07.1;Nicht belegte Schlüsselnummer U07;Nicht belegte Schlüsselnummer U07.1;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2021";D
+"2013";"4";T;X;"22";U00;U07.2;U07.2;U072;Nicht belegte Schlüsselnummer U07.2;Nicht belegte Schlüsselnummer U07;Nicht belegte Schlüsselnummer U07.2;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2021";D
+"2013";"4";T;X;"22";U00;U07.3;U07.3;U073;Nicht belegte Schlüsselnummer U07.3;Nicht belegte Schlüsselnummer U07;Nicht belegte Schlüsselnummer U07.3;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2021";D
+"2013";"4";T;X;"22";U00;U07.4;U07.4;U074;Nicht belegte Schlüsselnummer U07.4;Nicht belegte Schlüsselnummer U07;Nicht belegte Schlüsselnummer U07.4;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2021";D
+"2013";"4";T;X;"22";U00;U07.5;U07.5;U075;Nicht belegte Schlüsselnummer U07.5;Nicht belegte Schlüsselnummer U07;Nicht belegte Schlüsselnummer U07.5;;P;P;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2021";D
