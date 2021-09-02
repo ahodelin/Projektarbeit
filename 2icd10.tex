@@ -6,7 +6,7 @@ Die \ac{icd10gm} ist eine monohierarchisch strukturierte, alphanumerische Klassi
 
 \subsection{Alphabetisches Verzeichnis (Alphabet)} \label{alphadir}
 
-Die alphabetische Zuordnung des Kodes entsteht aus der gebräuchlich Diagnosentexte. Die Systematik enthält nicht alle Diagnosen des Alphabets und eine Bezeichnung dient dazu als Verzugsbezeichnung, sodass das Alphabet auch andere Diagnosenbezeichnungen enthält, die auch veralte oder ungenau sind \cite{icd10alpha}. Ein Beispiel davon ist \textit{\acl{covid}} \acs{covid}-19 (Tabelle \ref{tab:difbe}). Aus diesem Grund existiert der \ac{alphaid}. Der nutzt die Bezeichnungen als Basis für eine nicht klassifizierenden Kode \cite{icd10alpha}.
+Die alphabetische Zuordnung des Kodes entsteht aus der gebräuchlich Diagnosentexte. Die Systematik enthält nicht alle Diagnosen des Alphabets und eine Bezeichnung dient dazu als Verzugsbezeichnung, sodass das Alphabet auch andere Diagnosenbezeichnungen enthält, die auch veralte oder ungenau sind \cite{icd10alpha}. Ein Beispiel davon ist \\textsf{\acl{covid}} \acs{covid}-19 (Tabelle \ref{tab:difbe}). Aus diesem Grund existiert der \ac{alphaid}. Der nutzt die Bezeichnungen als Basis für eine nicht klassifizierenden Kode \cite{icd10alpha}.
 
 \begin{table}[ht]
 	\centering
@@ -44,21 +44,21 @@ Das \ac{bfarm} veröffentlicht zwischen September und Dezember eines Jahres die 
 		\hline
 		\rowcolor{lightgray} Dateiname & Information \\
 		\hline 
-		{\ttfamily icd10gmJJJJsyst\_gruppen.txt} &  Kapitel der \ac{icd10gm}-Systematik \\ \hline
-		{\ttfamily icd10gmJJJJsyst\_kapitel.txt} & Kapitel der \ac{icd10gm}-Systematik \\ \hline
-		{\ttfamily icd10gmJJJJsyst\_kodes.txt} & Kodes der \ac{icd10gm}-Systematik \\ \hline
-		{\ttfamily morbl\_JJJJ.txt} & Morbiditätsliste  \\ \hline
-		{\ttfamily mortl1\_JJJJ.txt} & Mortalitätsliste 1 \\ \hline
-		{\ttfamily mortl1grp\_JJJJ.txt} & Gruppen der Mortalitätsliste 1 \\ \hline
-		{\ttfamily mortl2\_JJJJ.txt} & Mortalitätsliste 2 \\ \hline
-		{\ttfamily mortl3\_JJJJ.txt} & Mortalitätsliste 3 \\ \hline
-		{\ttfamily ortl3grp\_JJJJ.txt} & Gruppen der Mortalitätsliste 3 \\ \hline
-		{\ttfamily mortl4\_JJJJ.txt} & Mortalitätsliste 4 \\ \hline		
+		\textsf{icd10gmJJJJsyst\_gruppen.txt} &  Kapitel der \ac{icd10gm}-Systematik \\ \hline
+		\textsf{icd10gmJJJJsyst\_kapitel.txt} & Kapitel der \ac{icd10gm}-Systematik \\ \hline
+		\textsf{icd10gmJJJJsyst\_kodes.txt} & Kodes der \ac{icd10gm}-Systematik \\ \hline
+		\textsf{morbl\_JJJJ.txt} & Morbiditätsliste  \\ \hline
+		\textsf{mortl1\_JJJJ.txt} & Mortalitätsliste 1 \\ \hline
+		\textsf{mortl1grp\_JJJJ.txt} & Gruppen der Mortalitätsliste 1 \\ \hline
+		\textsf{mortl2\_JJJJ.txt} & Mortalitätsliste 2 \\ \hline
+		\textsf{mortl3\_JJJJ.txt} & Mortalitätsliste 3 \\ \hline
+		\textsf{ortl3grp\_JJJJ.txt} & Gruppen der Mortalitätsliste 3 \\ \hline
+		\textsf{mortl4\_JJJJ.txt} & Mortalitätsliste 4 \\ \hline		
 	\end{tabular}
 \end{table}
 
-Diese Dateien sind in \ac{csv}-Format mit \glqq ;\grqq{} als Trendzeichen. Die \ac{zip}-Datei enthält auch eine {\ttfamily icd10gmJAHRESVERSIONsyst\_metadaten\_ liesmich.txt} mit der Beschreibung aller Dateien und \ac{sql}-Statements für die Aufbau einer Datenbank oder eines Schemas (Tabellen mit den Kopfzeilen in rot in der Abbildung \ref{fig:reldb2}), je nach welchem \ac{rdbms} benutzt wird \cite{readmel}.
+Diese Dateien sind in \ac{csv}-Format mit \glqq ;\grqq{} als Trendzeichen. Die \ac{zip}-Datei enthält auch eine \textsf{icd10gmJAHRESVERSIONsyst\_metadaten\_ liesmich.txt} mit der Beschreibung aller Dateien und \ac{sql}-Statements für die Aufbau einer Datenbank oder eines Schemas (Tabellen mit den Kopfzeilen in rot in der Abbildung \ref{fig:reldb2}), je nach welchem \ac{rdbms} benutzt wird \cite{readmel}.
 
-Die \ac{zip}-Datei befindet sich auf die Seite  \href{https://www.dimdi.de/dynamic/de/klassifikationen/downloads/}{Downloads} der Klassifikationen der \ac{bfarm} Webseite in der Sektion \ac{icd10gm}, aktuelle Jahresversion, \ac{icd10gm} {\ttfamily Jahr} Metadaten TXT (\acs{csv}).
+Die \ac{zip}-Datei befindet sich auf die Seite  \href{https://www.dimdi.de/dynamic/de/klassifikationen/downloads/}{Downloads} der Klassifikationen der \ac{bfarm} Webseite in der Sektion \ac{icd10gm}, aktuelle Jahresversion, \ac{icd10gm} \textsf{ Jahr} Metadaten TXT (\acs{csv}).
 
 %\textit{\glqq ....\grqq}´
