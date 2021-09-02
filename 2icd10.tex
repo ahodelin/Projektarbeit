@@ -1,9 +1,12 @@
 \section{\acs{icd10gm}}
+
 Die amtliche Klassifikation zur Verschlüsselung von Diagnosen in der ambulanten (\S 295 \ac{sgb} V) und stationären (\S 301 \ac{sgb} V) Versorgung in Deutschland ist die \ac{icd10gm}. Die Versionen und Formaten davon gelten vom Anfang bis zum Ende eines Jahres und werden im Auftrag des \ac{bmg} von dem \ac{bfarm} jährlich aktualisiert und herausgegeben \cite{icd10}. 
 
 Die \ac{icd10gm} ist eine monohierarchisch strukturierte, alphanumerische Klassifikation mit bis zu 5 Ebenen und deren Aufbau besteht aus zwei Teilen, das systematisches und alphabetisches Verzeichnis \cite{icd10}.
+
 \subsection{Alphabetisches Verzeichnis (Alphabet)} \label{alphadir}
-Die alphabetische Zuordnung des Kodes entsteht aus der gebräuchlich Diagnosentexte. Die Systematik enthält nicht alle Diagnosen des Alphabets und eine Bezeichnung dient dazu als Verzugsbezeichnung, sodass das Alphabet auch andere Diagnosenbezeichnungen enthält, die auch veralte oder ungenau sind \cite{icd10alpha}. Ein Beispiel davon ist \ac{covid} (Tabelle \ref{tab:difbe}). Aus diesem Grund existiert der \ac{alphaid}. Der nutzt die Bezeichnungen als Basis für eine nicht klassifizierenden Kode \cite{icd10alpha}.
+
+Die alphabetische Zuordnung des Kodes entsteht aus der gebräuchlich Diagnosentexte. Die Systematik enthält nicht alle Diagnosen des Alphabets und eine Bezeichnung dient dazu als Verzugsbezeichnung, sodass das Alphabet auch andere Diagnosenbezeichnungen enthält, die auch veralte oder ungenau sind \cite{icd10alpha}. Ein Beispiel davon ist \textit{\acl{covid}} \acs{covid}-19 (Tabelle \ref{tab:difbe}). Aus diesem Grund existiert der \ac{alphaid}. Der nutzt die Bezeichnungen als Basis für eine nicht klassifizierenden Kode \cite{icd10alpha}.
 
 \begin{table}[ht]
 	\centering
@@ -23,11 +26,13 @@ Die alphabetische Zuordnung des Kodes entsteht aus der gebräuchlich Diagnosente
 \end{table}
 
 \subsection{Systematisches Verzeichnis (Systematik)} 
+
 Die Systematik ist eine hierarchisch geordnete Liste der vierstelligen Systematik des Kodes \cite{icd10syst, icd10systauf}. Dies Hierarchieebenen der \ac{icd10gm} sind Kapitel, Gruppe/Bereiche und Kode, nämlich Kategorie/Dreisteller, Subkategorien/Vier- und Fünfsteller \cite{icd10systauf}. Ein sehr wichtiges Aspekt bei der Nutzung der \ac{icd10gm}, die in vielen Datenquellen eines Krankenhaus nicht richtig wahrgenommen wird, ist dass, \textbf{alle Hinweise beim Kodieren immer berücksichtigt werden müssen} \cite{icd10systauf}.
 
 Für die Durchführung und den Zweck dieses Projekts wird mit den \textbf{systematischen Verzeichnissen} der \ac{icd10gm} und deren vom \ac{bfarm} veröffentlichen Dateien und Metadaten gearbeitet. 
 
 \subsection{Metadaten}
+
 Das \ac{bfarm} veröffentlicht zwischen September und Dezember eines Jahres die Metadaten der neuen Fassung der \ac{icd10gm} in einer \ac{zip}-Datei mit Kodierungen und weiteren Informationen. Der Ordner Klassifikationsdateien enthält die aktuelle Version der Dateien für die Klassifikation der \ac{icd10gm} (Tabelle \ref{tab:classfiles}).
 
 \begin{table}[ht]
