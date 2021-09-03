@@ -1,7 +1,7 @@
-
 \section{Data Analyse} \label{dataanalysis}
+Die Analyse der Information der \ac{icd10gm} wurde im Python unter mit dem Framework Jupyter-Notebook durchgeführt. 
 
-Jede \ac{csv}-Datei mit Codes enthält durchschnittlich {\ttfamily 15782} \ac{icd10gm} (Tabelle \ref{tab:icdfiles}).
+Wie in der Tabelle \ref{tab:icdfiles} dargestellt wird, jede Kode-Datei enthält mehr als \textsf{15450} \ac{icd10gm}, obwohl manche Kodierungen gelöscht werden, nimmt die Menge neuer \ac{icd10gm} immer zu.
 
 \begin{table}[ht]
 	\centering
@@ -10,7 +10,7 @@ Jede \ac{csv}-Datei mit Codes enthält durchschnittlich {\ttfamily 15782} \ac{ic
 	\label{tab:icdfiles}
 	\begin{tabular}{|l|l|}
 		\hline
-	\rowcolor{lightgray}	Anzahl & Fassung \\ \hline 
+	\rowcolor{lightgray} Anzahl & Fassung \\ \hline 
 		15455 & 2007 \\ \hline
 		15498 & 2008 \\ \hline
 		15523 & 2009 \\ \hline
@@ -27,12 +27,12 @@ Jede \ac{csv}-Datei mit Codes enthält durchschnittlich {\ttfamily 15782} \ac{ic
 		16131 & 2020 \\ \hline
 		16203 & 2021 \\ \hline
 		\hline
-		\textit{15782} & \textbf{Durchschnitt} \\ \hline
+		%\textit{15782} & \textbf{Durchschnitt} \\ \hline
 		\textit{236737} & \textbf{Gesamt} \\ \hline
 	\end{tabular}
 	\end{table}
 
-Nach dem Durchlauf der \ac{etl} sind insgesamt {\ttfamily 16520} \ac{icd10gm} von 2007 bis 2021 in der Tabelle {\ttfamily icd10gm} eingefügt. Davon {\ttfamily 6188} blieben unverändert,{\ttfamily  152} sind gelöschte \ac{icd10gm} und {\ttfamily 10180} wurden verändert (Tabelle \ref{tab:icddb}). Wobei die Spalten für den Titel der drei- vier- und fünfstelligen Codes nicht berücksichtigt wurden (Schauen Sie die Spalten {\ttfamily dreisteller}, {\ttfamily viersteller} und {\ttfamily fuensteller} der Tabellen {\ttfamily kodes}, {\ttfamily icd10gm}, und {\ttfamily icd10gm\_history} in der Abbildung \ref{fig:reldb2}), weil diese drei Felder im Jahr 2012 neue eingefügt wurden. Ein weiteres Aspekt ist, dass die Werte verschiedener Felder in früheren Fassungen bei manchen \ac{icd10gm} nicht definiert waren (Tabelle \ref{tab:icdupd}).
+Nach dem Durchlauf der \ac{etl} sind insgesamt \textsf{16520} \ac{icd10gm} von 2007 bis 2021 in der \ac{db} eingefügt. In der Tabelle \ref{tab:icddb} ist die das Verhältnis dieser Kodierungen dargestellt. Wobei die Spalten für den Titel der drei- vier- und fünften Stellen der Codes nicht berücksichtigt wurden, weil diese Felder erst im Jahr 2013 entstanden sind \cite{readme13}. Ein weiteres Aspekt in Bezug auf die \textsf{10180} Änderung ist, dass die Werte verschiedener Felder  bei manchen \ac{icd10gm} in früheren Fassungen noch nicht definiert waren, wie in der Tabelle \ref{tab:icdupd} bei den Fällen der Mortaliätlisten verdeutlicht wird.
 
  \begin{table}[ht]
  	\centering
@@ -52,9 +52,11 @@ Nach dem Durchlauf der \ac{etl} sind insgesamt {\ttfamily 16520} \ac{icd10gm} vo
 
 \newpage
 
-\subsection{Neue \acs{icd10gm}}
+\subsection{Neue \acs{icd10gm}} \label{newicd}
 
-Von 2008 bis 2021 sind insgesamt {\ttfamily 966} neuen \ac{icd10gm} entstanden. Ein interessantes Aspekt davon ist, dass die Anzahl neuer \ac{icd10gm} pro Jahr unregelmäßig ist (Abbildung \ref{fig:newicdyear}). Es gib Jahre wie 2010, 2017 und 2018 mit mehr als {\ttfamily 100} neue Einträge. Dieses Phänomen passiert bei dem Bedarf neue Subklassifikationen und Charakterisierung von Diagnosen, wie zum Beispiel, der Code {\ttfamily U81!} in 2007 für {\ttfamily Bakterien mit Multiresistenz gegen Antibiotika} wurde in 2017 gelöscht und stattdessen entstand die Kodierung {\ttfamily U81.-!} für {\ttfamily Gramnegative Erreger mit bestimmten Antibio-\\tikaresistenzen, die besondere therapeutische oder hygienische Maßnah-\\men erfordern} zusammen mit {\ttfamily 43} weiteren Subklassifikationen von {\ttfamily U81.0-!} bis {\ttfamily U81.8!} für die Charakterisierung der verschiedenen multiresistenten Erreger.
+Von 2008 bis 2021 sind insgesamt \textsf{966} neuen \ac{icd10gm} entstanden. In der Abbildung \ref{fig:newicdyear} ist ein interessantes Aspekt davon repräsentiert, nämlich die Anzahl neuer \ac{icd10gm} pro Jahr ist unregelmäßig. Es gib Jahre wie 2017 und 2018 mit mehr als \textsf{120} neue Einträge. Dieses Phänomen passiert beim Bedarf neue Subklassifikationen und Charakterisierung von Diagnosen oder Anpassungen der Nomenklatur.
+
+Der Code \textsf{U81!} in 2007 für \textsf{Bakterien mit Multiresistenz gegen Antibiotika} wurde in 2017 entnommen und stattdessen entstand die Kodierung \textsf{U81.-!} für \textsf{Gramnegative Erreger mit bestimmten Antibiotikaresistenzen, die besondere therapeutische oder hygienische Maßnahmen erfordern} zusammen mit \textsf{43} weiteren Subklassifikationen von \textsf{U81.0-!} bis \textsf{U81.8!}. Das ist durch eine Umstrukturierung der Bereiche \textsf{U81!} nach Beratung dem \ac{rki} und weitere Organisationen entstanden, um diese Codes an die Nomenklatur der \ac{krinko} anzupassen \cite{erreg17}.
 
 \begin{figure}[ht]
 	\centering
@@ -62,8 +64,8 @@ Von 2008 bis 2021 sind insgesamt {\ttfamily 966} neuen \ac{icd10gm} entstanden. 
 	\caption[Neue \acs{icd10gm} pro Jahr]{Anzahl neuer \acs{icd10gm} zwischen den Jahren 2008 und 2021}
 	\label{fig:newicdyear}
 \end{figure} 
-
-Im Jahr 2018 wurden mehr als {\ttfamily 80} neue \ac{icd10gm} im Kapitel {\ttfamily Krankheiten des Muskel-Skelett-Systems und des Bindegewebes} eingefügt (Abbildung \ref{fig:newicdcap}). Ursache davon war die Insertion der Lokalisation der Muskel-Skelett-Beteiligung in der fünften Stelle der Kodierung mit Ziffern von {\ttfamily 0} bis {\ttfamily 9}, um die Beschreibung der Pathologien zu verbessern.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Im Jahr 2018 wurden mehr als \textsf{80} neue \ac{icd10gm} im Kapitel \textsf{Krankheiten des Muskel-Skelett-Systems und des Bindegewebes} eingefügt (Abbildung \ref{fig:newicdcap}). Ursache davon war die Insertion der Lokalisation der Muskel-Skelett-Beteiligung in der fünften Stelle der Kodierung mit Ziffern von \textsf{0} bis \textsf{9}, um die Beschreibung der Pathologien zu verbessern.
 
 \begin{figure}[ht]
 	\centering
@@ -74,7 +76,7 @@ Im Jahr 2018 wurden mehr als {\ttfamily 80} neue \ac{icd10gm} im Kapitel {\ttfam
 
 Ein wichtiger und aktueller Punkt sind die meldepflichtigen Krankheiten in der Laufe der Jahre. Die Abbildung \ref{fig:newicdmeld} stellt das Verhältnis der meldepflichtigen \ac{icd10gm}. Es ist zu erkennen, dass sei 2007 nur in den Jahren 2010, 2016 und 2021 wurden neue meldepflichtigen Codes definiert (Tabelle \ref{tab:meldung}). Ursachen davon sind Pandemien und Epidemien wie die Influenza zwischen 2009 und 2010 \cite{influenza1, influenza2}, die Verbreitung des Dengue Fiebers in Europa als Effekt der Globalisierung mit der steigenden Mobilität \cite{denge1} und Verbreitung der asiatischen Tigermücke \textsl{Aedes (Stegomyia) albopictus} zwischen 2015 und 2016 in der Region als Konsequenz der milden Winter \cite{denge2}, und noch aktuell seit Februar 2020 die Verbreitung des Corona Virus in Europa \cite{corona1} und deren gesundheitlichen Folgen \cite{corona2}.
 
-%\newpage
+\clearpage
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=5cm]{figures/arztJaYear}
@@ -82,7 +84,7 @@ Ein wichtiger und aktueller Punkt sind die meldepflichtigen Krankheiten in der L
 	\label{fig:newicdmeld}
 \end{figure} 
 
-%\newpage
+ \clearpage
 \begin{table}[ht]
 	\centering
 	\small
@@ -107,13 +109,11 @@ Ein wichtiger und aktueller Punkt sind die meldepflichtigen Krankheiten in der L
 	\end{tabular}
 \end{table}
 
-\newpage
+\subsection{Modifizierte \acs{icd10gm}} \label{updicd}
 
-\subsection{Modifizierte \acs{icd10gm}}
+Die verschiedene Änderungen an den Metadaten sind in der Tabelle \ref{tab:icdupd} ausgelistet. Es ist zu erkennen, dass die meiste Änderungen in Bezug zur Mortalitätslisten entstanden sind. Die Ursache davon ist, dass der Inhalt solche Listen bei der meiste \ac{icd10gm} im Jahr 2008 definiert wurde. Andererseits sind die Änderungen an diesen Felder minimal bei \ac{icd10gm}, bei deren diese Listen schon definiert wurden. Die zahlreiche Modifikationen an der Klassentitel entstehen durch Vorläge zur Weiterentwicklung der Klassifikation. Ein Beispiel davon ist die Schlüsselnummer \textsf{E10.31} mit dem Titel \glqq{\ttfamily\textcolor{blue}{Primär insulinabhängiger} Diabetes mellitus [Typ-1-Diabetes] \textcolor{red}{mit} Augenkomplika-\\tionen: Als entgleist bezeichnet}\grqq{}. Dieser Titel wurde zu \glqq{\ttfamily\textcolor{blue}{Primär insulinab-\\hängiger} Diabetes mellitus [Typ-1-Diabetes]\textcolor{red}{: Mit }Augenkomplikationen:\\ Als entgleist bezeichnet}\grqq{} in 2009. Die Änderung wurde in diesem Jahr durchgeführt, da eine fünfte Stelle in der Klassifikationen von \textsf{E10}  bis \textsf{E14} eingefügt wurde \cite{diab09}. Der Titel dieser \ac{icd10gm} wurde nochmal in 2014 zu \glqq\textsf{Diabetes mellitus, Typ 1: Mit Augenkomplikationen: Als entgleist bezeichnet}\grqq{} geändert. In diesem Jahr wurden die Titel von der \ac{who} an die gebräuchliche Terminologie angepasst \cite{diab14}.
 
-Die verschiedene Änderungen an den Metadaten sind in der Tabelle \ref{tab:icdupd} ausgelistet. Es ist zu erkennen, dass die meiste Änderungen in Bezug zur Mortalitätslisten entstanden sind. Die Ursache davon ist, dass der Inhalt solche Listen bei der meiste \ac{icd10gm} im Jahr 2008 definiert wurde. Andererseits sind die Änderungen an diesen Felder minimal bei \ac{icd10gm}, bei deren diese Listen schon definiert wurden. Die zahlreiche Modifikationen an der Klassentitel entstehen durch Vorläge zur Weiterentwicklung der Klassifikation. Ein Beispiel davon ist die Schlüsselnummer {\ttfamily E10.31} mit dem Titel \glqq{\ttfamily\textcolor{blue}{Primär insulinabhängiger} Diabetes mellitus [Typ-1-Diabetes] \textcolor{red}{mit} Augenkomplika-\\tionen: Als entgleist bezeichnet}\grqq{}. Dieser Titel wurde zu \glqq{\ttfamily\textcolor{blue}{Primär insulinab-\\hängiger} Diabetes mellitus [Typ-1-Diabetes]\textcolor{red}{: Mit }Augenkomplikationen:\\ Als entgleist bezeichnet}\grqq{} in 2009. Die Änderung wurde in diesem Jahr durchgeführt, da eine fünfte Stelle in der Klassifikationen von {\ttfamily E10}  bis {\ttfamily E14} eingefügt wurde \cite{diab09}. Der Titel dieser \ac{icd10gm} wurde nochmal in 2014 zu \glqq{\ttfamily Diabetes mellitus, Typ 1: Mit Augenkomplikationen: Als entgleist bezeichnet}\grqq{} geändert. In diesem Jahr wurden die Titel von der \ac{who} an die gebräuchliche Terminologie angepasst \cite{diab14}.
-
-\newpage
+ \clearpage
 
 \begin{table}[ht]
 	\centering

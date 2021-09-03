@@ -1,30 +1,37 @@
 \section{Datenbank Schema} \label{database}
 
-\subsection{Aufbau der \acl{db} Schema} \label{dbdevelop}
+\subsection{Aufbau der \acl{db}} \label{dbdevelop}
 
-Für die Durchführung dieses Projekts wurde ein relationales \ac{db} Schema in PostgreSQL entwickelt. Damit wurden die \ac{sql}-Statements der \glqq{\ttfamily  LIESMICH}\grqq-Dateien \cite{readmel} angepasst. Außerhalb von den \ac{sql}-Anpassungen wurde die Tabelle {\ttfamily kodes} auch modifiziert. In dieser Tabelle wurde die Spalte {\ttfamily ver} für die Speicherung der Auffassungen oder Versionen eingefügt und die Spalte {\ttfamily fünfsteller} wurde zu {\ttfamily fuenfsteller} umbenannt, um Probleme mit Zeichen-Kodierung zu verhindern. Noch dazu wurden drei neuen Tabelle eingefügt, um die Veröffentlichung Daten, Speicherung und Historisierung aller verfügbaren \ac{icd10gm} von 2007 bis 2021 zu steuern.
-	
-	\begin{figure}[ht]
-		\centering
-		\includegraphics[height=10cm]{figures/icdSqlSchemaNew}
-		\caption[Vorschlag der Datenbank Struktur von \acs{icd10gm}]{Datenbank Struktur des Schemas der \ac{icd10gm} von \ac{bfarm} mit der Änderungen an der Tabelle {\ttfamily kodes} in schwarz markiert und neuen Tabellen in gelb gekennzeichnet.}
-		\label{fig:reldb2}
-	\end{figure}
+Für die Durchführung dieses Projekts wurde ein relationales \ac{db} Schema in PostgreSQL entwickelt. Damit wurden die \ac{sql}-Anweisungen, nach Empfehlung in der Liesmich-Dateien der Fassungen, angepasst \cite{readmel}. Außerhalb von den vorher genannten Anpassungen wurde die Tabelle \textsf{kodes} auch modifiziert. In dieser Tabelle wurde die Spalte \textsf{ver} für die Speicherung der Auffassungen oder Versionen eingefügt und die Spalte \textsf{fünfsteller} wurde zu \textsf{fuenfsteller} umbenannt, um Probleme mit Zeichen-Kodierung zu verhindern. Diese Veränderungen sind in schwatzt in der Tabelle \textsf{kodes} der Abbildung \ref{fig:reldb2} gekennzeichnet. Noch dazu wurden drei neuen Tabelle eingefügt, um die Veröffentlichung Daten (\textsf{icd10gm\_release\_info}), Speicherung (\textsf{icd10gm}) und Historisierung \textsf{icd10gm\_history} aller verfügbaren \ac{icd10gm} von 2007 bis 2021 zu steuern. Solche Tabellen sind mit Kopfseile in gelb in der Abbildung \ref{fig:reldb2} repräsentiert.
+
+\subsection{Funktion der Tabelle \textsf{kodes} von \acs{bfarm}} \label{bfarmtables}
+
+Die Tabellen von \textsf{kodes} vom \ac{bfarm}-Schema beinhalten die Information der \ac{csv}-Dateien von nur eine Fassung und enthält damit die Anfangsdaten für die Tabellen \textsf{icd10gm} und \textsf{icd10gm\_history}.
+
+\clearpage	
+\begin{figure}[ht]
+	\centering
+	\includegraphics[height=10cm]{figures/icdSqlSchemaNew}
+	\caption[Datenbankstruktur]{Datenbankstruktur für die Steuerung der \ac{icd10gm}.}
+	\label{fig:reldb2}
+\end{figure}
+
 \subsection{Funktion der neuen Tabellen} \label{newtables}
 
-Für die Erfassung der Datierung der Veröffentlichungen der \ac{icd10gm} wurde die Tabelle {\ttfamily icd10gm\_release\_info} erstellt. Diese speichert den Identifikator oder das Jahr der Version in der Spalte {\ttfamily icd10gm\_version} und das Datum der Veröffentlichung in der Spalte {\ttfamily icd10gm\_release}. Diese hat das Format {\ttfamily JJJJ-MM-TT}. Wobei J das Jahr, M der Monat und T der Tag darstellen.
+Für die Erfassung der Datierung der Veröffentlichungen der Versionen wurde die Tabelle \textsf{icd10gm\_release\_info} erstellt. Diese speichert den Identifikator oder das Jahr der Version in der Spalte \textsf{icd10gm\_version} und das Datum der Veröffentlichung in der Spalte \textsf{icd10gm\_release}. Diese hat das Format \textsf{JJJJ-MM-TT}. Wobei J das Jahr, M der Monat und T der Tag darstellen. Dadurch wir nur mit der neuesten Veröffentlichung einer Fassung arbeiten, wurde der Identifikator der Version als Hauptschlüssel deklariert.
 
-Die \ac{icd10gm} von 2007 bis 2021, in aktueller Fassung bei den gültigen, werden in der Tabelle {\ttfamily icd10gm} gespeichert. Die Spalte {\ttfamily code}, genau wie bei der Tabelle {\ttfamily kodes} vom \ac{bfarm}-Schema ist die Hauptschlüssel. {\ttfamily ver} speichert die Version und ist ein Fremd Schlüssel, der zeigt die Spalte {\ttfamily icd10gm\_version} der Tabelle {\ttfamily icd10gm\_release\_info}. Die boolesche Spalte {\ttfamily isused} wird benutzt zu markieren welche \ac{icd10gm} bei anderen Systemen angewendet wurde. Die Tabelle {\ttfamily icd10gm} kann auch für Plausibilitätsabfragen benutzt werden.
 
-Die Tabelle {\ttfamily icd10gm\_history} enthält die vorherige Information der \ac{icd10gm}, die mit der Laufe der Zeit gelöscht oder geändert wurden. Die Besonderheiten diese Tabelle sind die Spalten {\ttfamily ver}, {\ttfamily vermodif} und {\ttfamily verevent}. Die Identifikatoren vergangener Versionen einer \ac{icd10gm} werden in der Spalte {\ttfamily ver} gespeichert. Die Spalte {\ttfamily vermodif} enthält der Identifikator der Fassungen bei deren eine \ac{icd10gm} gelöscht oder modifiziert wurde. Die Ereignisse von Änderung oder Löschung werden mit den Buchstaben {\ttfamily U} für \glqq{\ttfamily  update}\grqq{} und {\ttfamily D} für \glqq{\ttfamily  delete}\grqq{} in der Spalte {\ttfamily verevent} kodiert und gespeichert.
+Die \ac{icd10gm} von 2007 bis 2021, werden in der Tabelle \textsf{icd10gm} gespeichert. In dieser Tabelle wird die Information der noch gültigen \ac{icd10gm} aktualisiert. Die Spalte \textsf{code} dieser Tabelle ist die Hauptschlüssel, genau wie in der Tabelle \textsf{kodes} vom \ac{bfarm}-Schema. \textsf{ver} speichert den Identifikator der Version und ist ein Fremd Schlüssel, der zeigt die Spalte \textsf{icd10gm\_version} der Tabelle \textsf{icd10gm\_release\_info}. Die boolesche Spalte \textsf{isused} wird benutzt, um zu markieren welche \ac{icd10gm} bei anderen Systemen angewendet wird. Auf diesem Grund kann die Tabelle \textsf{icd10gm} auch für Plausibilitätsabfragen benutzt werden.
+
+Die Tabelle \textsf{icd10gm\_history} enthält die Information der \ac{icd10gm}, die mit der Laufe der Zeit gelöscht oder geändert wurden. Die Besonderheiten diese Tabelle sind die Spalten \textsf{ver}, \textsf{vermodif} und \textsf{verevent}. Die Identifikatoren vergangener Versionen einer \ac{icd10gm} werden in der Spalte \textsf{ver} gespeichert. Die Spalte \textsf{vermodif} enthält den Identifikator der Fassungen bei deren eine \ac{icd10gm} gelöscht oder modifiziert wurde. Die Ereignisse von eine Änderung oder Löschung werden mit den Buchstaben \textsf{U} für \glqq\textsf{update}\grqq{} und \textsf{D} für \glqq\textsf{delete}\grqq{} in der Spalte \textsf{verevent} kodiert und gespeichert.
 
 \subsection{Fluss der Information} \label{dbrun}
 
-Mit Hilfe einer \ac{etl}-Strecke (Sektion \ref{etlpipeline}) werden die Daten in der \ac{db} importiert. Die Information der Veröffentlichung der \ac{icd10gm} wird in der Tabelle {\ttfamily icd10gm\_release \_info} eingefügt. Die Tabellen von \ac{bfarm} erhalten nur die Information der, für ein Jahr, gültigen \ac{icd10gm}. Mit jeder Ladung wird die Information der Tabelle {\ttfamily icd10gm} mit den Daten der Tabelle {\ttfamily kodes} erneuert. Wobei die neuen Codes und deren Informationen zusammen mit Aktualisierungen eingefügt werden. An diese Stelle die \ac{icd10gm}, die in der neuen Fassung nicht mehr vorhanden sind oder modifiziert wurden, werden in der alten Fassung in der Tabelle {\ttfamily icd10gm\_history} mit der Art der Änderung zusammen mit Identifikator vergangener und neuer \ac{icd10gm} Version eingefügt. Dieser Prozessablauf in der \ac{db} ist durch Triggers gesteuert. Den Fluss der Information ist im Datenflussdiagramm der Abbildung \ref{fig:dbflow} repräsentiert.
+Mit Hilfe einer \ac{etl}-Strecke werden die Daten aus der \ac{zip}-Dateien in der \ac{db} importiert. Die Information der Veröffentlichung der \ac{icd10gm} wird in der Tabelle \textsf{icd10gm\_release \_info} eingefügt. Bei jeder Ladung wird die Information der Tabelle \textsf{kodes} vorher gelöscht und mit neuen \ac{icd10gm}-Datensätzen geladen. Die Codes, die vorher nicht in der Tabelle \textsf{icd10gm} vorhanden waren, werden in dieser kopiert. Nicht in \textsf{kodes} existierende \ac{icd10gm} werden aus \textsf{icd10gm} in \textsf{icd10gm\_history} kopiert. Diese Kopie enthält auch die Indikatoren der alten und neuen Fassungen und wird als gelöscht markiert. Existierende Kodierungen mit neuer Information werden vorher in der \textsf{icd10gm\_history} hinzugefügt und dann wird die Information in \textsf{icd10gm} aktualisiert. In diesem Fall werden auch die Indikatoren der alten und neuen Fassung registriert und der Datensatz als modifiziert markiert. Dieser Fluss der Information ist im Datenflussdiagramm der Abbildung \ref{fig:dbflow} repräsentiert. Der automatisierte Prozessablauf in der \ac{db} ist durch Triggers in den Tabellen \textsf{kodes} und \textsf{icd10gm} gesteuert.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=10cm]{figures/dbflow}
-	\caption[Datenfluss des Prozesses]{Datenflussdiagramm der Information von den \ac{zip}-Dateien bis zum Import in der \ac{db}}
+	\caption[Datenfluss des Prozesses]{Datenflussdiagramm der Information von den \ac{zip}-Dateien bis zum Import in der \ac{db}.}
 	\label{fig:dbflow}
 \end{figure} 

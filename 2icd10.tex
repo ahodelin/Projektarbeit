@@ -6,7 +6,7 @@ Die \ac{icd10gm} ist eine monohierarchisch strukturierte, alphanumerische Klassi
 
 \subsection{Alphabetisches Verzeichnis (Alphabet)} \label{alphadir}
 
-Die alphabetische Zuordnung des Kodes entsteht aus der gebräuchlich Diagnosentexte. Die Systematik enthält nicht alle Diagnosen des Alphabets und eine Bezeichnung dient dazu als Verzugsbezeichnung, sodass das Alphabet auch andere Diagnosenbezeichnungen enthält, die auch veralte oder ungenau sind \cite{icd10alpha}. Ein Beispiel davon ist \\textsf{\acl{covid}} \acs{covid}-19 (Tabelle \ref{tab:difbe}). Aus diesem Grund existiert der \ac{alphaid}. Der nutzt die Bezeichnungen als Basis für eine nicht klassifizierenden Kode \cite{icd10alpha}.
+Die alphabetische Zuordnung des Kodes entsteht aus der gebräuchlich Diagnosentexte. Die Systematik enthält nicht alle Diagnosen des Alphabets und eine Bezeichnung dient dazu als Verzugsbezeichnung, sodass das Alphabet auch andere Diagnosenbezeichnungen enthält, die auch veralte oder ungenau sind \cite{icd10alpha}. Ein Beispiel davon ist \\textsf{\acl{covid}} \acs{covid}-19 (sehen Sie die Tabelle \ref{tab:difbe}). Aus diesem Grund existiert der \ac{alphaid}. Der nutzt die Bezeichnungen als Basis für eine nicht klassifizierenden Kode \cite{icd10alpha}.
 
 \begin{table}[ht]
 	\centering
@@ -27,13 +27,11 @@ Die alphabetische Zuordnung des Kodes entsteht aus der gebräuchlich Diagnosente
 
 \subsection{Systematisches Verzeichnis (Systematik)} 
 
-Die Systematik ist eine hierarchisch geordnete Liste der vierstelligen Systematik des Kodes \cite{icd10syst, icd10systauf}. Dies Hierarchieebenen der \ac{icd10gm} sind Kapitel, Gruppe/Bereiche und Kode, nämlich Kategorie/Dreisteller, Subkategorien/Vier- und Fünfsteller \cite{icd10systauf}. Ein sehr wichtiges Aspekt bei der Nutzung der \ac{icd10gm}, die in vielen Datenquellen eines Krankenhaus nicht richtig wahrgenommen wird, ist dass, \textbf{alle Hinweise beim Kodieren immer berücksichtigt werden müssen} \cite{icd10systauf}.
-
-Für die Durchführung und den Zweck dieses Projekts wird mit den \textbf{systematischen Verzeichnissen} der \ac{icd10gm} und deren vom \ac{bfarm} veröffentlichen Dateien und Metadaten gearbeitet. 
-
+Die Systematik ist eine hierarchisch geordnete Liste der vierstelligen Systematik des Kodes \cite{icd10syst, icd10systauf}. Dies Hierarchieebenen der \ac{icd10gm} sind Kapitel, Gruppe/Bereiche und Kode, nämlich Kategorie/Dreisteller, Subkategorien/Vier- und Fünfsteller \cite{icd10systauf}. Für die Durchführung und den Zweck dieses Projekts wird mit dem systematischen Verzeichnis der \ac{icd10gm} und deren vom \ac{bfarm} veröffentlichen Dateien und Metadaten gearbeitet. 
+%Ein sehr wichtiges Aspekt bei der Nutzung der \ac{icd10gm}, die in vielen Datenquellen eines Krankenhaus nicht richtig wahrgenommen wird, ist dass, \textbf{alle Hinweise beim Kodieren immer berücksichtigt werden müssen} \cite{icd10systauf}.
 \subsection{Metadaten}
 
-Das \ac{bfarm} veröffentlicht zwischen September und Dezember eines Jahres die Metadaten der neuen Fassung der \ac{icd10gm} in einer \ac{zip}-Datei mit Kodierungen und weiteren Informationen. Der Ordner Klassifikationsdateien enthält die aktuelle Version der Dateien für die Klassifikation der \ac{icd10gm} (Tabelle \ref{tab:classfiles}).
+Das \ac{bfarm} veröffentlicht zwischen September und Dezember eines Jahres die Metadaten der neuen Fassung der \ac{icd10gm} in einer \ac{zip}-Datei mit Kodierungen und weiteren Informationen. Der Ordner Klassifikationsdateien enthält die aktuelle Version der Dateien für die Klassifikation der \ac{icd10gm} (sehen Sie die Tabelle \ref{tab:classfiles}). Diese Dateien sind in \ac{csv}-Format mit \glqq ;\grqq{} als Trendzeichen. 
 
 \begin{table}[ht]
 	\centering
@@ -57,8 +55,6 @@ Das \ac{bfarm} veröffentlicht zwischen September und Dezember eines Jahres die 
 	\end{tabular}
 \end{table}
 
-Diese Dateien sind in \ac{csv}-Format mit \glqq ;\grqq{} als Trendzeichen. Die \ac{zip}-Datei enthält auch eine \textsf{icd10gmJAHRESVERSIONsyst\_metadaten\_ liesmich.txt} mit der Beschreibung aller Dateien und \ac{sql}-Statements für die Aufbau einer Datenbank oder eines Schemas (Tabellen mit den Kopfzeilen in rot in der Abbildung \ref{fig:reldb2}), je nach welchem \ac{rdbms} benutzt wird \cite{readmel}.
-
-Die \ac{zip}-Datei befindet sich auf die Seite  \href{https://www.dimdi.de/dynamic/de/klassifikationen/downloads/}{Downloads} der Klassifikationen der \ac{bfarm} Webseite in der Sektion \ac{icd10gm}, aktuelle Jahresversion, \ac{icd10gm} \textsf{ Jahr} Metadaten TXT (\acs{csv}).
+Die \ac{zip}-Datei enthält auch eine Liesmich-Datei mit der Beschreibung aller \ac{csv}-Dateien, vorkommenden Erneuerungen in der Struktur der \ac{csv}-Dateien, und \ac{sql}-Statements für den Aufbau einer Datenbank oder eines Schemas, je nach welchem \ac{rdbms} benutzt wird \cite{readmel}. Solche Tabellen sind mit Kopfzeilen in rot in der Abbildung \ref{fig:reldb2} dargestellt. Diese \ac{zip}-Dateien befinden sich auf der Seite  \href{https://www.dimdi.de/dynamic/de/klassifikationen/downloads/}{Downloads} der Klassifikationen der \ac{bfarm} Webseite in der Sektion \ac{icd10gm}. Hier befinden sich die Version des laufenden Jahres und die Vorgängerversionen. Die Namen der Links zu den \ac{zip}-Dateien haben die Struktur \textsf{\ac{icd10gm} Version JJJJ}. Die Struktur der Namen der \ac{zip}-Dateien ist \textsf{\ac{icd10gm}VersionJJJJ.zip}.
 
 %\textit{\glqq ....\grqq}´

@@ -58,10 +58,7 @@
 \begin{document} 
 	\include{titelpage}
 	\newpage
-	\pagenumbering{roman}
-	\input{0acro}
-	
-	\newpage
+	\pagenumbering{roman}	
 	
 	\listoffigures
 	
@@ -70,7 +67,11 @@
 	\newpage
 	\tableofcontents	  
 	\newpage
-	\pagenumbering{arabic}
+	
+    \pagenumbering{arabic}
+	\input{0acro}
+	\newpage
+	
 	\input{1introduction}
 	\input{2icd10}
 	%\newpage
