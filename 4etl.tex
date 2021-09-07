@@ -6,7 +6,7 @@ Für den Import der Information der \ac{icd10gm} in der \ac{db} wurde eine \ac{e
 
 Zuerst werden die Ordner der \ac{zip}-Dateien mit Hilfe des Skripts \textsf{unzipper.sh} entpackt. Das Skript \textsf{copy\_codes.sh} generiert ein neuen Ordner für die Speicherung der Kode-Dateien. Diese Dateien werden ausgewählt und in diesem Ordner kopiert. Die Information des Datums der Freigabe und Fassung wird mit dem Skript \textsf{extra\_info.sh} aus der Liesmisch-Dateien extrahiert und in einem \ac{csv}-Datei importiert.
 
-\subsection{Transformation}
+\subsection{Transformation} \label{transf}
 
 Die Kode-Dateien von 2007 bis 2009 haben den Windows-Standardzeichensatz (ISO-8859-15) als Zeichenkodierung. Das verursacht Probleme bei dem Datenaustausch zwischen Plattformen. Aus diesem Grund wandelt das Skript \textsf{iso\_2\_utf8.sh} das Format dieser Kode-Dateien von ISO-8859-15 in UTF-8 um.
 

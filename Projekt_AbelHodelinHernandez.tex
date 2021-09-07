@@ -58,18 +58,23 @@
 \begin{document} 
 	\include{titelpage}
 	\newpage
-	\pagenumbering{roman}	
-	
-	\listoffigures
-	
-	\listoftables
+	\pagenumbering{roman}
 	
 	\newpage
 	\tableofcontents	  
 	\newpage
 	
+	\addcontentsline{toc}{section}{\listfigurename}
+	\listoffigures
+	
+	\addcontentsline{toc}{section}{\listtablename}
+	\listoftables
+	
+	\newpage
+	
     \pagenumbering{arabic}
 	\input{0acro}
+	
 	\newpage
 	
 	\input{1introduction}
@@ -80,7 +85,8 @@
 	\input{4etl}
 	%\newpage
 	\input{5data}
-	\newpage
+	%\newpage
+	\input{6schluss}
 	\newpage
 
 

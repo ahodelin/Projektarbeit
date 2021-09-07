@@ -156,7 +156,7 @@ Ein interessantes Aspekt ist, dass \textsf{52} Diagnosen mit Geschlechtsbezug de
 
 \begin{table}[ht]
 	\centering
-	\caption[Seltene Krankheiten in Mitteleuropa]{\ac{icd10gm} der Bereiche \textsf{A36.-} \textsf{Diphtherie} und \textsf{A80.-} \textsf{Akute Poliomyelitis [Spinale Kinderlähmung]}. \textsf{J} Ja, \textsf{N} Nein.}
+	\caption[Diphtherie und Poliomyelitis]{\ac{icd10gm} der Bereiche \textsf{A36.-} \textsf{Diphtherie} und \textsf{A80.-} \textsf{Akute Poliomyelitis [Spinale Kinderlähmung]}. \textsf{J} Ja, \textsf{N} Nein.}
 	\label{tab:icdeuropa}
 	\begin{tabular}{|l|l|p{8cm}|l|l|}
 		\hline
@@ -199,11 +199,15 @@ In jeder Fassung von 2008 bis 2021 sind zwischen \textsf{3} und \textsf{31} \ac{
 	\label{fig:oldicdyear}
 \end{figure} 
 
-Die Abbildung \ref{fig:oldicdort} zeigt, dass \textsf{139} der gelöschten Codes terminale Schlüsselnummer waren, also \ac{icd10gm} ohne Subkategorien. Davon wurden \textsf{60} erweitert, wie in Sektion \ref{newicd} beschrieben wurde. Die andere \textsf{87} \ac{icd10gm} wurden einfach nicht mehr weiter benutzt. Von den \textsf{13} nicht terminalen Codes \textsf{6} wurden verkürzt und als in terminalen Schlüsselnummer gesetzt. Ein Beispiel davon ist \textsf{Z75.2-} \textsf{Wartezeit auf eine Untersuchung oder Behandlung}, diese nicht terminale Kodierung wurde gelöscht und zu der terminalen Code \textsf{Z75.2} mit demselben Titel.
+Die Abbildung \ref{fig:oldicdort} zeigt, dass \textsf{139} der gelöschten Codes terminale Schlüsselnummer waren, also \ac{icd10gm} ohne Subkategorien. Davon wurden \textsf{60} erweitert, wie in Sektion \ref{newicd} beschrieben wurde. Die andere \textsf{87} \ac{icd10gm} wurden einfach nicht mehr weiter benutzt. Von den \textsf{13} nicht terminalen Codes \textsf{6} wurden verkürzt und als in terminalen Schlüsselnummer gesetzt. Ein Beispiel davon ist \textsf{Z75.2-} \textsf{Wartezeit auf eine Untersuchung oder Behandlung}, diese nicht terminale Kodierung wurde gelöscht und zu der terminalen Code \textsf{Z75.2} mit demselben Titel umgewandelt.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=6cm]{figures/ortoldYear}
 	\caption{Gelöschte \acs{icd10gm} und deren Hierarchie}
 	\label{fig:oldicdort}
-\end{figure} 
+\end{figure}
+
+\subsection{Strukturelle Änderungen}
+
+Wie in der Subsektion \ref{transf} genannt wurde, es gab auch Änderungen in der Struktur des semantischen Verzeichnisses. Im Jahr 2013 wurde die Spalte \textsf{titel} für den Klassentitel der Tabelle \textsf{kodes} aus dem Dreisteller-, Viersteller- und gegebenenfalls Fünfstellertitel zusammengesetzt. Auch in diesem Jahr wurden drei neue Felder für die einzelnen Bestandteile des zusammengesetzten Klassentitels eingefügt \cite{readme13}. Eine weitere Änderung in der Tabelle \textsf{kodes}, die schon sei 2015 geplant wurde, und im Jahr 2018 vorgenommen wurde, war die Entnahme der Felder der Altersklassenformaten für die untere und obere Grenze des Altenbezuges mit Angabe von Tagen, Wochen, Monaten und Jahren; und damit blieben nur die Felder mit dem Format in Tagen und Jahren, nämlich  \textsf{altunt} für die untere Grenze und \textsf{altob} für die obere Grenze des Altenbezuges \cite{readme17}.
