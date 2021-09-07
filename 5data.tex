@@ -54,11 +54,8 @@ Nach dem Durchlauf der \ac{etl} sind insgesamt \textsf{16520} \ac{icd10gm} von 2
 
 \subsection{Neue \acs{icd10gm}} \label{newicd}
 
-Von 2008 bis 2021 sind insgesamt \textsf{966} neuen \ac{icd10gm} entstanden. In der Abbildung \ref{fig:newicdyear} ist ein interessantes Aspekt davon repräsentiert, nämlich die Anzahl neuer \ac{icd10gm} pro Jahr ist unregelmäßig. Es gib Jahre wie 2017 und 2018 mit mehr als \textsf{120} neue Einträge. Dieses Phänomen passiert am meisten beim Bedarf neuer Subklassifikationen, um die Diagnosen spezifischer zu kodieren und an diverse klinischen Systeme anzupassen.
+Von 2008 bis 2021 sind insgesamt \textsf{966} neuen \ac{icd10gm} entstanden. In der Abbildung \ref{fig:newicdyear} ist ein interessantes Aspekt davon repräsentiert, nämlich die Anzahl neuer \ac{icd10gm} pro Jahr ist unregelmäßig. Es gib Jahre wie 2017 und 2018 mit mehr als \textsf{120} neue Einträge. Dieses Phänomen passiert am meisten beim Bedarf neuer Subklassifikationen, um die Diagnosen spezifischer zu kodieren und an diverse klinischen Systeme anzupassen. Ein Beispiel dieses Phonemen ist der Code \textsf{U81!} \textsf{Bakterien mit Multiresistenz gegen Antibiotika}, dieser wurde in 2017 entnommen und stattdessen entstand die Kodierung \textsf{U81.-!} \textsf{Gramnegative Erreger mit bestimmten Antibiotikaresistenzen, die besondere therapeutische oder hygienische Maßnahmen erfordern} zusammen mit \textsf{43} weiteren Subklassifikationen von \textsf{U81.0-!} bis \textsf{U81.8!}. Die Ursache davon war eine Umstrukturierung der Bereiche \textsf{U81!}, um diese Codes an die Nomenklatur der \ac{krinko} anzupassen \cite{erreg17}.
 
-Der Code \textsf{U81!} in 2007 für \textsf{Bakterien mit Multiresistenz gegen Antibiotika} wurde in 2017 entnommen und stattdessen entstand die Kodierung \textsf{U81.-!} für \textsf{Gramnegative Erreger mit bestimmten Antibiotikaresistenzen, die besondere therapeutische oder hygienische Maßnahmen erfordern} zusammen mit \textsf{43} weiteren Subklassifikationen von \textsf{U81.0-!} bis \textsf{U81.8!}. Die Ursache davon war eine Umstrukturierung der Bereiche \textsf{U81!}, um diese Codes an die Nomenklatur der \ac{krinko} anzupassen \cite{erreg17}. 
-
-%\clearpage
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=7cm]{figures/newicdyear}
@@ -186,7 +183,7 @@ In Bezug auf die sehr seltene Krankheiten in Mitteleuropa sind \textsf{20} von d
 
 \subsection{Gelöschte \acs{icd10gm}}
 
-In jeder Fassung von 2008 bis 2021 sind zwischen ... und ... \ac{icd10gm} gelöscht. Dieses Verhalten ist in der Abbildung \ref{fig:newdeleteoldicdyear} repräsentiert. Die Abbildung \ref{fig:oldicdyear} stellt dar, dass die meiste gelöschte Kodierungen zum Jahr 2007 gehören, das ist, weil die meiste \ac{icd10gm} des Systems von dieser Fassung stammen.
+In jeder Fassung von 2008 bis 2021 sind zwischen \textsf{3} und \textsf{31} \ac{icd10gm} gelöscht. Dieses Verhalten ist in der Abbildung \ref{fig:newdeleteoldicdyear} repräsentiert. Die Abbildung \ref{fig:oldicdyear} stellt dar, dass die meiste gelöschte Kodierungen zum Jahr 2007 gehören, das ist, weil die meiste \ac{icd10gm} des Systems von dieser Fassung stammen.
 
 \begin{figure}[ht]
 	\centering
@@ -202,6 +199,11 @@ In jeder Fassung von 2008 bis 2021 sind zwischen ... und ... \ac{icd10gm} gelös
 	\label{fig:oldicdyear}
 \end{figure} 
 
-Viele dieser Codes werden ersetzt oder erweitert, wie zum Beispiel aus \textsf{U07.1} \textsf{Nicht belegte Schlüsselnummer U07.1} vom Jahr 2013 wurde in 2021 \textsf{U07.1\underline{!}} \textsf{COVID-19, Virus nachgewiesen}.
+Die Abbildung \ref{fig:oldicdort} zeigt, dass \textsf{139} der gelöschten Codes terminale Schlüsselnummer waren, also \ac{icd10gm} ohne Subkategorien. Davon wurden \textsf{60} erweitert, wie in Sektion \ref{newicd} beschrieben wurde. Die andere \textsf{87} \ac{icd10gm} wurden einfach nicht mehr weiter benutzt. Von den \textsf{13} nicht terminalen Codes \textsf{6} wurden verkürzt und als in terminalen Schlüsselnummer gesetzt. Ein Beispiel davon ist \textsf{Z75.2-} \textsf{Wartezeit auf eine Untersuchung oder Behandlung}, diese nicht terminale Kodierung wurde gelöscht und zu der terminalen Code \textsf{Z75.2} mit demselben Titel.
 
-\newpage
+\begin{figure}[ht]
+	\centering
+	\includegraphics[height=6cm]{figures/ortoldYear}
+	\caption{Gelöschte \acs{icd10gm} und deren Hierarchie}
+	\label{fig:oldicdort}
+\end{figure} 
