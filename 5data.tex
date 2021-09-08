@@ -43,18 +43,24 @@ Nach dem Durchlauf der \ac{etl} sind insgesamt \textsf{16520} \ac{icd10gm} von 2
  		\hline
  		\rowcolor{lightgray}	Anzahl & Information \\ \hline 
  		16520 & \textbf{Gesamt} \\ \hline
+ 		6188 & Unverändert \\ \hline
+ 		10011 & Nur geändert \\ \hline
+ 		152 & Nur gelöscht \\ \hline 		
+ 		169 & Geändert und gelöscht \\ \hline
  		\hline
- 		\textit{6188} & \textbf{Unverändert} \\ \hline
- 		\textit{152} & \textbf{Gelöscht} \\ \hline
- 		\textit{10180} & \textbf{Geändert} \\ \hline
+ 		10180 & \textbf{Insgesamt geändert} \\ \hline
+ 		321 & \textbf{Insgesamt gelöscht} \\ \hline
+ 		
  	\end{tabular}
  \end{table}
-
-\newpage
 
 \subsection{Neue \acs{icd10gm}} \label{newicd}
 
 Von 2008 bis 2021 sind insgesamt \textsf{966} neuen \ac{icd10gm} entstanden. In der Abbildung \ref{fig:newicdyear} ist ein interessantes Aspekt davon repräsentiert, nämlich die Anzahl neuer \ac{icd10gm} pro Jahr ist unregelmäßig. Es gib Jahre wie 2017 und 2018 mit mehr als \textsf{120} neue Einträge. Dieses Phänomen passiert am meisten beim Bedarf neuer Subklassifikationen, um die Diagnosen spezifischer zu kodieren und an diverse klinischen Systeme anzupassen. Ein Beispiel dieses Phonemen ist der Code \textsf{U81!} \textsf{Bakterien mit Multiresistenz gegen Antibiotika}, dieser wurde in 2017 entnommen und stattdessen entstand die Kodierung \textsf{U81.-!} \textsf{Gramnegative Erreger mit bestimmten Antibiotikaresistenzen, die besondere therapeutische oder hygienische Maßnahmen erfordern} zusammen mit \textsf{43} weiteren Subklassifikationen von \textsf{U81.0-!} bis \textsf{U81.8!}. Die Ursache davon war eine Umstrukturierung der Bereiche \textsf{U81!}, um diese Codes an die Nomenklatur der \ac{krinko} anzupassen \cite{erreg17}.
+
+Im Jahr 2018 wurden mehr als \textsf{80} neue \ac{icd10gm} bei \textsf{M14.-*} \textsf{Arthropathien bei sonstigen anderenorts klassifizierten Krankheiten} eingefügt. Diese Zunahme ist auch in der Abbildung \ref{fig:newicdcap} widerspiegelt, denn diese Diagnosen sind im Kapitel \textsf{Krankheiten des Muskel-Skelett-Systems und des Bindegewebes} repräsentiert. Die Ursache diese Zunahme war die Insertion einer fünften Stelle, um die Abbildung im \ac{gdrg}-System zu ermöglichen \cite{musk18}.
+
+\clearpage
 
 \begin{figure}[ht]
 	\centering
@@ -63,9 +69,10 @@ Von 2008 bis 2021 sind insgesamt \textsf{966} neuen \ac{icd10gm} entstanden. In 
 	\label{fig:newicdyear}
 \end{figure} 
 
-Im Jahr 2018 wurden mehr als \textsf{80} neue \ac{icd10gm} bei \textsf{M14.-*} \textsf{Arthropathien bei sonstigen anderenorts klassifizierten Krankheiten} eingefügt. Diese Zunahme ist auch in der Abbildung \ref{fig:newicdcap} widerspiegelt, denn diese Diagnosen sind im Kapitel \textsf{Krankheiten des Muskel-Skelett-Systems und des Bindegewebes} repräsentiert. Die Ursache diese Zunahme war die Insertion einer fünften Stelle, um die Abbildung im \ac{gdrg}-System zu ermöglichen \cite{musk18}.
+Ein wichtiger und aktueller Punkt sind die meldepflichtigen Krankheiten in der Laufe der Jahre. Dieses Phonemen ist in der Abbildung \ref{fig:newicdmeld} dargestellt. Es ist zu erkennen, dass sei 2007 nur in den Jahren 2010, 2016 und 2021 wurden neue meldepflichtigen Codes definiert (Tabelle \ref{tab:meldung}). Ursachen davon sind Pandemien und Epidemien wie die Influenza Varianten zwischen 2009 und 2010 \cite{influenza1, influenza2}, die Verbreitung des Dengue Fiebers in Europa als Effekt der Globalisierung mit der steigenden Mobilität \cite{denge1} und Verbreitung der asiatischen Tigermücke \textsl{Aedes (Stegomyia) albopictus} zwischen 2015 und 2016 in der Region als Konsequenz der milden Winter \cite{denge2}, und noch aktuell seit Februar 2020 die Verbreitung des Corona Virus in Europa \cite{corona1} und deren gesundheitlichen Folgen \cite{corona2}.
 
-%\clearpage
+\clearpage
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=7.5cm]{figures/kaptnrYear}
@@ -73,9 +80,9 @@ Im Jahr 2018 wurden mehr als \textsf{80} neue \ac{icd10gm} bei \textsf{M14.-*} \
 	\label{fig:newicdcap}
 \end{figure} 
 
-Ein wichtiger und aktueller Punkt sind die meldepflichtigen Krankheiten in der Laufe der Jahre. Dieses Phonemen ist in der Abbildung \ref{fig:newicdmeld} dargestellt. Es ist zu erkennen, dass sei 2007 nur in den Jahren 2010, 2016 und 2021 wurden neue meldepflichtigen Codes definiert (Tabelle \ref{tab:meldung}). Ursachen davon sind Pandemien und Epidemien wie die Influenza Varianten zwischen 2009 und 2010 \cite{influenza1, influenza2}, die Verbreitung des Dengue Fiebers in Europa als Effekt der Globalisierung mit der steigenden Mobilität \cite{denge1} und Verbreitung der asiatischen Tigermücke \textsl{Aedes (Stegomyia) albopictus} zwischen 2015 und 2016 in der Region als Konsequenz der milden Winter \cite{denge2}, und noch aktuell seit Februar 2020 die Verbreitung des Corona Virus in Europa \cite{corona1} und deren gesundheitlichen Folgen \cite{corona2}.
 
-\clearpage
+
+%\clearpage
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=4.7cm]{figures/arztJaYear}
@@ -83,7 +90,7 @@ Ein wichtiger und aktueller Punkt sind die meldepflichtigen Krankheiten in der L
 	\label{fig:newicdmeld}
 \end{figure} 
 
- %\clearpage
+\clearpage
 \begin{table}[ht]
 	\centering
 	\small
@@ -110,8 +117,7 @@ Ein wichtiger und aktueller Punkt sind die meldepflichtigen Krankheiten in der L
 
 \subsection{Modifizierte \acs{icd10gm}} \label{updicd}
 
-Jedes Jahr werden Änderungen in der Metadaten der \ac{icd10gm} vorgenommen. Solche Modifikationen sind in der Tabelle \ref{tab:icdupd} ausgelistet. 
-
+Jedes Jahr werden Änderungen in der Metadaten der \ac{icd10gm} vorgenommen. Solche Modifikationen sind in der Tabelle \ref{tab:icdupd} ausgelistet. In dieser Tabelle ist es zu erkennen, dass die meiste Änderungen in Bezug zur Mortalitätslisten entstanden sind. Die Ursache davon ist, dass der Wert solche Listen bei der meisten Codes im Jahr 2007 \textsf{UNDEF} war. Erst in 2008 wurden diese Werte durch einen spezifischen Wert ersetzt, nämlich \textsf{6260} \ac{icd10gm} bei dem Bezug zur Mortalitätsliste 1 und \textsf{6881} Kodierungen bei dem Bezug zur Mortalitätsliste 3. Die zahlreiche Modifikationen an der Klassentitel entstehen durch Vorschläge zur Weiterentwicklung der Klassifikationen. Ein Beispiel davon ist die Schlüsselnummer \textsf{E10.31} mit dem Titel \textsf{Primär insulinabhängiger Diabetes mellitus [Typ-1-Diabetes] \underline{mit} Augenkomplikationen: Als entgleist bezeichnet}. Dieser Titel wurde zu \textsf{Primär insulinabhängiger Diabetes mellitus [Typ-1-Diabetes] \underline{: Mit } Augenkomplikationen: Als entgleist bezeichnet} in 2009 geändert. Die Änderung wurde in diesem Jahr durchgeführt, da eine fünfte Stelle in der Klassifikationen von \textsf{E10}  bis \textsf{E14} eingefügt wurde \cite{diab09}. Der Titel dieser \ac{icd10gm} wurde nochmal in 2014 zu \textsf{\underline{Diabetes mellitus, Typ 1: Mit Augenkomplikationen: Als entgleist bezeichnet}} ersetzt. In diesem Jahr wurden die Titel von der \ac{who} an die gebräuchliche Terminologie angepasst \cite{diab14}.
 \clearpage
 
 \begin{table}[ht]
@@ -150,7 +156,7 @@ Jedes Jahr werden Änderungen in der Metadaten der \ac{icd10gm} vorgenommen. Sol
 	\end{tabular}
 \end{table}
 
-Es ist zu erkennen, dass die meiste Änderungen in Bezug zur Mortalitätslisten entstanden sind. Die Ursache davon ist, dass der Wert solche Listen bei der meisten Codes im Jahr 2007 \textsf{UNDEF} war. Erst in 2008 wurden diese Werte durch einen spezifischen Wert ersetzt, nämlich \textsf{6260} \ac{icd10gm} bei dem Bezug zur Mortalitätsliste 1 und \textsf{6881} Kodierungen bei dem Bezug zur Mortalitätsliste 3. Die zahlreiche Modifikationen an der Klassentitel entstehen durch Vorschläge zur Weiterentwicklung der Klassifikationen. Ein Beispiel davon ist die Schlüsselnummer \textsf{E10.31} mit dem Titel \textsf{Primär insulinabhängiger Diabetes mellitus [Typ-1-Diabetes] \underline{mit} Augenkomplikationen: Als entgleist bezeichnet}. Dieser Titel wurde zu \textsf{Primär insulinabhängiger Diabetes mellitus [Typ-1-Diabetes] \underline{: Mit } Augenkomplikationen: Als entgleist bezeichnet} in 2009 geändert. Die Änderung wurde in diesem Jahr durchgeführt, da eine fünfte Stelle in der Klassifikationen von \textsf{E10}  bis \textsf{E14} eingefügt wurde \cite{diab09}. Der Titel dieser \ac{icd10gm} wurde nochmal in 2014 zu \textsf{\underline{Diabetes mellitus, Typ 1: Mit Augenkomplikationen: Als entgleist bezeichnet}} ersetzt. In diesem Jahr wurden die Titel von der \ac{who} an die gebräuchliche Terminologie angepasst \cite{diab14}.
+
 
 Ein interessantes Aspekt ist, dass \textsf{52} Diagnosen mit Geschlechtsbezug der \textsf{68}, Krankheiten der Brustdrüse sind. Diese \ac{icd10gm} waren frühe auf das weibliche Geschlecht bezogen, jetzt ist der Geschlechtsbezug diese Kodierungen irrelevant.
 
