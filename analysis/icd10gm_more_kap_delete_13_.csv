@@ -1,0 +1,60 @@
+"ver";"ebene";"ort";"art";"kapnr";"grvon";"code";"normcode";"codeohnepunkt";"titel";"dreisteller";"viersteller";"fuenfsteller";"p295";"p301";"mortl1code";"mortl2code";"mortl3code";"mortl4code";"morblcode";"sexcode";"sexfehlertyp";"altunt";"altob";"altfehlertyp";"exot";"belegt";"ifsgmeldung";"ifsglabor";"vermodif";"verevent"
+"2008";"4";N;X;"09";I30;I48.0-;I48.0;I480;Vorhofflattern;;;;P;V;"1-068";"2-054";"3-030";"4-044";"150";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2008";"5";T;S;"09";I30;I48.00;I48.00;I4800;Vorhofflattern: Paroxysmal;;;;P;P;"1-068";"2-054";"3-030";"4-044";"150";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2008";"5";T;S;"09";I30;I48.01;I48.01;I4801;Vorhofflattern: Chronisch;;;;P;P;"1-068";"2-054";"3-030";"4-044";"150";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2008";"5";T;S;"09";I30;I48.09;I48.09;I4809;Vorhofflattern: Nicht näher bezeichnet;;;;P;P;"1-068";"2-054";"3-030";"4-044";"150";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2008";"4";N;X;"09";I30;I48.1-;I48.1;I481;Vorhofflimmern;;;;P;V;"1-068";"2-054";"3-030";"4-044";"150";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2008";"5";T;S;"09";I30;I48.10;I48.10;I4810;Vorhofflimmern: Paroxysmal;;;;P;P;"1-068";"2-054";"3-030";"4-044";"150";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2008";"5";T;S;"09";I30;I48.11;I48.11;I4811;Vorhofflimmern: Chronisch;;;;P;P;"1-068";"2-054";"3-030";"4-044";"150";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2008";"5";T;S;"09";I30;I48.19;I48.19;I4819;Vorhofflimmern: Nicht näher bezeichnet;;;;P;P;"1-068";"2-054";"3-030";"4-044";"150";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2008";"3";N;X;"09";I80;I84.-;I84;I84;Hämorrhoiden;;;;V;V;"1-071";"2-057";"3-030";"4-044";"163";"9";"9";j015;j124;K;N;J;N;N;"2013";D
+"2008";"4";T;X;"09";I80;I84.0;I84.0;I840;Innere thrombosierte Hämorrhoiden;;;;P;P;"1-071";"2-057";"3-030";"4-044";"163";"9";"9";j015;j124;K;N;J;N;N;"2013";D
+"2008";"4";T;X;"09";I80;I84.1;I84.1;I841;Innere Hämorrhoiden mit sonstigen Komplikationen;;;;P;P;"1-071";"2-057";"3-030";"4-044";"163";"9";"9";j015;j124;K;N;J;N;N;"2013";D
+"2008";"4";T;X;"09";I80;I84.2;I84.2;I842;Innere Hämorrhoiden ohne Komplikation;;;;P;P;"1-071";"2-057";"3-030";"4-044";"163";"9";"9";j015;j124;K;N;J;N;N;"2013";D
+"2008";"4";T;X;"09";I80;I84.3;I84.3;I843;Äußere thrombosierte Hämorrhoiden;;;;P;P;"1-071";"2-057";"3-030";"4-044";"163";"9";"9";j015;j124;K;N;J;N;N;"2013";D
+"2008";"4";T;X;"09";I80;I84.4;I84.4;I844;Äußere Hämorrhoiden mit sonstigen Komplikationen;;;;P;P;"1-071";"2-057";"3-030";"4-044";"163";"9";"9";j015;j124;K;N;J;N;N;"2013";D
+"2008";"4";T;X;"09";I80;I84.5;I84.5;I845;Äußere Hämorrhoiden ohne Komplikation;;;;P;P;"1-071";"2-057";"3-030";"4-044";"163";"9";"9";j015;j124;K;N;J;N;N;"2013";D
+"2008";"4";T;X;"09";I80;I84.6;I84.6;I846;Marisken als Folgezustand von Hämorrhoiden;;;;P;P;"1-071";"2-057";"3-030";"4-044";"163";"9";"9";j015;j124;K;N;J;N;N;"2013";D
+"2008";"4";T;X;"09";I80;I84.7;I84.7;I847;Nicht näher bezeichnete thrombosierte Hämorrhoiden;;;;P;P;"1-071";"2-057";"3-030";"4-044";"163";"9";"9";j015;j124;K;N;J;N;N;"2013";D
+"2008";"4";T;X;"09";I80;I84.8;I84.8;I848;Nicht näher bezeichnete Hämorrhoiden mit sonstigen Komplikationen;;;;P;P;"1-071";"2-057";"3-030";"4-044";"163";"9";"9";j015;j124;K;N;J;N;N;"2013";D
+"2008";"4";T;X;"09";I80;I84.9;I84.9;I849;Hämorrhoiden ohne Komplikation, nicht näher bezeichnet;;;;P;P;"1-071";"2-057";"3-030";"4-044";"163";"9";"9";j015;j124;K;N;J;N;N;"2013";D
+"2008";"5";T;S;"13";M20;M21.67;M21.67;M2167;Sonstige erworbene Deformitäten des Knöchels und des Fußes: Knöchel und Fuß [Fußwurzel, Mittelfuß, Zehen, Sprunggelenk, sonstige Gelenke des Fußes];;;;P;P;"1-083";"2-072";"3-059";"4-044";"202";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2008";"5";T;S;"13";M20;M21.87;M21.87;M2187;Sonstige näher bezeichnete erworbene Deformitäten der Extremitäten: Knöchel und Fuß [Fußwurzel, Mittelfuß, Zehen, Sprunggelenk, sonstige Gelenke des Fußes];;;;P;P;"1-083";"2-072";"3-059";"4-044";"202";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2009";"5";T;X;"13";M20;M23.11;M23.11;M2311;Scheibenmeniskus (angeboren): Vorderhorn des Innenmeniskus;;;;P;P;"1-083";"2-072";"3-059";"4-044";"203";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2009";"5";T;X;"13";M20;M23.12;M23.12;M2312;Scheibenmeniskus (angeboren): Hinterhorn des Innenmeniskus;;;;P;P;"1-083";"2-072";"3-059";"4-044";"203";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2009";"5";T;X;"13";M20;M23.14;M23.14;M2314;Scheibenmeniskus (angeboren): Vorderhorn des Außenmeniskus;;;;P;P;"1-083";"2-072";"3-059";"4-044";"203";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2009";"5";T;X;"13";M20;M23.15;M23.15;M2315;Scheibenmeniskus (angeboren): Hinterhorn des Außenmeniskus;;;;P;P;"1-083";"2-072";"3-059";"4-044";"203";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2008";"4";N;X;"13";M20;M23.4-;M23.4;M234;Freier Gelenkkörper im Kniegelenk;;;;P;V;"1-083";"2-072";"3-059";"4-044";"203";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2009";"5";T;X;"13";M20;M23.40;M23.40;M2340;Freier Gelenkkörper im Kniegelenk: Mehrere Lokalisationen;;;;P;P;"1-083";"2-072";"3-059";"4-044";"203";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2009";"5";T;X;"13";M20;M23.41;M23.41;M2341;Freier Gelenkkörper im Kniegelenk: Vorderes Kreuzband oder Vorderhorn des Innenmeniskus;;;;P;P;"1-083";"2-072";"3-059";"4-044";"203";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2009";"5";T;X;"13";M20;M23.42;M23.42;M2342;Freier Gelenkkörper im Kniegelenk: Hinteres Kreuzband oder Hinterhorn des Innenmeniskus;;;;P;P;"1-083";"2-072";"3-059";"4-044";"203";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2009";"5";T;X;"13";M20;M23.43;M23.43;M2343;Freier Gelenkkörper im Kniegelenk: Innenband [Lig. collaterale tibiale] oder sonstiger und nicht näher bezeichneter Teil des Innenmeniskus;;;;P;P;"1-083";"2-072";"3-059";"4-044";"203";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2009";"5";T;X;"13";M20;M23.44;M23.44;M2344;Freier Gelenkkörper im Kniegelenk: Außenband [Lig. collaterale fibulare] oder Vorderhorn des Außenmeniskus;;;;P;P;"1-083";"2-072";"3-059";"4-044";"203";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2009";"5";T;X;"13";M20;M23.45;M23.45;M2345;Freier Gelenkkörper im Kniegelenk: Hinterhorn des Außenmeniskus;;;;P;P;"1-083";"2-072";"3-059";"4-044";"203";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2009";"5";T;X;"13";M20;M23.46;M23.46;M2346;Freier Gelenkkörper im Kniegelenk: Sonstiger und nicht näher bezeichneter Teil des Außenmeniskus;;;;P;P;"1-083";"2-072";"3-059";"4-044";"203";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2009";"5";T;X;"13";M20;M23.47;M23.47;M2347;Freier Gelenkkörper im Kniegelenk: Kapselband;;;;P;P;"1-083";"2-072";"3-059";"4-044";"203";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2009";"5";T;X;"13";M20;M23.49;M23.49;M2349;Freier Gelenkkörper im Kniegelenk: Nicht näher bezeichnetes Band oder nicht näher bezeichneter Meniskus;;;;P;P;"1-083";"2-072";"3-059";"4-044";"203";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2009";"5";T;X;"13";M20;M23.55;M23.55;M2355;Chronische Instabilität des Kniegelenkes: Hinterhorn des Außenmeniskus;;;;P;P;"1-083";"2-072";"3-059";"4-044";"203";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2009";"5";T;X;"13";M20;M23.56;M23.56;M2356;Chronische Instabilität des Kniegelenkes: Sonstiger und nicht näher bezeichneter Teil des Außenmeniskus;;;;P;P;"1-083";"2-072";"3-059";"4-044";"203";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2009";"5";T;X;"13";M20;M23.85;M23.85;M2385;Sonstige Binnenschädigungen des Kniegelenkes: Hinterhorn des Außenmeniskus;;;;P;P;"1-083";"2-072";"3-059";"4-044";"203";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2009";"5";T;X;"13";M20;M23.86;M23.86;M2386;Sonstige Binnenschädigungen des Kniegelenkes: Sonstiger und nicht näher bezeichneter Teil des Außenmeniskus;;;;P;P;"1-083";"2-072";"3-059";"4-044";"203";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2008";"5";T;S;"13";M80;M81.61;M81.61;M8161;Lokalisierte Osteoporose [Lequesne]: Schulterregion [Klavikula, Skapula, Akromioklavikular-, Schulter-, Sternoklavikulargelenk];;;;P;P;"1-083";"2-072";"3-059";"4-044";"208";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2008";"5";T;S;"13";M80;M81.62;M81.62;M8162;Lokalisierte Osteoporose [Lequesne]: Oberarm [Humerus, Ellenbogengelenk];;;;P;P;"1-083";"2-072";"3-059";"4-044";"208";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2008";"5";T;S;"13";M80;M81.63;M81.63;M8163;Lokalisierte Osteoporose [Lequesne]: Unterarm [Radius, Ulna, Handgelenk];;;;P;P;"1-083";"2-072";"3-059";"4-044";"208";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2008";"5";T;S;"13";M80;M81.64;M81.64;M8164;Lokalisierte Osteoporose [Lequesne]: Hand [Finger, Handwurzel, Mittelhand, Gelenke zwischen diesen Knochen];;;;P;P;"1-083";"2-072";"3-059";"4-044";"208";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2008";"5";T;S;"13";M80;M81.68;M81.68;M8168;Lokalisierte Osteoporose [Lequesne]: Sonstige [Hals, Kopf, Rippen, Rumpf, Schädel, Wirbelsäule];;;;P;P;"1-083";"2-072";"3-059";"4-044";"208";"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2009";"3";N;X;"22";U00;U05.-!;U05;U05;Nicht belegte Schlüsselnummern;;;;V;V;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2013";D
+"2008";"4";T;X;"22";U00;U05.0!;U05.0;U050;Nicht belegte Schlüsselnummer U05.0;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2013";D
+"2008";"4";T;X;"22";U00;U05.1!;U05.1;U051;Nicht belegte Schlüsselnummer U05.1;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2013";D
+"2008";"4";T;X;"22";U00;U05.2!;U05.2;U052;Nicht belegte Schlüsselnummer U05.2;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2013";D
+"2008";"4";T;X;"22";U00;U05.3!;U05.3;U053;Nicht belegte Schlüsselnummer U05.3;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2013";D
+"2008";"4";T;X;"22";U00;U05.4!;U05.4;U054;Nicht belegte Schlüsselnummer U05.4;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2013";D
+"2008";"4";T;X;"22";U00;U05.5!;U05.5;U055;Nicht belegte Schlüsselnummer U05.5;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2013";D
+"2008";"4";T;X;"22";U00;U05.6!;U05.6;U056;Nicht belegte Schlüsselnummer U05.6;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2013";D
+"2008";"4";T;X;"22";U00;U05.7!;U05.7;U057;Nicht belegte Schlüsselnummer U05.7;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2013";D
+"2008";"4";T;X;"22";U00;U05.8!;U05.8;U058;Nicht belegte Schlüsselnummer U05.8;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2013";D
+"2008";"4";T;X;"22";U00;U05.9!;U05.9;U059;Nicht belegte Schlüsselnummer U05.9;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;N;N;N;"2013";D
+"2007";"4";T;X;"22";U80;U80.0!;U80.0;U800;Staphylococcus aureus mit Resistenz gegen Oxacillin, Glykopeptid-Antibiotika, Chinolone, Streptogramine oder Oxazolidinone;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2007";"4";T;X;"22";U80;U80.1!;U80.1;U801;Streptococcus pneumoniae mit Resistenz gegen Penizillin, Oxacillin, Makrolid-Antibiotika, Oxazolidinone oder Streptogramine;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2007";"4";T;X;"22";U80;U80.2!;U80.2;U802;Enterococcus faecalis mit Resistenz gegen Glykopeptid-Antibiotika, Oxazolidinone, oder mit High-Level-Aminoglykosid-Resistenz;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D
+"2007";"4";T;X;"22";U80;U80.3!;U80.3;U803;Enterococcus faecium mit Resistenz gegen Glykopeptid-Antibiotika, Oxazolidinone, Streptogramine, oder mit High-Level-Aminoglykosid-Resistenz;;;;Z;Z;UNDEF;UNDEF;UNDEF;UNDEF;UNDEF;"9";"9";"9999";"9999";"9";N;J;N;N;"2013";D

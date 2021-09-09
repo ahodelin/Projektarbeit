@@ -1,5 +1,5 @@
 \section{Data Analyse} \label{dataanalysis}
-Die Analyse der Information der \ac{icd10gm} wurde im Python unter mit dem Framework Jupyter-Notebook durchgeführt. 
+Die Analyse der Information der \ac{icd10gm} wurde mit Hilfe \ac{sql}-Befehle und Python unter dem Framework Jupyter-Notebook durchgeführt.
 
 Wie in der Tabelle \ref{tab:icdfiles} dargestellt wird, jede Kode-Datei enthält mehr als \textsf{15450} \ac{icd10gm}, obwohl manche Kodierungen gelöscht werden, nimmt die Menge neuer \ac{icd10gm} immer zu.
 
@@ -43,13 +43,16 @@ Nach dem Durchlauf der \ac{etl} sind insgesamt \textsf{16520} \ac{icd10gm} von 2
  		\hline
  		\rowcolor{lightgray}	Anzahl & Information \\ \hline 
  		16520 & \textbf{Gesamt} \\ \hline
+ 		\hline
  		6188 & Unverändert \\ \hline
  		10011 & Nur geändert \\ \hline
  		152 & Nur gelöscht \\ \hline 		
- 		169 & Geändert und gelöscht \\ \hline
+ 		165 & Geändert und gelöscht \\ \hline
+ 		4 & Wieder verwendet \\ \hline
  		\hline
  		10180 & \textbf{Insgesamt geändert} \\ \hline
- 		321 & \textbf{Insgesamt gelöscht} \\ \hline
+ 		317 & \textbf{Insgesamt gelöscht} \\ \hline
+ 		
  		
  	\end{tabular}
  \end{table}
@@ -117,12 +120,12 @@ Ein wichtiger und aktueller Punkt sind die meldepflichtigen Krankheiten in der L
 
 \subsection{Modifizierte \acs{icd10gm}} \label{updicd}
 
-Jedes Jahr werden Änderungen in der Metadaten der \ac{icd10gm} vorgenommen. Solche Modifikationen sind in der Tabelle \ref{tab:icdupd} ausgelistet. In dieser Tabelle ist es zu erkennen, dass die meiste Änderungen in Bezug zur Mortalitätslisten entstanden sind. Die Ursache davon ist, dass der Wert solche Listen bei der meisten Codes im Jahr 2007 \textsf{UNDEF} war. Erst in 2008 wurden diese Werte durch einen spezifischen Wert ersetzt, nämlich \textsf{6260} \ac{icd10gm} bei dem Bezug zur Mortalitätsliste 1 und \textsf{6881} Kodierungen bei dem Bezug zur Mortalitätsliste 3. Die zahlreiche Modifikationen an der Klassentitel entstehen durch Vorschläge zur Weiterentwicklung der Klassifikationen. Ein Beispiel davon ist die Schlüsselnummer \textsf{E10.31} mit dem Titel \textsf{Primär insulinabhängiger Diabetes mellitus [Typ-1-Diabetes] \underline{mit} Augenkomplikationen: Als entgleist bezeichnet}. Dieser Titel wurde zu \textsf{Primär insulinabhängiger Diabetes mellitus [Typ-1-Diabetes] \underline{: Mit } Augenkomplikationen: Als entgleist bezeichnet} in 2009 geändert. Die Änderung wurde in diesem Jahr durchgeführt, da eine fünfte Stelle in der Klassifikationen von \textsf{E10}  bis \textsf{E14} eingefügt wurde \cite{diab09}. Der Titel dieser \ac{icd10gm} wurde nochmal in 2014 zu \textsf{\underline{Diabetes mellitus, Typ 1: Mit Augenkomplikationen: Als entgleist bezeichnet}} ersetzt. In diesem Jahr wurden die Titel von der \ac{who} an die gebräuchliche Terminologie angepasst \cite{diab14}.
+Jedes Jahr werden Änderungen in der Metadaten der \ac{icd10gm} vorgenommen. Solche Modifikationen sind in der Tabelle \ref{tab:icdupd} ausgelistet. In dieser Tabelle ist es zu erkennen, dass die meiste Änderungen in Bezug zur Mortalitätslisten entstanden sind, nämlich \textsf{6949} \ac{icd10gm} bei dem Bezug zur Mortalitätsliste 3 und \textsf{6348} Kodierungen bei dem Bezug zur Mortalitätsliste 1. Die Ursache davon ist, dass die Werte solche Listen bei der meisten Codes im Jahr 2007 nicht definiert waren, und mit dem Wert \textsf{UNDEF} gesetzt. Erst in 2008 wurden diese Felder durch einen spezifischen Wert ersetzt. Die zahlreiche Modifikationen an der Klassentitel entstehen durch Vorschläge zur Weiterentwicklung der Klassifikationen. Ein Beispiel davon ist die Schlüsselnummer \textsf{E10.31} mit dem Titel \textsf{Primär insulinabhängiger Diabetes mellitus [Typ-1-Diabetes] \underline{mit} Augenkomplikationen: Als entgleist bezeichnet}. Dieser Titel wurde zu \textsf{Primär insulinabhängiger Diabetes mellitus [Typ-1-Diabetes] \underline{: Mit } Augenkomplikationen: Als entgleist bezeichnet} in 2009 geändert. Die Änderung wurde in diesem Jahr durchgeführt, da eine fünfte Stelle in der Klassifikationen von \textsf{E10}  bis \textsf{E14} eingefügt wurde \cite{diab09}. Der Titel dieser \ac{icd10gm} wurde nochmal in 2014 zu \textsf{\underline{Diabetes mellitus, Typ 1: Mit Augenkomplikationen: Als entgleist bezeichnet}} ersetzt. In diesem Jahr wurden die Titel von der \ac{who} an die gebräuchliche Terminologie angepasst \cite{diab14}.
 \clearpage
 
 \begin{table}[ht]
 	\centering
-	\caption[Änderungen in den Metadaten]{Liste der Metadaten und Anzahl an Änderungen}
+	\caption[Änderungen in den Metadaten]{Liste deDr Metadaten und Anzahl an Änderungen}
 	\label{tab:icdupd}
 	\begin{tabular}{|l|p{12cm}|}
 		\hline
@@ -158,7 +161,7 @@ Jedes Jahr werden Änderungen in der Metadaten der \ac{icd10gm} vorgenommen. Sol
 
 
 
-Ein interessantes Aspekt ist, dass \textsf{52} Diagnosen mit Geschlechtsbezug der \textsf{68}, Krankheiten der Brustdrüse sind. Diese \ac{icd10gm} waren frühe auf das weibliche Geschlecht bezogen, jetzt ist der Geschlechtsbezug diese Kodierungen irrelevant.
+Ein interessantes Aspekt ist, dass \textsf{52} Diagnosen mit Geschlechtsbezug der \textsf{68}, Krankheiten der Brustdrüse sind. Diese \ac{icd10gm} waren frühe auf das weibliche Geschlecht bezogen, jetzt ist der Geschlechtsbezug diese Kodierungen irrelevant. Viele dieser Änderungen wurden in den Jahren 2008 und 2016 vorgenommen. An dieser Stelle können wir nicht erklären, wieso diese Art von Krankheiten nicht immer ohne Geschlechtsbezug waren, denn seit 1930 existieren medizinische Publikationen über Brustdrüse Anomalien bei Männer \cite{bcm}. 
 
 \begin{table}[ht]
 	\centering
@@ -189,10 +192,11 @@ In Bezug auf die sehr seltene Krankheiten in Mitteleuropa sind \textsf{20} von d
 
 \subsection{Gelöschte \acs{icd10gm}}
 
-In jeder Fassung von 2008 bis 2021 sind zwischen \textsf{1} in 2020 und \textsf{68} 2013 \ac{icd10gm} gelöscht. Dieses Verhalten ist in der Abbildung \ref{fig:newdeleteoldicdyear} repräsentiert. Von den \textsf{321} gelöschten Schlüsselnummer \textsf{126} wurden erweitert, wie in Sektion \ref{newicd} beschrieben wurde, 
+In jeder Fassung von 2008 bis 2021 \ac{icd10gm} werden gelöscht. Dieses Verhalten ist in der Abbildung \ref{fig:newdeleteoldicdyear} repräsentiert. Die meiste davon im Jahr 2013. 
 
+Die Kapitel, die in diesem Jahr, am meisten getroffen wurden, sind in der Abbildung \ref{fig:kap13} dargestellt. In diesem Jahr wurde eine umfangreiche Umstrukturierung in der Semantik vorgenommen, bei denen bestimmte Kodebereiche im Kapitel \textsf{09} \textsf{Krankheiten des Kreislaufsystems} umfänglich überarbeitet wurden, viele fünfstellige Klassifizierungen wurden von Kapitel \textsf{13} \textsf{Krankheiten des Muskel-Skelett-Systems und des Bindegewebes} entnommen, und im Kapitel \textsf{22} \textsf{Schlüsselnummern für besondere Zwecke} wurden zahlreiche \ac{icd10gm} umgebaut \cite{dele13}.
 
-%Die Abbildung \ref{fig:oldicdyear} stellt dar, dass die meiste gelöschte Kodierungen zum Jahr 2013 gehören, das ist, weil die meiste \ac{icd10gm} des Systems von dieser Fassung stammen.
+Von den \textsf{317} gelöschten Schlüsselnummer \textsf{126} wurden erweitert, wie in Sektion \ref{newicd} beschrieben wurde, 
 
 \begin{figure}[ht]
 	\centering
@@ -201,20 +205,19 @@ In jeder Fassung von 2008 bis 2021 sind zwischen \textsf{1} in 2020 und \textsf{
 	\label{fig:newdeleteoldicdyear}
 \end{figure} 
 
-%\begin{figure}[ht]
-%	\centering
-%	\includegraphics[height=6cm]{figures/oldVersionDelete}
-%	\caption[Gelöschte \acs{icd10gm} und deren alten Fassungen]{Anzahl gelöschten \acs{icd10gm} zwischen den Jahren 2008 und 2021}
-%	\label{fig:oldicdyear}
-%\end{figure} 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[height=6cm]{figures/kaptnr13}
+	\caption{Meist betroffene Kapitel in 2013}
+	\label{fig:kap13}
+\end{figure}
 
-Die Abbildung \ref{fig:oldicdort} zeigt, dass \textsf{139} der gelöschten Codes terminale Schlüsselnummer waren, also \ac{icd10gm} ohne Subkategorien. Davon wurden  Die andere \textsf{87} \ac{icd10gm} wurden einfach nicht mehr weiter benutzt. Von den \textsf{13} nicht terminalen Codes \textsf{6} wurden verkürzt und als in terminalen Schlüsselnummer gesetzt. Ein Beispiel davon ist \textsf{Z75.2-} \textsf{Wartezeit auf eine Untersuchung oder Behandlung}, diese nicht terminale Kodierung wurde gelöscht und zu der terminalen Code \textsf{Z75.2} mit demselben Titel umgewandelt.
-
+Die Abbildung \ref{fig:oldicdort} zeigt, dass die meiste Codes, nämlich \textsf{295} der \textsf{327} gelöschten Kodierungen, terminale Schlüsselnummer waren, also \ac{icd10gm} ohne Subkategorien. Davon wurden \textsf{115} erweitert wie in der Sektion \ref{newicd} erläutert wurde. Von der nicht terminale Kodierungen wurden dann \textsf{11} erweitert. Ein Beispiel davon ist \textsf{Z75.2-} \textsf{Wartezeit auf eine Untersuchung oder Behandlung}, diese nicht terminale Kodierung wurde gelöscht und zu der terminalen Code \textsf{Z75.2} mit demselben Titel umgewandelt. Der Rest der \ac{icd10gm} wurden einfach nicht mehr weiter benutzt. 
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=6cm]{figures/ortoldYear}
-	\caption{Gelöschte \acs{icd10gm} und deren Hierarchie}
+	\caption{Hierarchie der gelöschte \acs{icd10gm}}
 	\label{fig:oldicdort}
 \end{figure}
 
@@ -222,7 +225,9 @@ Die Abbildung \ref{fig:oldicdort} zeigt, dass \textsf{139} der gelöschten Codes
 
 \subsection{Wiederverwendete \acs{icd10gm}}
 
-\textsf{5} Schlüsselnummer wurden wiederverwendet...
+\textsf{4} Schlüsselnummer wurden wiederverwendet 
+
+...tabelle...
 
 
 \subsection{Strukturelle Änderungen}
