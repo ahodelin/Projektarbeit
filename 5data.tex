@@ -125,6 +125,7 @@ Jedes Jahr werden Änderungen in der Metadaten der \ac{icd10gm} vorgenommen. Sol
 
 \begin{table}[ht]
 	\centering
+	\small
 	\caption[Änderungen in den Metadaten]{Liste deDr Metadaten und Anzahl an Änderungen}
 	\label{tab:icdupd}
 	\begin{tabular}{|l|p{12cm}|}
@@ -194,9 +195,7 @@ In Bezug auf die sehr seltene Krankheiten in Mitteleuropa sind \textsf{20} von d
 
 In jeder Fassung von 2008 bis 2021 \ac{icd10gm} werden gelöscht. Dieses Verhalten ist in der Abbildung \ref{fig:newdeleteoldicdyear} repräsentiert. Die meiste davon im Jahr 2013. 
 
-Die Kapitel, die in diesem Jahr, am meisten getroffen wurden, sind in der Abbildung \ref{fig:kap13} dargestellt. In diesem Jahr wurde eine umfangreiche Umstrukturierung in der Semantik vorgenommen, bei denen bestimmte Kodebereiche im Kapitel \textsf{09} \textsf{Krankheiten des Kreislaufsystems} umfänglich überarbeitet wurden, viele fünfstellige Klassifizierungen wurden von Kapitel \textsf{13} \textsf{Krankheiten des Muskel-Skelett-Systems und des Bindegewebes} entnommen, und im Kapitel \textsf{22} \textsf{Schlüsselnummern für besondere Zwecke} wurden zahlreiche \ac{icd10gm} umgebaut \cite{dele13}.
-
-Von den \textsf{317} gelöschten Schlüsselnummer \textsf{126} wurden erweitert, wie in Sektion \ref{newicd} beschrieben wurde, 
+\clearpage
 
 \begin{figure}[ht]
 	\centering
@@ -205,6 +204,8 @@ Von den \textsf{317} gelöschten Schlüsselnummer \textsf{126} wurden erweitert,
 	\label{fig:newdeleteoldicdyear}
 \end{figure} 
 
+%\clearpage
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=6cm]{figures/kaptnr13}
@@ -212,7 +213,11 @@ Von den \textsf{317} gelöschten Schlüsselnummer \textsf{126} wurden erweitert,
 	\label{fig:kap13}
 \end{figure}
 
+Die Kapitel, die in diesem Jahr, am meisten getroffen wurden, sind in der Abbildung \ref{fig:kap13} dargestellt. In diesem Jahr wurde eine umfangreiche Umstrukturierung in der Semantik vorgenommen, bei denen bestimmte Kodebereiche im Kapitel \textsf{09} \textsf{Krankheiten des Kreislaufsystems} umfänglich überarbeitet wurden, viele fünfstellige Klassifizierungen wurden von Kapitel \textsf{13} \textsf{Krankheiten des Muskel-Skelett-Systems und des Bindegewebes} entnommen, und im Kapitel \textsf{22} \textsf{Schlüsselnummern für besondere Zwecke} wurden zahlreiche \ac{icd10gm} umgebaut \cite{dele13}.
+
 Die Abbildung \ref{fig:oldicdort} zeigt, dass die meiste Codes, nämlich \textsf{295} der \textsf{327} gelöschten Kodierungen, terminale Schlüsselnummer waren, also \ac{icd10gm} ohne Subkategorien. Davon wurden \textsf{115} erweitert wie in der Sektion \ref{newicd} erläutert wurde. Von der nicht terminale Kodierungen wurden dann \textsf{11} erweitert. Ein Beispiel davon ist \textsf{Z75.2-} \textsf{Wartezeit auf eine Untersuchung oder Behandlung}, diese nicht terminale Kodierung wurde gelöscht und zu der terminalen Code \textsf{Z75.2} mit demselben Titel umgewandelt. Der Rest der \ac{icd10gm} wurden einfach nicht mehr weiter benutzt. 
+
+%\clearpage
 
 \begin{figure}[ht]
 	\centering
@@ -221,14 +226,27 @@ Die Abbildung \ref{fig:oldicdort} zeigt, dass die meiste Codes, nämlich \textsf
 	\label{fig:oldicdort}
 \end{figure}
 
-\newpage
+%\newpage
 
 \subsection{Wiederverwendete \acs{icd10gm}}
 
-\textsf{4} Schlüsselnummer wurden wiederverwendet 
+Die Tabelle \ref{tab:wieder} zeigt die \textsf{4} Schlüsselnummer, die wiederverwendet wurden. Von dieses Phonemen haben wir bis jetzt noch keine Erklärung.
 
-...tabelle...
+\begin{table}[ht]
+	\centering
+	\small
+	\caption[Wieder benutzte \acs{icd10gm}]{Liste der wieder benutzten \ac{icd10gm}}
+	\label{tab:wieder}
+	\begin{tabular}{|l|l|l|p{6cm}|}
+		\hline
+		\rowcolor{lightgray} Alt & Wieder & \ac{icd10gm} & Titel \\ \hline
+		2013 & 2015 & M21.60 & Erworbener Hohlfuß [Pes cavus] \\ \hline
+		2013 & 2015 & M21.6- & Sonstige erworbene Deformitäten des Knöchels und des Fußes \\ \hline
+		2014 & 2016 & N90.8 & Sonstige näher bezeichnete nichtentzündliche Krankheiten der Vulva und des Perineums \\ \hline
+		2010 & 2019 & K55.8 & Sonstige Gefäßkrankheiten des Darmes \\ \hline
 
+\end{tabular}
+\end{table}
 
 \subsection{Strukturelle Änderungen}
 
