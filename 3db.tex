@@ -1,10 +1,12 @@
-\section{Datenbank Schema} \label{database}
+\chapter{Materialien und Methode} \label{database}
 
-\subsection{Aufbau der \acl{db}} \label{dbdevelop}
+\section{Aufbau der \acl{db}} \label{dbdevelop}
 
 Für die Durchführung dieses Projekts wurde ein relationales \ac{db} Schema in PostgreSQL entwickelt. Damit wurden die \ac{sql}-Anweisungen, nach Empfehlung in der Liesmich-Dateien der Fassungen, angepasst \cite{readmel}. Außerhalb von den vorher genannten Anpassungen wurde die Tabelle \textsf{kodes} auch modifiziert. In dieser Tabelle wurde die Spalte \textsf{ver} für die Speicherung der Auffassungen oder Versionen eingefügt und die Spalte \textsf{fünfsteller} wurde zu \textsf{fuenfsteller} umbenannt, um Probleme mit Zeichen-Kodierung zu verhindern. Diese Veränderungen sind in schwatzt in der Tabelle \textsf{kodes} der Abbildung \ref{fig:reldb2} gekennzeichnet. Noch dazu wurden drei neuen Tabelle eingefügt, um die Veröffentlichung Daten (\textsf{icd10gm\_release\_info}), Speicherung (\textsf{icd10gm}) und Historisierung \textsf{icd10gm\_history} aller verfügbaren \ac{icd10gm} von 2007 bis 2021 zu steuern. Solche Tabellen sind mit Kopfseile in gelb in der Abbildung \ref{fig:reldb2} repräsentiert.
 
-\subsection{Funktion der Tabelle \textsf{kodes} von \acs{bfarm}} \label{bfarmtables}
+\section{Funktion der Tabellen}
+
+\section{Tabelle \textsf{kodes} von \acs{bfarm}} \label{bfarmtables}
 
 Die Tabellen von \textsf{kodes} vom \ac{bfarm}-Schema beinhalten die Information der \ac{csv}-Dateien von nur eine Fassung und enthält damit die Anfangsdaten für die Tabellen \textsf{icd10gm} und \textsf{icd10gm\_history}.
 
@@ -16,7 +18,7 @@ Die Tabellen von \textsf{kodes} vom \ac{bfarm}-Schema beinhalten die Information
 	\label{fig:reldb2}
 \end{figure}
 
-\subsection{Funktion der neuen Tabellen} \label{newtables}
+\subsection{Neuen Tabellen} \label{newtables}
 
 Für die Erfassung der Datierung der Veröffentlichungen der Versionen wurde die Tabelle \textsf{icd10gm\_release\_info} erstellt. Diese speichert den Identifikator oder das Jahr der Version in der Spalte \textsf{icd10gm\_version} und das Datum der Veröffentlichung in der Spalte \textsf{icd10gm\_release}. Diese hat das Format \textsf{JJJJ-MM-TT}. Wobei J das Jahr, M der Monat und T der Tag darstellen. Dadurch wir nur mit der neuesten Veröffentlichung einer Fassung arbeiten, wurde der Identifikator der Version als Hauptschlüssel deklariert.
 
@@ -25,7 +27,7 @@ Die \ac{icd10gm} von 2007 bis 2021, werden in der Tabelle \textsf{icd10gm} gespe
 
 Die Tabelle \textsf{icd10gm\_history} enthält die Information der \ac{icd10gm}, die mit der Laufe der Zeit eingefügt, gelöscht oder geändert wurden. Die Besonderheiten diese Tabelle sind die Spalten \textsf{ver}, \textsf{oldver}, \textsf{verevent} und \textsf{isdeleted}. Die Identifikatoren vergangener Versionen einer \ac{icd10gm} werden in der Spalte \textsf{oldver} gespeichert. Die Spalte \textsf{ver} enthält den Identifikator der Fassungen bei deren eine \ac{icd10gm} eingefügt, gelöscht oder modifiziert wurde. Die Ereignisse einer Insertion, Änderung, Löschung oder Wiederverwendung werden mit den Buchstaben \textsf{I} \glqq\textsf{insert}\grqq{}, \textsf{U} \glqq\textsf{update}\grqq{}, \textsf{D} \glqq\textsf{delete}\grqq{} und \textsf{DI} \glqq\textsf{delete insert}\grqq{} in der Spalte \textsf{verevent} kodiert und gespeichert. Da manche Schlüsselnummer wieder benutzt wurden, wird die Spalte \textsf{isdeleted} mit dem Wert \textsf{true} markiert, wenn ein \ac{icd10gm} gelöscht wird. Diese Spalte wird auf \textsf{false} bei eine Wiederverwendung gesetzt.
 
-\subsection{Fluss der Information} \label{dbrun}
+\section{Fluss der Information} \label{dbrun}
 
 Mit Hilfe einer \ac{etl}-Strecke werden die Daten aus der \ac{zip}-Dateien in der \ac{db} importiert. Die Information der Veröffentlichung der \ac{icd10gm} wird in der Tabelle \textsf{icd10gm\_release \_info} eingefügt. Bei jeder Ladung wird die Information der Tabelle \textsf{kodes} vorher gelöscht und mit neuen \ac{icd10gm}-Datensätzen geladen. Die Codes, die vorher nicht in der Tabelle \textsf{icd10gm} vorhanden waren, werden in dieser und in der Tabelle \textsf{icd10gm\_history} kopiert. Diese Datensätze werden in \textsf{icd10gm\_history} als eingefügt markiert. Nicht in \textsf{kodes} existierende \ac{icd10gm} werden aus \textsf{icd10gm} in \textsf{icd10gm\_history} kopiert. Diese Kopie enthält auch die Indikatoren der Fassung der Insertion oder der letzten Änderung, und der Fassung der Löschung, und wird als gelöscht markiert. Existierende Kodierungen mit neuer Information werden in der Tabelle \textsf{icd10gm} aktualisiert und nachher in \textsf{icd10gm\_history} hinzugefügt.In diesem Fall werden auch die Indikatoren der alten und neuen Fassung registriert und der Datensatz als modifiziert markiert.Dieser Fluss der Information ist im Datenflussdiagramm der Abbildung \ref{fig:dbflow} repräsentiert. Der automatisierte Prozessablauf in der \ac{db} ist durch Triggers in den Tabellen \textsf{kodes} und \textsf{icd10gm} gesteuert.
 

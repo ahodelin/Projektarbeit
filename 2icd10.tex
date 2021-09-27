@@ -4,6 +4,8 @@ Die amtliche Klassifikation zur Verschlüsselung von Diagnosen in der ambulanten
 
 Die \ac{icd10gm} ist eine monohierarchisch strukturierte, alphanumerische Klassifikation mit bis zu 5 Ebenen und deren Aufbau besteht aus zwei Teilen, das systematisches und alphabetisches Verzeichnis \cite{icd10}.
 
+\section{Alphabetische und systematische Verzeichnisse}
+
 \subsection{Alphabetisches Verzeichnis (Alphabet)} \label{alphadir}
 
 Die alphabetische Zuordnung des Kodes entsteht aus der gebräuchlich Diagnosentexte. Die Systematik enthält nicht alle Diagnosen des Alphabets und eine Bezeichnung dient dazu als Verzugsbezeichnung, sodass das Alphabet auch andere Diagnosenbezeichnungen enthält, die auch veralte oder ungenau sind \cite{icd10alpha}. Ein Beispiel davon ist \\textsf{\acl{covid}} \acs{covid}-19 (sehen Sie die Tabelle \ref{tab:difbe}). Aus diesem Grund existiert der \ac{alphaid}. Der nutzt die Bezeichnungen als Basis für eine nicht klassifizierenden Kode \cite{icd10alpha}.
@@ -29,7 +31,7 @@ Die alphabetische Zuordnung des Kodes entsteht aus der gebräuchlich Diagnosente
 
 Die Systematik ist eine hierarchisch geordnete Liste der vierstelligen Systematik des Kodes \cite{icd10syst, icd10systauf}. Dies Hierarchieebenen der \ac{icd10gm} sind Kapitel, Gruppe/Bereiche und Kode, nämlich Kategorie/Dreisteller, Subkategorien/Vier- und Fünfsteller \cite{icd10systauf}. Für die Durchführung und den Zweck dieses Projekts wird mit dem systematischen Verzeichnis der \ac{icd10gm} und deren vom \ac{bfarm} veröffentlichen Dateien und Metadaten gearbeitet. 
 %Ein sehr wichtiges Aspekt bei der Nutzung der \ac{icd10gm}, die in vielen Datenquellen eines Krankenhaus nicht richtig wahrgenommen wird, ist dass, \textbf{alle Hinweise beim Kodieren immer berücksichtigt werden müssen} \cite{icd10systauf}.
-\subsection{Metadaten}
+\section{Metadaten}
 
 Das \ac{bfarm} veröffentlicht zwischen September und Dezember eines Jahres die Metadaten der neuen Fassung der \ac{icd10gm} in einer \ac{zip}-Datei mit Kodierungen und weiteren Informationen. Der Ordner Klassifikationsdateien enthält die aktuelle Version der Dateien für die Klassifikation der \ac{icd10gm} (sehen Sie die Tabelle \ref{tab:classfiles}). Diese Dateien sind in \ac{csv}-Format mit \glqq ;\grqq{} als Trendzeichen. 
 
