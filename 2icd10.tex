@@ -1,4 +1,4 @@
-\section{Verzeichnisse des \acs{icd10gm}}
+\section{Verzeichnisse der \acs{icd10gm} Klassifizierung}
 
 Die \ac{icd10gm} ist die amtliche Klassifikation zur Verschlüsselung von Diagnosen in der ambulanten (\S 295 \ac{sgb} V) und stationären (\S 301 \ac{sgb} V) Versorgung in Deutschland, deren Versionen und Formaten gelten vom Anfang bis zum Ende eines Jahres und werden im Auftrag des \ac{bmg} von dem \ac{bfarm} jährlich aktualisiert und herausgegeben \cite{icd10}. 
 
@@ -6,7 +6,7 @@ Diese Klassifikation ist alphanumerisch, monohierarchisch strukturiert mit bis z
 
 \subsection{Alphabetisches Verzeichnis (Alphabet)} \label{alphadir}
 
-Die alphabetische Zuordnung des Kodes entsteht aus der gewohnten Diagnosentexte. Die Systematik enthält nicht alle Diagnosen des Alphabets. Deswegen dient die semantische Bezeichnung als Verzugsbezeichnung, sodass das Alphabet auch andere veraltete oder ungenaue Diagnosenbezeichnungen enthält \cite{icd10alpha}. Die Tabelle \ref{tab:difbe} illustriert ein Beispiel dieser Ungenauigkeit Anhang von der Diagnose \acl{covid} (\acs{covid}-19) . Aus diesem Grund existiert der \ac{alphaid}. Der nutzt die Bezeichnungen als Basis für eine nicht klassifizierenden Kode \cite{icd10alpha}.
+Die alphabetische Zuordnung des Kodes entsteht aus der gewohnten Diagnosentexte. Die Systematik enthält nicht alle Diagnosen des Alphabets. Deswegen dient die semantische Bezeichnung als Verzugsbezeichnung, sodass das Alphabet auch andere veralteten oder ungenauen Diagnosenbezeichnungen enthält \cite{icd10alpha}. Die Tabelle \ref{tab:difbe} illustriert ein Beispiel dieser Ungenauigkeit Anhang von der Diagnose \acl{covid} (\acs{covid}-19). Aus diesem Grund existiert der \ac{alphaid}. Der nutzt die Bezeichnungen als Basis für eine nicht klassifizierenden Kode \cite{icd10alpha}.
 
 \begin{table}[ht]
 	\centering
@@ -27,16 +27,16 @@ Die alphabetische Zuordnung des Kodes entsteht aus der gewohnten Diagnosentexte.
 
 \subsection{Systematisches Verzeichnis (Systematik)} 
 
-Die Systematik ist eine hierarchisch geordnete Liste der vierstelligen Systematik des Kodes \cite{icd10syst}. Diese Hierarchieebenen der \ac{icd10gm} sind Kapitel, Gruppe/Bereiche und Kode, nämlich Kategorie (Kode bis zur dritten Stelle), Subkategorien (Kode an der vierten oder fünften Stelle) \cite{icd10systauf}. Für die Durchführung und den Zweck dieses Projekts wird mit dem systematischen Verzeichnis der \ac{icd10gm} und deren vom \ac{bfarm} veröffentlichen Dateien und Metadaten gearbeitet.
+Die Systematik ist eine hierarchisch geordnete Liste der vierstelligen Systematik des Kodes \cite{icd10syst}. Diese Hierarchieebenen der \ac{icd10gm} sind Kapitel, Gruppe/Bereiche, Kategorie (Kode bis zur dritten Stelle), Subkategorien (vierstellige oder fünfstellige Kodes) \cite{icd10systauf}. Für die Durchführung und den Zweck dieses Projekts wird mit dem systematischen Verzeichnis der \ac{icd10gm} und deren vom \ac{bfarm} veröffentlichen Dateien und Metadaten gearbeitet.
 
 \section{Metadaten}
 
-Das \ac{bfarm} veröffentlicht zwischen September und Dezember eines Jahres die Metadaten der neuen Fassung der \ac{icd10gm} in einer \ac{zip}-Datei mit Kodierungen und weiteren Informationen. Der Ordner Klassifikationsdateien enthält die aktuelle Version der Dateien für die Klassifikation der \ac{icd10gm} (sehen Sie die Tabelle \ref{tab:classfiles}). Diese Dateien sind in \ac{csv}-Format mit \glqq ;\grqq{} als Trendzeichen. Die \ac{zip}-Datei enthält auch eine Liesmich-Datei mit der Beschreibung aller \ac{csv}-Dateien, vorkommenden Erneuerungen in der Struktur dieser Dateien, und \ac{sql}-Statements für den Aufbau einer \ac{db}. Die Tabellen die auf diese \ac{csv}-Dateien entstehen, sind mit Kopfzeilen in rot in der Abbildung \ref{fig:reldb2} dargestellt. Diese \ac{zip}-Dateien befinden sich auf der Seite  \href{https://www.dimdi.de/dynamic/de/klassifikationen/downloads/}{Downloads} der Klassifikationen der \ac{bfarm} Webseite in der Sektion \ac{icd10gm}. Hier befinden sich die Version des laufenden Jahres und die Vorgängerversionen. Die Namen der Links zu den \ac{zip}-Dateien haben die Struktur \textsf{\ac{icd10gm} Version JJJJ}. Die Struktur der Namen der \ac{zip}-Dateien ist \textsf{\ac{icd10gm}VersionJJJJ.zip}.
+Das \ac{bfarm} veröffentlicht zwischen September und Dezember eines Jahres die Metadaten der neuen Fassung der \ac{icd10gm} in einem komprimierten Ordner in einem \ac{zip}-Datei mit Unterordnern  mit Kodierungsdateien und weiteren Informationen. Der Unterordner Klassifikationsdateien enthält die Dateien der aktuellen Fassung der \ac{icd10gm} wie in der Tabelle \ref{tab:classfiles} dargestellt wird. Diese Dateien sind in \ac{csv}-Format mit \glqq ;\grqq{} als Trendzeichen. Die \ac{zip}-Datei enthält auch eine Text-Datei unter der Name \textsf{icd10gmJJJJsyst\_metadaten\_liesmich.txt}, wobei \textsf{JJJJ} das Jahr der Fassung darstellt, mit der Beschreibung aller \ac{csv}-Dateien, Information der vorkommenden Erneuerungen in der Struktur dieser Dateien, und \ac{sql}-Statements für den Aufbau einer \ac{db}. Die \ac{zip}-Dateien der Version des laufenden Jahres und der Vorgängerversionen befinden sich auf der Seite \href{https://www.dimdi.de/dynamic/de/klassifikationen/downloads/}{Downloads} der Klassifikationen der \ac{bfarm} Webseite in der Sektion \ac{icd10gm}. Die Namen der Links zu den \ac{zip}-Dateien haben die Struktur \textsf{\ac{icd10gm} Version JJJJ} und die Struktur der Namen der \ac{zip}-Dateien ist \textsf{\ac{icd10gm}JJJJ.zip}.
 
 \begin{table}[ht]
 	\centering
 	\small
-	\caption[Inhalt im Ordner Klassifikationsdateien ]{Liste der Dateien im Ordner Klassifikationsdateien. \glqq JJJJ\grqq{} stellt das Jahr der Fassung der \ac{icd10gm} dar.}
+	\caption{Liste der Dateien im Ordner Klassifikationsdateien.}
 	\label{tab:classfiles}
 	\begin{tabular}{|l|l|}
 		\hline
@@ -51,7 +51,7 @@ Das \ac{bfarm} veröffentlicht zwischen September und Dezember eines Jahres die 
 		\textsf{mortl2\_JJJJ.txt} & Mortalitätsliste 2 \\ \hline
 		\textsf{mortl3\_JJJJ.txt} & Mortalitätsliste 3 \\ \hline
 		\textsf{ortl3grp\_JJJJ.txt} & Gruppen der Mortalitätsliste 3 \\ \hline
-		\textsf{mortl4\_JJJJ.txt} & Mortalitätsliste 4 \\ \hline		
+		\textsf{mortl4\_JJJJ.txt} & Mortalitätsliste 4 \\ \hline
 	\end{tabular}
 \end{table}
 

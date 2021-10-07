@@ -1,0 +1,46 @@
+\documentclass[12pt, a4paper]{scrreprt}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{acro}
+
+\ProvideAcroEnding{genitivmaskulin}{s}{s}
+\ProvideAcroEnding{dativplural}{n}{n}
+
+\ExplSyntaxOn
+\NewAcroCommand \acg
+{
+	\acro_genitivmaskulin:
+	\acro_use:n {#1}
+}
+%\ExplSyntaxOff
+
+%\ExplSyntaxOn
+\NewAcroCommand \acd
+{
+	\acro_dativplural:
+	\acro_use:n {#1}
+}
+\ExplSyntaxOff
+
+\DeclareAcronym{bva}{
+	short = BVA ,
+	long  = Bundesversicherungsamt,
+	long-plural-form = Bundesversicherungsämter ,
+	long-genitivmaskulin = es
+}
+\DeclareAcronym{lanuv}{
+	short = LANUV ,
+	long  = {Landesamt für Natur, Umwelt und Verbraucherschutz} ,
+	long-plural-form = {Landesämter für Natur, Umwelt und Verbraucherschutz} ,
+	long-genitivmaskulin-form = {Landesamtes für Natur, Umwelt und Verbraucherschutz},
+	long-dativplural-form = {Landesamten für Natur, Umwelt und Verbraucherschutz}
+}
+
+\begin{document} 
+	\printacronyms[sort = true]
+	
+	
+	\acd{lanuv}
+	\ac{bva} \\
+\end{document}
