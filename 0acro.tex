@@ -1,6 +1,26 @@
+	\ProvideAcroEnding{genitivsingularmaskulin}{s}{s}
+	\ProvideAcroEnding{dativplural}{n}{n}
+	
+	\ExplSyntaxOn
+	\NewAcroCommand \acg
+	{
+		\acro_genitivsingularmaskulin:
+		\acro_use:n {#1}
+	}
+	%\ExplSyntaxOff
+	
+	%\ExplSyntaxOn
+	\NewAcroCommand \acd
+	{
+		\acro_dativplural:
+		\acro_use:n {#1}
+	}
+	\ExplSyntaxOff
+
 	\DeclareAcronym{alphaid}{
 		short = Alpha-ID,
-		long = Alpha-Identifikator
+		long = Alpha-Identifikator,
+		long-genitivsingularmaskulin-form = {Alpha-Identifikatoren}
 	}
 
 	\DeclareAcronym{bash}
@@ -12,13 +32,15 @@
 	\DeclareAcronym{bfarm}
 	{
 		short = BfArM,
-		long = Bundesinstitut für Arzneimittel und Medizinprodukte
+		long = Bundesinstitut für Arzneimittel und Medizinprodukte,
+		long-genitivsingularmaskulin-form = {Bundesinstituts für Arzneimittel und Medizinprodukte}
 	}
 
 	\DeclareAcronym{bmg}
 	{
 		short = BMG,
-		long = Bundesministerium für Gesundheit
+		long = Bundesministerium für Gesundheit,
+		long-genitivsingularmaskulin-form = {Bundesministeriums für Gesundheit}
 	}
 	\DeclareAcronym{cdw}
 	{	short = CDW,

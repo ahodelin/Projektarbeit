@@ -1,6 +1,10 @@
 \section{\acs{etl}-Strecke} \label{etlpipeline}
 
-Für den Import der Information der \ac{icd10gm} in der \ac{db} wurde eine \ac{etl}-Strecke entwickelt. Dazu wurden \ac{bash}-Skripts unter Ubuntu 20.04 programmiert und durchgeführt. Die Anfang Punk für die Durchführung der \ac{etl} sind die \ac{zip}-Dateien der \ac{icd10gm} Metadaten von 2007 bis 2021 aus der Download Seite vom \ac{bfarm} für die Klassifikationen. Diese Dateien wurden zuerst manuell heruntergeladen. Der Abruf und die Reihenfolge der Skripts für den Durchlauf der \ac{etl} werden von dem \ac{bash}-Skript \textsf{icd\_etl.sh} definiert. Die Abbildung \ref{fig:etl} stellt das Flussdiagramm der \ac{etl}-Strecke dar.
+Für den Import der Information der \ac{icd10gm} in der \ac{db} wurde eine \ac{etl}-Strecke entwickelt. Dazu wurden \ac{bash}-Skripts unter Ubuntu 20.04 programmiert und durchgeführt. 
+
+--Warum \ac{bash}?
+
+Die Anfang Punk für die Durchführung der \ac{etl} sind die \ac{zip}-Dateien der \ac{icd10gm} Metadaten von 2007 bis 2021 aus der Download Seite vom \ac{bfarm} für die Klassifikationen. Diese Dateien wurden zuerst manuell heruntergeladen. Der Abruf und die Reihenfolge der Skripts für den Durchlauf der \ac{etl} werden von dem \ac{bash}-Skript \textsf{icd\_etl.sh} definiert. Die Abbildung \ref{fig:etl} stellt das Flussdiagramm der \ac{etl}-Strecke dar.
 
 \subsection{Extraktion}
 
