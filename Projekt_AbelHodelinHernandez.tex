@@ -9,10 +9,10 @@
 \usepackage{graphicx}
 %\usepackage{svg}
 \usepackage{longtable}
-%\usepackage[printonlyused, withpage, nohyperlinks, smaller]{acronym}
-\usepackage{acro}
+\usepackage[printonlyused,  smaller]{acronym}
+%\usepackage{acro}
 \usepackage{fancyhdr}
-\usepackage[type={CC}, modifier={by-sa},version={4.0},]{doclicense}
+\usepackage[type={CC}, modifier={by-sa},version={4.0}]{doclicense}
 \usepackage{listings}
 \usepackage[table]{xcolor}
 \usepackage{xcolor}
@@ -58,7 +58,7 @@
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
-\include{0acro}
+%\include{0acro}
 
 \begin{document} 
 	\include{titelpage}
@@ -79,11 +79,11 @@
 	
     \pagenumbering{arabic}
 
-	\printacronyms[sort=true, name={Abkürzungsverzeichnis}, heading = chapter*]
+	%\printacronyms[sort=true, name={Abkürzungsverzeichnis}, heading = chapter*]
 	
 	\newpage
 	
-	%\include{0abstract}
+	\input{0acro}
 	
 	\input{1introduction}
 	\input{2icd10}
