@@ -62,28 +62,22 @@
 
 \begin{document} 
 	\include{titelpage}
-	\newpage
 	\pagenumbering{roman}
-	
-	\newpage
 	\tableofcontents	  
-	\newpage
+
 	
-	\addcontentsline{toc}{section}{\listfigurename}
+	\addcontentsline{toc}{chapter}{\listfigurename}
 	\listoffigures
 	
-	\addcontentsline{toc}{section}{\listtablename}
+	\addcontentsline{toc}{chapter}{\listtablename}
 	\listoftables
 	
-	\newpage
-	
-    \pagenumbering{arabic}
-
-	%\printacronyms[sort=true, name={Abkürzungsverzeichnis}, heading = chapter*]
 	
 	\newpage
+	\pagenumbering{arabic}
 	
 	\input{0acro}
+	
 	
 	\input{1introduction}
 	\input{2icd10}
