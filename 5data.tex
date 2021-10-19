@@ -33,7 +33,7 @@ Wie in der Tabelle~\ref{tab:icdfiles} dargestellt wird, jede Kode-Datei enthält
 	\end{tabular}
 	\end{table}
 
-Nach dem Durchlauf der \ac{etl} sind insgesamt \textsf{16520} \ac{icd10gm} von 2007 bis 2021 in der \ac{db} eingefügt. In der Abbildung~\ref{fig:icddb} ist die das Verhältnis dieser Kodierungen in Bezug auf die Modifikationen dargestellt. Die meiste Änderungen sind an den Spalten für den Titel der dritte, vierte und fünften Stellen der Codes, weil diese Felder erst im Jahr 2013 entstanden sind \cite{readme13}. Die konkrete Zahl dieser Modifikationen sind in der Tabelle~\ref{tab:icdupd} dargestellt. Ein weiteres Aspekt in Bezug auf der großen Menge der Änderungen ist, dass die Werte verschiedener Felder bei manchen \ac{icd10gm} in früheren Fassungen noch nicht definiert waren, wie in der Tabelle~\ref{tab:icdupd} bei den Fällen der Mortaliätslisten verdeutlicht wird.
+Nach dem Durchlauf der \ac{etl} sind insgesamt \textsf{16520} \ac{icd10gm} von 2007 bis 2021 in der \ac{db} eingefügt. In der Abbildung~\ref{fig:icddb} ist die das Verhältnis dieser Kodierungen in Bezug auf die Modifikationen dargestellt. Die konkrete Zahlen dieser Modifikationen sind in der Tabelle~\ref{tab:icdupd} dargestellt. 
  
  \begin{figure}[ht]
  	\centering
@@ -105,7 +105,8 @@ Ein interessantes Aspekt der meldepflichtigen Krankheiten in der Tabelle~\ref{ta
 
 \section{Modifizierte \acs{icd10gm}} \label{sec:updicd}
 
-Jedes Jahr werden Änderungen in der Metadaten der \ac{icd10gm} vorgenommen. Solche Modifikationen sind in der Tabelle \ref{tab:icdupd} ausgelistet. In dieser Tabelle ist es zu erkennen, dass die meiste Änderungen in Bezug zur Mortalitätslisten entstanden sind, nämlich \textsf{6949} \ac{icd10gm} bei dem Bezug zur Mortalitätsliste 3 und \textsf{6348} Kodierungen bei dem Bezug zur Mortalitätsliste 1. Die Ursache davon ist, dass die Werte solche Listen bei der meisten Codes im Jahr 2007 nicht definiert waren, und mit dem Wert \textsf{UNDEF} gesetzt. Erst in 2008 wurden diese Felder durch einen spezifischen Wert ersetzt. Die zahlreiche Modifikationen an der Klassentitel entstehen durch Vorschläge zur Weiterentwicklung der Klassifikationen. Ein Beispiel davon ist die Schlüsselnummer \textsf{E10.31} mit dem Titel \textsf{Primär insulinabhängiger Diabetes mellitus [Typ-1-Diabetes] \underline{mit} Augenkomplikationen: Als entgleist bezeichnet}. Dieser Titel wurde zu \textsf{Primär insulinabhängiger Diabetes mellitus [Typ-1-Diabetes] \underline{: Mit } Augenkomplikationen: Als entgleist bezeichnet} in 2009 geändert. Die Änderung wurde in diesem Jahr durchgeführt, da eine fünfte Stelle in der Klassifikationen von \textsf{E10}  bis \textsf{E14} eingefügt wurde \cite{diab09}. Der Titel dieser \ac{icd10gm} wurde nochmal in 2014 zu \textsf{\underline{Diabetes mellitus, Typ 1: Mit Augenkomplikationen: Als entgleist bezeichnet}} ersetzt. In diesem Jahr wurden die Titel von der \ac{who} an die gebräuchliche Terminologie angepasst \cite{komm14}.
+Jedes Jahr werden Änderungen in der Metadaten der \ac{icd10gm} vorgenommen. Solche Modifikationen sind in der Tabelle \ref{tab:icdupd} ausgelistet. Wie in der Sektion~\ref{sec:dataanalysis} genannt wurde, Die meiste Änderungen sind an den Spalten für die verschiedenen Stellen der Codes, weil diese Felder erst im Jahr 2013 entstanden sind \cite{readme13}. Ein weiteres Aspekt in Bezug auf die zahlreichen Änderungen ist, dass die Werte verschiedener Felder bei manchen \ac{icd10gm} in früheren Fassungen noch nicht definiert waren, wie in der Tabelle~\ref{tab:icdupd} bei den Fällen der Mortaliätslisten verdeutlicht wird. Die Werte solche Listen bei der meisten Codes im Jahr 2007 waren nicht definiert, und waren mit dem Wert \textsf{UNDEF} gesetzt. Erst in 2008 wurden diese Felder durch einen spezifischen Wert ersetzt. Die zahlreiche Modifikationen an der Klassentitel sind durch Vorschläge zur Weiterentwicklung der Klassifikationen entstanden \cite{diab09, komm14}. 
+%  Ein Beispiel davon ist die Schlüsselnummer \textsf{E10.31} mit dem Titel \textsf{Primär insulinabhängiger Diabetes mellitus [Typ-1-Diabetes] \underline{mit} Augenkomplikationen: Als entgleist bezeichnet}. Dieser Titel wurde zu \textsf{Primär insulinabhängiger Diabetes mellitus [Typ-1-Diabetes] \underline{: Mit } Augenkomplikationen: Als entgleist bezeichnet} in 2009 geändert. Die Änderung wurde in diesem Jahr durchgeführt, da eine fünfte Stelle in der Klassifikationen von \textsf{E10}  bis \textsf{E14} eingefügt wurde \cite{diab09}. Der Titel dieser \ac{icd10gm} wurde nochmal in 2014 zu \textsf{\underline{Diabetes mellitus, Typ 1: Mit Augenkomplikationen: Als entgleist bezeichnet}} ersetzt. In diesem Jahr wurden die Titel von der \ac{who} an die gebräuchliche Terminologie angepasst \cite{komm14}.
 
 %\clearpage
 
@@ -148,23 +149,25 @@ Jedes Jahr werden Änderungen in der Metadaten der \ac{icd10gm} vorgenommen. Sol
 	\end{tabular}
 \end{table}
 
-Ein interessantes Aspekt ist, dass \textsf{52} Diagnosen mit Geschlechtsbezug der \textsf{68}, Krankheiten der Brustdrüse sind. Diese \ac{icd10gm} waren frühe auf das weibliche Geschlecht bezogen, jetzt ist der Geschlechtsbezug diese Kodierungen irrelevant. Viele dieser Änderungen wurden in den Jahren 2008 und 2016 vorgenommen. An dieser Stelle können wir nicht erklären, wieso diese Art von Krankheiten nicht immer ohne Geschlechtsbezug waren, denn seit 1930 existieren medizinische Publikationen über Brustdrüse Anomalien bei Männer \cite{bcm}. 
+Ein interessantes Aspekt ist, dass \textsf{52} Diagnosen mit Geschlechtsbezug der \textsf{68} Schlüsselnummer, Krankheiten der Brustdrüse sind. Diese \ac{icd10gm} waren frühe auf das weibliche Geschlecht bezogen, jetzt ist der Geschlechtsbezug diese Kodierungen irrelevant. Viele dieser Änderungen wurden in den Jahren 2008 und 2016 vorgenommen. An dieser Stelle können wir nicht erklären, wieso diese Art von Krankheiten nicht immer ohne Geschlechtsbezug waren, denn seit 1930 existieren medizinische Publikationen über Brustdrüse Anomalien bei Männer \cite{bcm}.
+
+\clearpage
 
 \begin{table}[ht]
 	\centering
-	\caption[Diphtherie und Poliomyelitis]{\ac{icd10gm} der Bereiche \textsf{A36.-} \textsf{Diphtherie} und \textsf{A80.-} \textsf{Akute Poliomyelitis [Spinale Kinderlähmung]}. \textsf{J} Ja, \textsf{N} Nein.}
+	\caption[Beispiel von seltenen Krankheiten in Mitteleuropa (Diphtherie und Poliomyelitis)]{Beispiel von seltenen Krankheiten in Mitteleuropa anhand von \ac{icd10gm} der Bereiche \textsf{A36.-} \textsf{Diphtherie} und \textsf{A80.-} \textsf{Akute Poliomyelitis [Spinale Kinderlähmung]}. Die alten und neuen Werte sind in der Spalte \glqq Alt\grqq{} bzw. \glqq Neu\grqq{}. \textsf{N} Nein, \textsf{J} Ja}
 	\label{tab:icdeuropa}
-	\begin{tabular}{|l|l|p{8cm}|l|l|}
+	\begin{tabular}{|p{1.6cm}|l|p{7cm}|l|l|}
 		\hline
-		\rowcolor{lightgray} Änderung & \ac{icd10gm} & Titel & Alt & Neue \\ \hline
-		2011 & A36.- & Diphtherie & N & J \\ \hline
+		\rowcolor{lightgray} Fassung der Änderung & \ac{icd10gm} & Titel & Alt & Neue \\ \hline
+		\rowcolor{maroon!10} 2011 & A36.- & Diphtherie & N & J \\ \hline
 		2011 & A36.0 & Rachendiphtherie & N & J \\ \hline
 		2011 & A36.1 & Nasenrachendiphtherie & N & J \\ \hline
 		2011 & A36.2 & Kehlkopfdiphtherie & N & J \\ \hline
 		2011 & A36.3 & Hautdiphtherie & N & J \\ \hline
 		2011 & A36.8 & Sonstige Diphtherie & N & J \\ \hline
-		2011 & A36.9 & Diphtherie, nicht näher bezeichnet & N & J \\ \hline
-		2011 & A80.- & Akute Poliomyelitis [Spinale Kinderlähmung] & N & J \\ \hline
+		2011 & A36.9 & Diphtherie, nicht näher bezeichnet & N & J \\ \hline \hline
+		\rowcolor{maroon!10} 2011 & A80.- & Akute Poliomyelitis [Spinale Kinderlähmung] & N & J \\ \hline
 		2011 & A80.0 & Akute paralytische Poliomyelitis durch Impfvirus & N & J \\ \hline
 		2011 & A80.1 & Akute paralytische Poliomyelitis durch importiertes Wildvirus & N & J \\ \hline
 		2011 & A80.2 & Akute paralytische Poliomyelitis durch einheimisches Wildvirus & N & J \\ \hline
@@ -174,13 +177,13 @@ Ein interessantes Aspekt ist, dass \textsf{52} Diagnosen mit Geschlechtsbezug de
 	\end{tabular}
 \end{table}
 
-In Bezug auf die sehr seltene Krankheiten in Mitteleuropa sind \textsf{20} von den \textsf{31} belegte Schlüsselnummer. Davon gehören \textsf{14} zu den Bereichen \textsf{A36.-} \textsf{Diphtherie} und \textsf{A80.-} \textsf{Akute Poliomyelitis [Spinale Kinderlähmung]}. Diese sind in der Tabelle \ref{tab:icdeuropa} ausgelistet. Die Ursachen der Änderungen sind die erfolgreiche Impfkampagne in Deutschland, sodass die vom \ac{rki} jährlich selten gemeldeten Fällen importiert sind \cite{dippol1}.
+Von den sehr seltenen Krankheiten in Mitteleuropa sind \textsf{20} der \textsf{31} Diagnosen belegte Schlüsselnummer, also Kodierungen ohne Unterkategorien und somit in dem alltäglichen  Gebrauch. Davon gehören \textsf{12} zu den Bereichen \textsf{A36.-} \textsf{Diphtherie} und \textsf{A80.-} \textsf{Akute Poliomyelitis [Spinale Kinderlähmung]}. Diese sind in der Tabelle~\ref{tab:icdeuropa} ausgelistet. Diese Diagnosen sind heutzutage selten, die Ursache davon sind die erfolgreiche Impfkampagne in Deutschland, sodass die vom \ac{rki} jährlich selten gemeldeten Fällen in den heutigen Tagen importiert sind \cite{dippol1}.
 
 \section{Gelöschte \acs{icd10gm}} \label{sec:deletedicd}
 
-In jeder Fassung von 2008 bis 2021 \ac{icd10gm} werden gelöscht. Dieses Verhalten ist in der Abbildung \ref{fig:newdeleteoldicdyear} repräsentiert. Die meiste davon im Jahr 2013. 
+In jeder Fassung von 2008 bis 2021 werden \ac{icd10gm} gelöscht. Dieses Verhalten ist in der Abbildung~\ref{fig:newdeleteoldicdyear} repräsentiert. Die meiste Schlüsselnummer wurden im Jahr 2013 gelöscht, da eine umfangreiche Umstrukturierung in der Semantik in diesem Jahr vorgenommen wurde. Die Kapitel, die in diesem Jahr, am meisten betroffen wurden, sind in der Abbildung~\ref{fig:kap13} dargestellt. Bei der semantischen Umstrukturierung im Jahr 2013 wurden bestimmte Kodebereiche im Kapitel \textsf{Krankheiten des Kreislaufsystems} umfänglich überarbeitet, viele fünfstellige Klassifizierungen wurden von Kapitel \textsf{Krankheiten des Muskel-Skelett-Systems und des Bindegewebes} entnommen, und im Kapitel \textsf{Schlüsselnummern für besondere Zwecke} wurden zahlreiche \ac{icd10gm} umgebaut \cite{dele13}.
 
-\clearpage
+%\clearpage
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=6cm]{figures/neuVersionDelete}
@@ -188,18 +191,17 @@ In jeder Fassung von 2008 bis 2021 \ac{icd10gm} werden gelöscht. Dieses Verhalt
 	\label{fig:newdeleteoldicdyear}
 \end{figure} 
 
-%\clearpage
+\clearpage
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=6cm]{figures/kaptnr13}
-	\caption{Meist betroffene Kapitel in 2013}
+	\caption{Meist betroffene Kapitel beim Löschen in 2013}
 	\label{fig:kap13}
 \end{figure}
 
-Die Kapitel, die in diesem Jahr, am meisten getroffen wurden, sind in der Abbildung \ref{fig:kap13} dargestellt. In diesem Jahr wurde eine umfangreiche Umstrukturierung in der Semantik vorgenommen, bei denen bestimmte Kodebereiche im Kapitel \textsf{09} \textsf{Krankheiten des Kreislaufsystems} umfänglich überarbeitet wurden, viele fünfstellige Klassifizierungen wurden von Kapitel \textsf{13} \textsf{Krankheiten des Muskel-Skelett-Systems und des Bindegewebes} entnommen, und im Kapitel \textsf{22} \textsf{Schlüsselnummern für besondere Zwecke} wurden zahlreiche \ac{icd10gm} umgebaut \cite{dele13}.
 
-Die Abbildung \ref{fig:oldicdort} zeigt, dass die meiste Codes, nämlich \textsf{295} der \textsf{327} gelöschten Kodierungen, terminale Schlüsselnummer waren, also \ac{icd10gm} ohne Subkategorien. Davon wurden \textsf{115} erweitert wie in der Sektion \ref{sec:newicd} erläutert wurde. Von der nicht terminale Kodierungen wurden dann \textsf{11} erweitert. Ein Beispiel davon ist \textsf{Z75.2-} \textsf{Wartezeit auf eine Untersuchung oder Behandlung}, diese nicht terminale Kodierung wurde gelöscht und zu der terminalen Code \textsf{Z75.2} mit demselben Titel umgewandelt. Der Rest der \ac{icd10gm} wurden einfach nicht mehr weiter benutzt. 
+Die Abbildung \ref{fig:oldicdort} zeigt, dass die meisten Codes, nämlich \textsf{295} der \textsf{321} irgendwann gelöschten Kodierungen, terminale Schlüsselnummer waren, also \ac{icd10gm} ohne Subkategorien. Davon wurden \textsf{115} erweitert wie in der Sektion \ref{sec:newicd} Anhang des Beispiel von \textsf{U81!} \textsf{Bakterien mit Multiresistenz gegen Antibiotika} erläutert wurde. Von der nicht terminalen Kodierungen wurden dann \textsf{11} erweitert. Ein Beispiel davon ist \textsf{Z75.2-} \textsf{Wartezeit auf eine Untersuchung oder Behandlung}. Diese nicht terminale Kodierung wurde gelöscht und zu der terminalen Code \textsf{Z75.2} mit demselben Titel umgewandelt. 
 
 %\clearpage
 
@@ -247,6 +249,8 @@ Wie in der Subsektion \ref{subsec:transf} genannt wurde, es gab auch Änderungen
 Vorher wurden die verschiedenen Änderungen in dem semantischen Verzeichnis und einige Gründe davon genannt und erklärt. In der Tabelle \ref{tab:IUDDI} wird, Anhang von einem Beispiel, die chronologische Entwicklung der \ac{icd10gm} in der Tabelle \textsf{icd10gm\_history} der \ac{db} gezeigt. Die Spalte Fassung, \textsf{ver} in der Tabelle \textsf{icd10gm\_history}, stellt die Version der Einführung, Änderung, Löschung oder Wiederverwendung einer \ac{icd10gm} dar. Das Feld Alte Fassung, \textsf{oldver} in der vorher genannten Tabelle, beinhaltet den Identifikator der vorherigen Fassung einer Schlüssel. In der Spalte Ereignis, \textsf{verevent} in der Tabelle \textsf{icd10gm\_history}, sind die Ereignisse Einführung, Änderung, Löschung und Wiederverwendung, wie in der Subsektion \ref{subsec:newtables} beschrieben wurden, kodiert. Eine wichtige Anmerkung in der Darstellung ist, dass die gezeigte alte Fassung bei der wiederverwendete Klassifikationen die Fassung der Insertion oder der letzten Änderung ist, weil in der Fassung der Löschung dieser Code nicht vorhanden war.
 
 Es ist zu erkennen, dass unsere Implementierung die Lebenszyklus von \ac{icd10gm} Klassifikationen darstellen kann, sodass jede Modifikation dokumentiert ist. In einer extra \ac{csv}-Datei ist die vollständige Tabelle \textsf{icd10gm\_history} mit allen Spalten und Klassifikationen der registrierten Kodierungen von 2007 bis 2021.
+
+\clearpage
 
 \begin{table}[ht]
 	\centering
