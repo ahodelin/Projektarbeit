@@ -1,9 +1,9 @@
 \chapter{Ergebnisse} \label{ch:results}
 
 \section{\acs{icd10gm} in der \acs{csv}-Dateien und \acs{db}} \label{sec:dataanalysis}
-Die Analyse der Information der \ac{icd10gm} wurde mit Hilfe \ac{sql}-Befehle und Python unter dem Framework Jupyter-Notebook durchgeführt.
+Die Analyse der Information der \ac{icd10gm} wurde mit Hilfe von \ac{sql}-Befehlen und der Skript Sprache Python unter dem Framework Jupyter-Notebook durchgeführt.
 
-Wie in der Tabelle~\ref{tab:icdfiles} dargestellt wird, jede Kode-Datei enthält mehr als \textsf{15450} \ac{icd10gm}, obwohl manche Kodierungen gelöscht werden, nimmt die Menge neuer \ac{icd10gm} immer zu.
+Wie in der Tabelle~\ref{tab:icdfiles} dargestellt wird, jede Kode-Datei enthält mehr als \textsf{15450} Codes, obwohl manche Kodierungen gelöscht werden, nimmt die Menge neuer \ac{icd10gm} ständig zu.
 
 \begin{table}[ht]
 	\centering
@@ -29,38 +29,16 @@ Wie in der Tabelle~\ref{tab:icdfiles} dargestellt wird, jede Kode-Datei enthält
 		16131 & 2020 \\ \hline
 		16203 & 2021 \\ \hline
 		\hline
-		%\textit{15782} & \textbf{Durchschnitt} \\ \hline
 		\textit{236737} & \textbf{Gesamt} \\ \hline
 	\end{tabular}
 	\end{table}
 
-Nach dem Durchlauf der \ac{etl} sind insgesamt \textsf{16520} \ac{icd10gm} von 2007 bis 2021 in der \ac{db} eingefügt. In der Abbildung~\ref{fig:icddb} ist die das Verhältnis dieser Kodierungen dargestellt. Wobei die Spalten für den Titel der drei- vier- und fünften Stellen der Codes nicht berücksichtigt wurden, weil diese Felder erst im Jahr 2013 entstanden sind \cite{readme13}. Ein weiteres Aspekt in Bezug auf die \textsf{10180} Änderung ist, dass die Werte verschiedener Felder  bei manchen \ac{icd10gm} in früheren Fassungen noch nicht definiert waren, wie in der Tabelle~\ref{tab:icdupd} bei den Fällen der Mortaliätlisten verdeutlicht wird.
-
- %\begin{table}[ht]
- %	\centering
- %	\small
- %	\caption[\acs{icd10gm} in der \acs{db}]{Charakterisierung der \acs{icd10gm} in der \ac{db}}
- %	\label{tab:icddb}
- %	\begin{tabular}{|l|l|}
- %		\hline
- %		\rowcolor{lightgray}	Anzahl & Information \\ \hline 
- %		16520 & \textbf{Gesamt} \\ \hline
- %		\hline
- %		6188 & Unverändert \\ \hline
- %		10011 & Nur geändert \\ \hline
- %		152 & Nur gelöscht \\ \hline 		
- %		165 & Geändert und gelöscht \\ \hline
- %		4 & Wieder verwendet \\ \hline
- %		\hline
- %		10180 & \textbf{Insgesamt geändert} \\ \hline
- %		317 & \textbf{Insgesamt gelöscht} \\ \hline 		
- %	\end{tabular}
- %\end{table}
+Nach dem Durchlauf der \ac{etl} sind insgesamt \textsf{16520} \ac{icd10gm} von 2007 bis 2021 in der \ac{db} eingefügt. In der Abbildung~\ref{fig:icddb} ist die das Verhältnis dieser Kodierungen in Bezug auf die Modifikationen dargestellt. Die meiste Änderungen sind an den Spalten für den Titel der dritte, vierte und fünften Stellen der Codes, weil diese Felder erst im Jahr 2013 entstanden sind \cite{readme13}. Die konkrete Zahl dieser Modifikationen sind in der Tabelle~\ref{tab:icdupd} dargestellt. Ein weiteres Aspekt in Bezug auf der großen Menge der Änderungen ist, dass die Werte verschiedener Felder bei manchen \ac{icd10gm} in früheren Fassungen noch nicht definiert waren, wie in der Tabelle~\ref{tab:icdupd} bei den Fällen der Mortaliätslisten verdeutlicht wird.
  
  \begin{figure}[ht]
  	\centering
  	\includegraphics[height=6cm]{figures/icd10gm_quantities}
- 	\caption[\acs{icd10gm} in der \acs{db}]{Charakterisierung der \acs{icd10gm} in der \ac{db}.}
+ 	\caption[\acs{icd10gm} in der \acs{db}]{Charakterisierung der \acs{icd10gm} in der \ac{db} in Bezug auf den Modifikationen.}
  	\label{fig:icddb}
  \end{figure}
 
@@ -68,7 +46,7 @@ Nach dem Durchlauf der \ac{etl} sind insgesamt \textsf{16520} \ac{icd10gm} von 2
 
 Von 2008 bis 2021 sind insgesamt \textsf{966} neuen \ac{icd10gm} entstanden. In der Abbildung~\ref{fig:newicdyear} ist ein interessantes Aspekt davon repräsentiert, nämlich die Anzahl neuer \ac{icd10gm} pro Jahr ist unregelmäßig. Es gib Jahre wie 2017 und 2018 mit mehr als \textsf{120} neue Einträge. Dieses Phänomen passiert am meisten beim Bedarf neuer Subklassifikationen, um die Diagnosen spezifischer zu kodieren und an diverse klinischen Systeme anzupassen. Ein Beispiel dieses Phonemen ist der Code \textsf{U81!} \textsf{Bakterien mit Multiresistenz gegen Antibiotika}, dieser wurde in 2017 entnommen und stattdessen entstand die Kodierung \textsf{U81.-!} \textsf{Gramnegative Erreger mit bestimmten Antibiotikaresistenzen, die besondere therapeutische oder hygienische Maßnahmen erfordern} zusammen mit \textsf{43} weiteren Subklassifikationen von \textsf{U81.0-!} bis \textsf{U81.8!}. Die Ursache davon war eine Umstrukturierung der Bereiche \textsf{U81!}, um diese Codes an die Nomenklatur der \ac{krinko} anzupassen \cite{erreg17}.
 
-Im Jahr 2018 wurden mehr als \textsf{80} neue \ac{icd10gm} bei \textsf{M14.-*} \textsf{Arthropathien bei sonstigen anderenorts klassifizierten Krankheiten} eingefügt. Diese Zunahme ist auch in der Abbildung~\ref{fig:newicdcap} widerspiegelt, denn diese Diagnosen sind im Kapitel \textsf{Krankheiten des Muskel-Skelett-Systems und des Bindegewebes} repräsentiert. Die Ursache diese Zunahme war die Insertion einer fünften Stelle, um die Abbildung im \ac{gdrg}-System zu ermöglichen \cite{musk18}.
+Im Jahr 2018 wurden mehr als \textsf{80} neue \ac{icd10gm} in der Bereiche \textsf{M14.-*} \textsf{Arthropathien bei sonstigen anderenorts klassifizierten Krankheiten} eingefügt. Diese Zunahme ist auch in der Abbildung~\ref{fig:newicdcap} widerspiegelt, denn diese Diagnosen sind im Kapitel \textsf{Krankheiten des Muskel-Skelett-Systems und des Bindegewebes} repräsentiert. Die Ursache diese Zunahme war die Insertion einer fünften Stelle an der Kodierung, um die Abbildung im \ac{gdrg}-System zu ermöglichen \cite{musk18}.
 
 %\clearpage
 
@@ -79,14 +57,18 @@ Im Jahr 2018 wurden mehr als \textsf{80} neue \ac{icd10gm} bei \textsf{M14.-*} \
 	\label{fig:newicdyear}
 \end{figure} 
 
-Ein wichtiger und aktueller Punkt sind die meldepflichtigen Krankheiten in der Laufe der Jahre. Dieses Phonemen ist in der Abbildung~\ref{fig:newicdmeld} dargestellt. Es ist zu erkennen, dass sei 2007 nur in den Jahren 2010, 2016 und 2021 wurden neue meldepflichtigen Codes definiert (Tabelle~\ref{tab:meldung}). Ursachen davon sind Pandemien und Epidemien wie die Influenza Varianten zwischen 2009 und 2010 \cite{influenza1, influenza2}, die Verbreitung des Dengue Fiebers in Europa als Effekt der Globalisierung mit der steigenden Mobilität \cite{denge1} und Verbreitung der asiatischen Tigermücke \textsl{Aedes (Stegomyia) albopictus} zwischen 2015 und 2016 in der Region als Konsequenz der milden Winter \cite{denge2}, und noch aktuell seit Februar 2020 die Verbreitung des Corona Virus in Europa \cite{corona1} und deren gesundheitlichen Folgen \cite{corona2}.
+Ein wichtiger und aktueller Punkt sind die meldepflichtigen Krankheiten in der Laufe der Jahre. Dieses Phonemen ist in der Abbildung~\ref{fig:newicdmeld} dargestellt. Es ist zu erkennen, dass neue meldepflichtigen Codes in den Jahren 2010, 2016 und 2021 definiert wurden (Tabelle~\ref{tab:meldung}). Ursachen davon sind Pandemien und Epidemien wie die Influenza Varianten zwischen 2009 und 2010 \cite{influenza1, influenza2}, die Verbreitung des Dengue Fiebers in Europa als Effekt der Globalisierung mit der steigenden Mobilität \cite{denge1} und Verbreitung der asiatischen Tigermücke \textsl{Aedes (Stegomyia) albopictus} zwischen 2015 und 2016 in der Region als Konsequenz der milden Winter \cite{denge2}, und noch aktuell seit Februar 2020 die Verbreitung des Corona Virus in Europa \cite{corona1} und deren gesundheitlichen Folgen \cite{corona2}. 
+
+Ein interessantes Aspekt der meldepflichtigen Krankheiten ist die Diagnose \textsf{B17.9} \textsf{Akute Virushepatitis, nicht näher bezeichnet}. Diese Krankheit war unter \textsf{K72.0} \textsf{Akutes und subakutes Leberversagen} zugeordnet, erst in 2010 wurde zur Kenntnis genommen dass, die akute Hepatitis in manche Fälle um eine akute infektiöse Hepatitis handelt. Aus diesem Grund hatte die \ac{who} die Schlüsselnummer \textsf{B17.9} zur Verfügung gestellt \cite{komm10}.
+
+
 
 \clearpage
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=5.7cm]{figures/kaptnrYear}
-	\caption[Kapitel mit den meisten eingeführten \acs{icd10gm} (2008 - 2021)]{Kapitel mit den meisten eingeführten \ac{icd10gm} zwischen 2008 und 2021 und die Jahren mit den meisten neue \ac{icd10gm}}
+	\caption[Kapitel mit den meisten eingeführten \acs{icd10gm} (2008 - 2021)]{Kapitel mit den meisten neuen Kodierungen zwischen 2008 und 2021}
 	\label{fig:newicdcap}
 \end{figure}
 
@@ -94,7 +76,7 @@ Ein wichtiger und aktueller Punkt sind die meldepflichtigen Krankheiten in der L
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=5.7cm]{figures/arztJaYear}
-	\caption[Meldepflichtige \acs{icd10gm} pro Jahr]{Menge an neuen meldepflichtigen Diagnosen zwischen den Jahren 2008 und 2021}
+	\caption[Neue meldepflichtige \acs{icd10gm} pro Jahr]{Menge der neuen meldepflichtigen Diagnosen zwischen den Jahren 2008 und 2021}
 	\label{fig:newicdmeld}
 \end{figure} 
 
@@ -126,42 +108,45 @@ Ein wichtiger und aktueller Punkt sind die meldepflichtigen Krankheiten in der L
 \section{Modifizierte \acs{icd10gm}} \label{sec:updicd}
 
 Jedes Jahr werden Änderungen in der Metadaten der \ac{icd10gm} vorgenommen. Solche Modifikationen sind in der Tabelle \ref{tab:icdupd} ausgelistet. In dieser Tabelle ist es zu erkennen, dass die meiste Änderungen in Bezug zur Mortalitätslisten entstanden sind, nämlich \textsf{6949} \ac{icd10gm} bei dem Bezug zur Mortalitätsliste 3 und \textsf{6348} Kodierungen bei dem Bezug zur Mortalitätsliste 1. Die Ursache davon ist, dass die Werte solche Listen bei der meisten Codes im Jahr 2007 nicht definiert waren, und mit dem Wert \textsf{UNDEF} gesetzt. Erst in 2008 wurden diese Felder durch einen spezifischen Wert ersetzt. Die zahlreiche Modifikationen an der Klassentitel entstehen durch Vorschläge zur Weiterentwicklung der Klassifikationen. Ein Beispiel davon ist die Schlüsselnummer \textsf{E10.31} mit dem Titel \textsf{Primär insulinabhängiger Diabetes mellitus [Typ-1-Diabetes] \underline{mit} Augenkomplikationen: Als entgleist bezeichnet}. Dieser Titel wurde zu \textsf{Primär insulinabhängiger Diabetes mellitus [Typ-1-Diabetes] \underline{: Mit } Augenkomplikationen: Als entgleist bezeichnet} in 2009 geändert. Die Änderung wurde in diesem Jahr durchgeführt, da eine fünfte Stelle in der Klassifikationen von \textsf{E10}  bis \textsf{E14} eingefügt wurde \cite{diab09}. Der Titel dieser \ac{icd10gm} wurde nochmal in 2014 zu \textsf{\underline{Diabetes mellitus, Typ 1: Mit Augenkomplikationen: Als entgleist bezeichnet}} ersetzt. In diesem Jahr wurden die Titel von der \ac{who} an die gebräuchliche Terminologie angepasst \cite{komm14}.
+
 %\clearpage
 
 \begin{table}[ht]
 	\centering
 	\small
-	\caption[Änderungen in den Metadaten]{Liste deDr Metadaten und Anzahl an Änderungen}
+	\caption[Änderungen in den Metadaten]{Liste der Metadaten und Anzahl an Änderungen}
 	\label{tab:icdupd}
-	\begin{tabular}{|l|p{12cm}|}
+	\begin{tabular}{|l|p{11.5cm}|}
 		\hline
 		\rowcolor{lightgray} Änderungen & Metadaten \\ \hline
-		6949 & \textbf{Bezug zur Mortalitätsliste 3} \\ \hline		
-		5 & Bezug zur Mortalitätsliste 3 (davon definiert) \\ \hline
-		6348 & \textbf{Bezug zur Mortalitätsliste 1} \\ \hline
-		2 & Bezug zur Mortalitätsliste 1 (davon definiert) \\ \hline
+		15578 & Dritte Stelle \\ \hline
+		13871 & Vierte Stelle \\ \hline
+		6949 & Bezug zur Mortalitätsliste 3 \\ \hline		
+		6348 & Bezug zur Mortalitätsliste 1 \\ \hline
+		2 & \textbf{Bezug zur Mortalitätsliste 1 (definiert)} \\ \hline
+		5061 & Fünfte Stelle \\ \hline
 		%1193 & Art des Fehlers bei Geschlechtsbezug \\ \hline
 		1111 & Klassentitel \\ \hline
-		308 & \textbf{Untere Altersgrenze} \\ \hline
-		42 & Untere Altersgrenze (davon relevant) \\ \hline
-		299 & \textbf{Bezug zur Morbiditätsliste} \\ \hline
-		11 & Bezug zur Morbiditätsliste (davon definiert) \\ \hline
-		% 286 & Alter Fehlertyp \\ \hline
-		286 & \textbf{Obere Altersgrenze} \\ \hline
-		19 & Obere Altersgrenze (davon relevant) \\ \hline
-		162 & Auswahl der Laborausschlussziffer des \ac{ebmg}  \\ \hline
+		308 & Untere Altersgrenze \\ \hline
+		36 & \textbf{Untere Altersgrenze (relevant)} \\ \hline
+		299 & Bezug zur Morbiditätsliste \\ \hline
+		11 & \textbf{Bezug zur Morbiditätsliste (definiert)} \\ \hline
+		%286 & Alter Fehlertyp \\ \hline
+		286 & Obere Altersgrenze \\ \hline
+		14 & \textbf{Obere Altersgrenze (relevant)} \\ \hline
+		162 & Anwendung der Laborausschlussziffer des \ac{ebmg} \\ \hline
 		118 & Art der Vier- und Fünfsteller \\ \hline
-		69 & \textbf{Bezug zur Mortalitätsliste 4} \\ \hline
-		0 & Bezug zur Mortalitätsliste 4 (davon definiert) \\ \hline
+		69 & Bezug zur Mortalitätsliste 4 \\ \hline
 		68 & Geschlechtsbezug \\ \hline
-		64 & \textbf{Bezug zur Mortalitätsliste 2} \\ \hline
-		2 & Bezug zur Mortalitätsliste 2 (davon definiert) \\ \hline
-		44 & Erster Dreisteller der Gruppe \\ \hline		
-		40 & Meldepflicht \\ \hline
+		64 & Bezug zur Mortalitätsliste 2 \\ \hline
+		2 & \textbf{Bezug zur Mortalitätsliste 2 (definiert)} \\ \hline
+		44 & Kategorie der Gruppe \\ \hline
+		40 & Arzt-Meldepflicht \\ \hline		
 		31 & Sehr seltene Krankheit in Mitteleuropa \\ \hline				
-		6 & Belegte Nummer \\ \hline
-		3 & Paragraph 295 \\ \hline			
+		6 & Belegung des Codes \\ \hline
+		3 & \S 295 \ac{sgb} V \\ \hline		
 		2 & Klassifikationsebene \\ \hline
+		
 	\end{tabular}
 \end{table}
 
