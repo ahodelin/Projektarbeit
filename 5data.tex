@@ -42,6 +42,29 @@ Nach dem Durchlauf der \ac{etl} sind insgesamt \textsf{16520} \ac{icd10gm} von 2
  	\label{fig:icddb}
  \end{figure}
 
+\section{Zeitliche Entwicklung der \acs{icd10gm}} \label{sec:timeicd}
+
+Die Darstellung der Besonderheiten eines Lebenszyklus der historischen \ac{icd10gm} Auffassungen ist in der Tabelle~\ref{tab:IUDDI} exemplarisch dargestellt. Das Beispiel zeigt die chronologische Entwicklung der \ac{icd10gm} in der Tabelle \textsf{icd10gm\_history} der \ac{db}. Die Spalte Fassung, \textsf{ver} in der Tabelle \textsf{icd10gm\_history}, zeigt die Version der Einführung, Änderung, Löschung oder Wiederverwendung einer \ac{icd10gm}. Das Feld Alte Fassung, \textsf{oldver} in der vorher genannten Tabelle, beinhaltet den Identifikator der vorherigen Fassung einer Schlüsselnummer. In der Spalte Ereignis, \textsf{verevent} in der Tabelle \textsf{icd10gm\_history}, sind die Ereignisse Einführung, Änderung, Löschung und Wiederverwendung, wie in der Subsektion~\ref{subsec:newtables} beschrieben wurden, kodiert. Eine wichtige Anmerkung in der Darstellung ist, dass die gezeigte alte Fassung bei der wiederverwendete Klassifikationen, die Version der Insertion oder der letzten Änderung ist, weil dieser Kode in der Fassung der Löschung nicht vorhanden war.
+
+Somit könnten wir erkennen, dass unsere Implementierung die Lebenszyklus von \ac{icd10gm} Klassifikationen darstellen kann, sodass jede Modifikation in der Semantik zwischen 2007 und 2021 dokumentiert ist. In den weiteren Sektionen werden die verschiedenen Änderungen in dem semantischen Verzeichnis und einigen Sonderverzeichnissen gezeigt und deren Gründe erklärt.
+%\clearpage
+
+\begin{table}[ht]
+	\centering
+	\small
+	\caption[Beispiel der Historisierung einer \acs{icd10gm} Klassifikation]{Beispiel der Historisierung einer \acs{icd10gm} Klassifikation. Dieses stellt eine, nach der Einführung, veränderte, gelöschte, und wieder benutzte Schlüsselnummer dar.}
+	\label{tab:IUDDI}
+	\begin{tabular}{|l|l|p{6cm}|l|l|}
+		\hline
+		\rowcolor{lightgray} Fassung & Kode & Titel & Alte Fassung & Ereignis \\ \hline
+		2007 & N90.8  & Sonstige näher bezeichnete nichtentzündliche Krankheiten der Vulva und des Perineums &  & I \\ \hline
+		2008 & N90.8  & Sonstige näher bezeichnete nichtentzündliche Krankheiten der Vulva und des Perineums & 2007 & U \\ \hline
+		2013 & N90.8  & Sonstige näher bezeichnete nichtentzündliche Krankheiten der Vulva und des Perineums & 2008 & U \\ \hline
+		2014 & N90.8  & Sonstige näher bezeichnete nichtentzündliche Krankheiten der Vulva und des Perineums & 2013 & D \\ \hline
+		2016 & N90.8  & Sonstige näher bezeichnete nichtentzündliche Krankheiten der Vulva und des Perineums & 2013 & DI \\ \hline
+	\end{tabular}
+\end{table}
+
 \section{Neue \acs{icd10gm}} \label{sec:newicd}
 
 Von 2008 bis 2021 sind insgesamt \textsf{966} neuen \ac{icd10gm} entstanden. In der Abbildung~\ref{fig:newicdyear} ist ein interessantes Aspekt davon repräsentiert, nämlich die Anzahl neuer \ac{icd10gm} pro Jahr ist unregelmäßig. Es gib Jahre wie 2017 und 2018 mit mehr als \textsf{120} neue Einträge. Dieses Phänomen passiert am meisten beim Bedarf neuer Subklassifikationen, um die Diagnosen spezifischer zu kodieren und an diverse klinischen Systeme anzupassen. Ein Beispiel dieses Phonemen ist der Kode \textsf{U81!} \textsf{Bakterien mit Multiresistenz gegen Antibiotika}, dieser wurde in 2017 entnommen und stattdessen entstand die Kodierung \textsf{U81.-!} \textsf{Gramnegative Erreger mit bestimmten Antibiotikaresistenzen, die besondere therapeutische oder hygienische Maßnahmen erfordern} zusammen mit \textsf{43} weiteren Subklassifikationen von \textsf{U81.0-!} bis \textsf{U81.8!}. Die Ursache davon war eine Umstrukturierung der Bereiche \textsf{U81!}, um diese Kodes an die Nomenklatur der \ac{krinko} anzupassen \cite{erreg17}.
@@ -243,26 +266,3 @@ Die Kodierungsschlüssel \textsf{K55.8} wurde in 2010 gelöscht und die Kodierun
 \section{Strukturelle Änderungen} \label{sec:strucmodif}
 
 Wie in der Subsektion \ref{subsec:transf} genannt wurde, es gab auch Änderungen in der Struktur des semantischen Verzeichnisses. Im Jahr 2013 wurde die Spalte \textsf{titel} für den Klassentitel der Tabelle \textsf{kodes} aus dem Dreisteller-, Viersteller- und gegebenenfalls Fünfstellertitel zusammengesetzt. Auch in diesem Jahr wurden drei neue Felder für die einzelnen Bestandteile des zusammengesetzten Klassentitels eingefügt \cite{readme13}. Eine weitere Änderung in der Tabelle \textsf{kodes}, die schon sei 2015 geplant wurde, und im Jahr 2018 vorgenommen wurde, war die Entnahme der Felder der Altersklassenformaten für die untere und obere Grenze des Altenbezuges mit Angabe von Tagen, Wochen, Monaten und Jahren; und damit blieben nur die Felder mit dem Format in Tagen und Jahren, nämlich  \textsf{altunt} für die untere Grenze und \textsf{altob} für die obere Grenze des Altenbezuges \cite{readme17}.
-
-\section{Zeitliche Entwicklung der \acs{icd10gm}} \label{sec:timeicd}
-
-Vorher wurden die verschiedenen Änderungen in dem semantischen Verzeichnis und einige Gründe davon genannt und erklärt. In der Tabelle~\ref{tab:IUDDI} wird, Anhang von einem Beispiel, die chronologische Entwicklung der \ac{icd10gm} in der Tabelle \textsf{icd10gm\_history} der \ac{db} gezeigt. Die Spalte Fassung, \textsf{ver} in der Tabelle \textsf{icd10gm\_history}, zeigt die Version der Einführung, Änderung, Löschung oder Wiederverwendung einer \ac{icd10gm}. Das Feld Alte Fassung, \textsf{oldver} in der vorher genannten Tabelle, beinhaltet den Identifikator der vorherigen Fassung einer Schlüsselnummer. In der Spalte Ereignis, \textsf{verevent} in der Tabelle \textsf{icd10gm\_history}, sind die Ereignisse Einführung, Änderung, Löschung und Wiederverwendung, wie in der Subsektion~\ref{subsec:newtables} beschrieben wurden, kodiert. Eine wichtige Anmerkung in der Darstellung ist, dass die gezeigte alte Fassung bei der wiederverwendete Klassifikationen, die Version der Insertion oder der letzten Änderung ist, weil dieser Kode in der Fassung der Löschung nicht vorhanden war.
-
-Somit könnten wir erkennen, dass unsere Implementierung die Lebenszyklus von \ac{icd10gm} Klassifikationen darstellen kann, sodass jede Modifikation in der Semantik zwischen 2007 und 2021 dokumentiert ist.
-\clearpage
-
-\begin{table}[ht]
-	\centering
-	\small
-	\caption[Beispiel der Historisierung einer \acs{icd10gm} Klassifikation]{Beispiel der Historisierung einer \acs{icd10gm} Klassifikation. Dieses stellt eine, nach der Einführung, veränderte, gelöschte, und wieder benutzte Schlüsselnummer dar.}
-	\label{tab:IUDDI}
-	\begin{tabular}{|l|l|p{6cm}|l|l|}
-		\hline
-		\rowcolor{lightgray} Fassung & Kode & Titel & Alte Fassung & Ereignis \\ \hline
-			2007 & N90.8  & Sonstige näher bezeichnete nichtentzündliche Krankheiten der Vulva und des Perineums &  & I \\ \hline
-			2008 & N90.8  & Sonstige näher bezeichnete nichtentzündliche Krankheiten der Vulva und des Perineums & 2007 & U \\ \hline
-			2013 & N90.8  & Sonstige näher bezeichnete nichtentzündliche Krankheiten der Vulva und des Perineums & 2008 & U \\ \hline
-			2014 & N90.8  & Sonstige näher bezeichnete nichtentzündliche Krankheiten der Vulva und des Perineums & 2013 & D \\ \hline
-			2016 & N90.8  & Sonstige näher bezeichnete nichtentzündliche Krankheiten der Vulva und des Perineums & 2013 & DI \\ \hline
-	\end{tabular}
-\end{table}
