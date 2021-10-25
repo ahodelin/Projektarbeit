@@ -3,7 +3,7 @@
 \section{\acs{icd10gm} in der \acs{csv}-Dateien und \acs{db}} \label{sec:dataanalysis}
 Die Analyse der Information der \ac{icd10gm} wurde mit Hilfe von \ac{sql}-Befehlen und der Skript Sprache Python unter dem Framework Jupyter-Notebook durchgeführt.
 
-Wie in der Tabelle~\ref{tab:icdfiles} dargestellt wird, jede Kode-Datei enthält mehr als \textsf{15450} Codes, obwohl manche Kodierungen gelöscht werden, nimmt die Menge neuer \ac{icd10gm} ständig zu.
+Wie in der Tabelle~\ref{tab:icdfiles} dargestellt wird, jede Kode-Datei enthält mehr als \textsf{15450} Kodes, obwohl manche Kodierungen gelöscht werden, nimmt die Menge neuer \ac{icd10gm} ständig zu.
 
 \begin{table}[ht]
 	\centering
@@ -44,7 +44,7 @@ Nach dem Durchlauf der \ac{etl} sind insgesamt \textsf{16520} \ac{icd10gm} von 2
 
 \section{Neue \acs{icd10gm}} \label{sec:newicd}
 
-Von 2008 bis 2021 sind insgesamt \textsf{966} neuen \ac{icd10gm} entstanden. In der Abbildung~\ref{fig:newicdyear} ist ein interessantes Aspekt davon repräsentiert, nämlich die Anzahl neuer \ac{icd10gm} pro Jahr ist unregelmäßig. Es gib Jahre wie 2017 und 2018 mit mehr als \textsf{120} neue Einträge. Dieses Phänomen passiert am meisten beim Bedarf neuer Subklassifikationen, um die Diagnosen spezifischer zu kodieren und an diverse klinischen Systeme anzupassen. Ein Beispiel dieses Phonemen ist der Code \textsf{U81!} \textsf{Bakterien mit Multiresistenz gegen Antibiotika}, dieser wurde in 2017 entnommen und stattdessen entstand die Kodierung \textsf{U81.-!} \textsf{Gramnegative Erreger mit bestimmten Antibiotikaresistenzen, die besondere therapeutische oder hygienische Maßnahmen erfordern} zusammen mit \textsf{43} weiteren Subklassifikationen von \textsf{U81.0-!} bis \textsf{U81.8!}. Die Ursache davon war eine Umstrukturierung der Bereiche \textsf{U81!}, um diese Codes an die Nomenklatur der \ac{krinko} anzupassen \cite{erreg17}.
+Von 2008 bis 2021 sind insgesamt \textsf{966} neuen \ac{icd10gm} entstanden. In der Abbildung~\ref{fig:newicdyear} ist ein interessantes Aspekt davon repräsentiert, nämlich die Anzahl neuer \ac{icd10gm} pro Jahr ist unregelmäßig. Es gib Jahre wie 2017 und 2018 mit mehr als \textsf{120} neue Einträge. Dieses Phänomen passiert am meisten beim Bedarf neuer Subklassifikationen, um die Diagnosen spezifischer zu kodieren und an diverse klinischen Systeme anzupassen. Ein Beispiel dieses Phonemen ist der Kode \textsf{U81!} \textsf{Bakterien mit Multiresistenz gegen Antibiotika}, dieser wurde in 2017 entnommen und stattdessen entstand die Kodierung \textsf{U81.-!} \textsf{Gramnegative Erreger mit bestimmten Antibiotikaresistenzen, die besondere therapeutische oder hygienische Maßnahmen erfordern} zusammen mit \textsf{43} weiteren Subklassifikationen von \textsf{U81.0-!} bis \textsf{U81.8!}. Die Ursache davon war eine Umstrukturierung der Bereiche \textsf{U81!}, um diese Kodes an die Nomenklatur der \ac{krinko} anzupassen \cite{erreg17}.
 
 Im Jahr 2018 wurden mehr als \textsf{80} neue \ac{icd10gm} in der Bereiche \textsf{M14.-*} \textsf{Arthropathien bei sonstigen anderenorts klassifizierten Krankheiten} eingefügt. Diese Zunahme ist auch in der Abbildung~\ref{fig:newicdcap} widerspiegelt, denn diese Diagnosen sind im Kapitel \textsf{Krankheiten des Muskel-Skelett-Systems und des Bindegewebes} repräsentiert. Die Ursache diese Zunahme war die Insertion einer fünften Stelle an der Kodierung, um die Abbildung im \ac{gdrg}-System zu ermöglichen \cite{musk18}.
 
@@ -57,7 +57,7 @@ Im Jahr 2018 wurden mehr als \textsf{80} neue \ac{icd10gm} in der Bereiche \text
 	\label{fig:newicdyear}
 \end{figure} 
 
-Ein wichtiger und aktueller Punkt sind die meldepflichtigen Krankheiten in der Laufe der Jahre. Dieses Phonemen ist in der Abbildung~\ref{fig:newicdmeld} dargestellt. Es ist zu erkennen, dass neue meldepflichtigen Codes in den Jahren 2010, 2016 und 2021 definiert wurden (Tabelle~\ref{tab:meldung}). Ursachen davon sind Pandemien und Epidemien wie die Influenza Varianten zwischen 2009 und 2010 \cite{influenza1, influenza2}, die Verbreitung des Dengue Fiebers in Europa als Effekt der Globalisierung mit der steigenden Mobilität \cite{denge1} und Verbreitung der asiatischen Tigermücke \textsl{Aedes (Stegomyia) albopictus} zwischen 2015 und 2016 in der Region als Konsequenz der milden Winter \cite{denge2}, und noch aktuell seit Februar 2020 die Verbreitung des Corona Virus in Europa \cite{corona1} und deren gesundheitlichen Folgen \cite{corona2}. 
+Ein wichtiger und aktueller Punkt sind die meldepflichtigen Krankheiten in der Laufe der Jahre. Dieses Phonemen ist in der Abbildung~\ref{fig:newicdmeld} dargestellt. Es ist zu erkennen, dass neue meldepflichtigen Kodes in den Jahren 2010, 2016 und 2021 definiert wurden (Tabelle~\ref{tab:meldung}). Ursachen davon sind Pandemien und Epidemien wie die Influenza Varianten zwischen 2009 und 2010 \cite{influenza1, influenza2}, die Verbreitung des Dengue Fiebers in Europa als Effekt der Globalisierung mit der steigenden Mobilität \cite{denge1} und Verbreitung der asiatischen Tigermücke \textsl{Aedes (Stegomyia) albopictus} zwischen 2015 und 2016 in der Region als Konsequenz der milden Winter \cite{denge2}, und noch aktuell seit Februar 2020 die Verbreitung des Corona Virus in Europa \cite{corona1} und deren gesundheitlichen Folgen \cite{corona2}. 
 
 Ein interessantes Aspekt der meldepflichtigen Krankheiten in der Tabelle~\ref{tab:meldung} ist die Diagnose \textsf{B17.9} \textsf{Akute Virushepatitis, nicht näher bezeichnet}. Diese Krankheit war unter \textsf{K72.0} \textsf{Akutes und subakutes Leberversagen} zugeordnet, erst in 2010 wurde zur Kenntnis genommen dass, die akute Hepatitis in manche Fälle um eine akute infektiöse Hepatitis handelt. Aus diesem Grund hatte die \ac{who} die Schlüsselnummer \textsf{B17.9} zur Verfügung gestellt \cite{komm10}.
 
@@ -105,7 +105,7 @@ Ein interessantes Aspekt der meldepflichtigen Krankheiten in der Tabelle~\ref{ta
 
 \section{Modifizierte \acs{icd10gm}} \label{sec:updicd}
 
-Jedes Jahr werden Änderungen in der Metadaten der \ac{icd10gm} vorgenommen. Solche Modifikationen sind in der Tabelle \ref{tab:icdupd} ausgelistet. Wie in der Sektion~\ref{sec:dataanalysis} genannt wurde, Die meiste Änderungen sind an den Spalten für die verschiedenen Stellen der Codes, weil diese Felder erst im Jahr 2013 entstanden sind \cite{readme13}. Ein weiteres Aspekt in Bezug auf die zahlreichen Änderungen ist, dass die Werte verschiedener Felder bei manchen \ac{icd10gm} in früheren Fassungen noch nicht definiert waren, wie in der Tabelle~\ref{tab:icdupd} bei den Fällen der Mortaliätslisten verdeutlicht wird. Die Werte solche Listen bei der meisten Codes im Jahr 2007 waren nicht definiert, und waren mit dem Wert \textsf{UNDEF} gesetzt. Erst in 2008 wurden diese Felder durch einen spezifischen Wert ersetzt. Die zahlreiche Modifikationen an der Klassentitel sind durch Vorschläge zur Weiterentwicklung der Klassifikationen entstanden \cite{diab09, komm14}. 
+Jedes Jahr werden Änderungen in der Metadaten der \ac{icd10gm} vorgenommen. Solche Modifikationen sind in der Tabelle \ref{tab:icdupd} ausgelistet. Wie in der Sektion~\ref{sec:dataanalysis} genannt wurde, Die meiste Änderungen sind an den Spalten für die verschiedenen Stellen der Kodes, weil diese Felder erst im Jahr 2013 entstanden sind \cite{readme13}. Ein weiteres Aspekt in Bezug auf die zahlreichen Änderungen ist, dass die Werte verschiedener Felder bei manchen \ac{icd10gm} in früheren Fassungen noch nicht definiert waren, wie in der Tabelle~\ref{tab:icdupd} bei den Fällen der Mortaliätslisten verdeutlicht wird. Die Werte solche Listen bei der meisten Kodes im Jahr 2007 waren nicht definiert, und waren mit dem Wert \textsf{UNDEF} gesetzt. Erst in 2008 wurden diese Felder durch einen spezifischen Wert ersetzt. Die zahlreiche Modifikationen an der Klassentitel sind durch Vorschläge zur Weiterentwicklung der Klassifikationen entstanden \cite{diab09, komm14}. 
 %  Ein Beispiel davon ist die Schlüsselnummer \textsf{E10.31} mit dem Titel \textsf{Primär insulinabhängiger Diabetes mellitus [Typ-1-Diabetes] \underline{mit} Augenkomplikationen: Als entgleist bezeichnet}. Dieser Titel wurde zu \textsf{Primär insulinabhängiger Diabetes mellitus [Typ-1-Diabetes] \underline{: Mit } Augenkomplikationen: Als entgleist bezeichnet} in 2009 geändert. Die Änderung wurde in diesem Jahr durchgeführt, da eine fünfte Stelle in der Klassifikationen von \textsf{E10}  bis \textsf{E14} eingefügt wurde \cite{diab09}. Der Titel dieser \ac{icd10gm} wurde nochmal in 2014 zu \textsf{\underline{Diabetes mellitus, Typ 1: Mit Augenkomplikationen: Als entgleist bezeichnet}} ersetzt. In diesem Jahr wurden die Titel von der \ac{who} an die gebräuchliche Terminologie angepasst \cite{komm14}.
 
 %\clearpage
@@ -142,7 +142,7 @@ Jedes Jahr werden Änderungen in der Metadaten der \ac{icd10gm} vorgenommen. Sol
 		44 & Kategorie der Gruppe \\ \hline
 		40 & Arzt-Meldepflicht \\ \hline		
 		31 & Sehr seltene Krankheit in Mitteleuropa \\ \hline				
-		6 & Belegung des Codes \\ \hline
+		6 & Belegung des Kodes \\ \hline
 		3 & \S 295 \ac{sgb} V \\ \hline		
 		2 & Klassifikationsebene \\ \hline
 		
@@ -151,7 +151,7 @@ Jedes Jahr werden Änderungen in der Metadaten der \ac{icd10gm} vorgenommen. Sol
 
 Ein interessantes Aspekt an der Stelle des Geschlechtsbezugs ist, dass \textsf{52} Diagnosen mit Geschlechtsbezug der \textsf{68} an dieser Stelle geänderte Schlüsselnummer, Krankheiten der Brustdrüse sind. Diese \ac{icd10gm} waren frühe auf das weibliche Geschlecht bezogen, jetzt ist der Geschlechtsbezug diese Kodierungen irrelevant. Viele dieser Änderungen wurden in den Jahren 2008 und 2016 vorgenommen. An dieser Stelle können wir nicht erklären, wieso diese Art von Krankheiten nicht immer ohne Geschlechtsbezug waren, denn seit 1930 existieren medizinische Publikationen über Brustdrüse Anomalien bei Männer \cite{bcm}, in der heutigen Tagen gib es eine leichte Zuname an Männer mit Brustkrebs beobachtet \cite{giobcm} und die erste Fassung der \ac{icd10gm} für die Zwecke des \ac{sgb} V wurde schon in 1996 erarbeitet \cite{icdgmhistory}.
 
-\clearpage´
+\clearpage
 
 \begin{table}[ht]
 	\centering
@@ -201,7 +201,7 @@ In jeder Fassung von 2008 bis 2021 werden \ac{icd10gm} gelöscht. Dieses Verhalt
 \end{figure}
 
 
-Die Abbildung \ref{fig:oldicdort} zeigt, dass die meisten Codes, nämlich \textsf{295} der \textsf{321} gelöschten Kodierungen, terminale Schlüsselnummer waren, also \ac{icd10gm} ohne Subkategorien. Davon wurden \textsf{115} erweitert, wie in der Sektion \ref{sec:newicd} Anhang des Beispiel von \textsf{U81!} \textsf{Bakterien mit Multiresistenz gegen Antibiotika} erläutert wurde. Von der nicht terminalen Kodierungen wurden dann \textsf{11} erweitert. Ein Beispiel davon ist \textsf{Z75.2-} \textsf{Wartezeit auf eine Untersuchung oder Behandlung}. Diese nicht terminale Kodierung wurde gelöscht und von dem terminalen Code \textsf{Z75.2} mit demselben Titel ersetzt. 
+Die Abbildung \ref{fig:oldicdort} zeigt, dass die meisten Kodes, nämlich \textsf{295} der \textsf{321} gelöschten Kodierungen, terminale Schlüsselnummer waren, also \ac{icd10gm} ohne Subkategorien. Davon wurden \textsf{115} erweitert, wie in der Sektion \ref{sec:newicd} Anhang des Beispiel von \textsf{U81!} \textsf{Bakterien mit Multiresistenz gegen Antibiotika} erläutert wurde. Von der nicht terminalen Kodierungen wurden dann \textsf{11} erweitert. Ein Beispiel davon ist \textsf{Z75.2-} \textsf{Wartezeit auf eine Untersuchung oder Behandlung}. Diese nicht terminale Kodierung wurde gelöscht und von dem terminalen Kode \textsf{Z75.2} mit demselben Titel ersetzt. 
 
 %\clearpage
 
@@ -236,9 +236,9 @@ Die Tabelle \ref{tab:wieder} zeigt die \textsf{4} Schlüsselnummer, die wiederve
 
 Die Schlüsselnummer \textsf{M21.6-} und \textsf{M21.60} wurden in 2013 entnommen, da im Kodebereich \textsf{M20-M25} zahlreiche Schlüssel zu keine sinnvolle Kombinationen führten \cite{dele13}. Andererseits in 2015 wurde die Kategorie \textsf{M21.6} mit den genannten Schlüsselnummer wieder aufgenommen, um eine bessere Spezifikation der Diagnosen in dem \ac{gdrg}-System \cite{komm15}. 
 
-Die \ac{icd10gm} \textsf{N90.8} wurde in 2014 entnommen und stattdessen wurde \textsf{N90.8-} \textsf{Sonstige näher bezeichnete nichtentzündliche Krankheiten der Vulva und des Perineums} mit weiteren Subklassifikationen zur spezifischen Kodierung eingeführt \cite{komm14}. Zwei Jahre später in 2016 wurde der Code \textsf{N90.8-} und deren Unterkategorien wieder entnommen und zu anderem Kapitel mit neuen Kodierungen verlagert, und die Schlüsselnummer \textsf{N90.8} wurde wieder eingeführt \cite{komm16}.
+Die \ac{icd10gm} \textsf{N90.8} wurde in 2014 entnommen und stattdessen wurde \textsf{N90.8-} \textsf{Sonstige näher bezeichnete nichtentzündliche Krankheiten der Vulva und des Perineums} mit weiteren Subklassifikationen zur spezifischen Kodierung eingeführt \cite{komm14}. Zwei Jahre später in 2016 wurde der Kode \textsf{N90.8-} und deren Unterkategorien wieder entnommen und zu anderem Kapitel mit neuen Kodierungen verlagert, und die Schlüsselnummer \textsf{N90.8} wurde wieder eingeführt \cite{komm16}.
 
-Die Kodierungsschlüssel \textsf{K55.8} wurde in 2010 gelöscht und die Kodierung \textsf{K55.8-} \textsf{Sonstige Gefäßkrankheiten des Darmes} mit weiteren Stellen eingeführt, um einige Diagnosen des Dünndarms bessern abgrenzen zu können \cite{komm10}. In 2019 wurde die \ac{icd10gm} \textsf{K55.3-}   \textsf{Angiodysplasie des Dünndarmes} mit weiteren fünfstelligen Codes eingeführt und die, in 2010, eingeführte Klassifikationen wurden auf dem neuen Kodeberich verlagert, sodass die Kodierungen von 2010 obsolet wurden, und \textsf{K55.8} wieder benutzt wurde \cite{komm19}.
+Die Kodierungsschlüssel \textsf{K55.8} wurde in 2010 gelöscht und die Kodierung \textsf{K55.8-} \textsf{Sonstige Gefäßkrankheiten des Darmes} mit weiteren Stellen eingeführt, um einige Diagnosen des Dünndarms bessern abgrenzen zu können \cite{komm10}. In 2019 wurde die \ac{icd10gm} \textsf{K55.3-}   \textsf{Angiodysplasie des Dünndarmes} mit weiteren fünfstelligen Kodes eingeführt und die, in 2010, eingeführte Klassifikationen wurden auf dem neuen Kodeberich verlagert, sodass die Kodierungen von 2010 obsolet wurden, und \textsf{K55.8} wieder benutzt wurde \cite{komm19}.
 
 \section{Strukturelle Änderungen} \label{sec:strucmodif}
 
@@ -246,7 +246,7 @@ Wie in der Subsektion \ref{subsec:transf} genannt wurde, es gab auch Änderungen
 
 \section{Zeitliche Entwicklung der \acs{icd10gm}} \label{sec:timeicd}
 
-Vorher wurden die verschiedenen Änderungen in dem semantischen Verzeichnis und einige Gründe davon genannt und erklärt. In der Tabelle~\ref{tab:IUDDI} wird, Anhang von einem Beispiel, die chronologische Entwicklung der \ac{icd10gm} in der Tabelle \textsf{icd10gm\_history} der \ac{db} gezeigt. Die Spalte Fassung, \textsf{ver} in der Tabelle \textsf{icd10gm\_history}, zeigt die Version der Einführung, Änderung, Löschung oder Wiederverwendung einer \ac{icd10gm}. Das Feld Alte Fassung, \textsf{oldver} in der vorher genannten Tabelle, beinhaltet den Identifikator der vorherigen Fassung einer Schlüsselnummer. In der Spalte Ereignis, \textsf{verevent} in der Tabelle \textsf{icd10gm\_history}, sind die Ereignisse Einführung, Änderung, Löschung und Wiederverwendung, wie in der Subsektion~\ref{subsec:newtables} beschrieben wurden, kodiert. Eine wichtige Anmerkung in der Darstellung ist, dass die gezeigte alte Fassung bei der wiederverwendete Klassifikationen, die Version der Insertion oder der letzten Änderung ist, weil dieser Code in der Fassung der Löschung nicht vorhanden war.
+Vorher wurden die verschiedenen Änderungen in dem semantischen Verzeichnis und einige Gründe davon genannt und erklärt. In der Tabelle~\ref{tab:IUDDI} wird, Anhang von einem Beispiel, die chronologische Entwicklung der \ac{icd10gm} in der Tabelle \textsf{icd10gm\_history} der \ac{db} gezeigt. Die Spalte Fassung, \textsf{ver} in der Tabelle \textsf{icd10gm\_history}, zeigt die Version der Einführung, Änderung, Löschung oder Wiederverwendung einer \ac{icd10gm}. Das Feld Alte Fassung, \textsf{oldver} in der vorher genannten Tabelle, beinhaltet den Identifikator der vorherigen Fassung einer Schlüsselnummer. In der Spalte Ereignis, \textsf{verevent} in der Tabelle \textsf{icd10gm\_history}, sind die Ereignisse Einführung, Änderung, Löschung und Wiederverwendung, wie in der Subsektion~\ref{subsec:newtables} beschrieben wurden, kodiert. Eine wichtige Anmerkung in der Darstellung ist, dass die gezeigte alte Fassung bei der wiederverwendete Klassifikationen, die Version der Insertion oder der letzten Änderung ist, weil dieser Kode in der Fassung der Löschung nicht vorhanden war.
 
 Somit könnten wir erkennen, dass unsere Implementierung die Lebenszyklus von \ac{icd10gm} Klassifikationen darstellen kann, sodass jede Modifikation in der Semantik zwischen 2007 und 2021 dokumentiert ist.
 \clearpage
@@ -258,7 +258,7 @@ Somit könnten wir erkennen, dass unsere Implementierung die Lebenszyklus von \a
 	\label{tab:IUDDI}
 	\begin{tabular}{|l|l|p{6cm}|l|l|}
 		\hline
-		\rowcolor{lightgray} Fassung & Code & Titel & Alte Fassung & Ereignis \\ \hline
+		\rowcolor{lightgray} Fassung & Kode & Titel & Alte Fassung & Ereignis \\ \hline
 			2007 & N90.8  & Sonstige näher bezeichnete nichtentzündliche Krankheiten der Vulva und des Perineums &  & I \\ \hline
 			2008 & N90.8  & Sonstige näher bezeichnete nichtentzündliche Krankheiten der Vulva und des Perineums & 2007 & U \\ \hline
 			2013 & N90.8  & Sonstige näher bezeichnete nichtentzündliche Krankheiten der Vulva und des Perineums & 2008 & U \\ \hline

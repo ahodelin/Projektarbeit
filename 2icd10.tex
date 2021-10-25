@@ -27,11 +27,78 @@ Die alphabetische Zuordnung des Kodes entsteht aus der gewohnten Diagnosentexte.
 
 \subsection{Systematisches Verzeichnis (Systematik)} \label{subsec:sistematic}
 
-Die Systematik ist eine hierarchisch geordnete Liste der vierstelligen Systematik des Kodes \cite{icd10syst}. Diese Hierarchieebenen der \ac{icd10gm} sind Kapitel, Gruppe/Bereiche, Kategorie (Kode bis zur dritten Stelle), Subkategorien (vierstellige oder fünfstellige Kodes) \cite{icd10systauf}. Für die Durchführung und den Zweck dieses Projekts wird mit dem systematischen Verzeichnis der \ac{icd10gm} und deren vom \ac{bfarm} veröffentlichen Dateien und Metadaten gearbeitet.
+Die Systematik ist die hierarchisch geordnete Liste der \ac{icd10gm}-Kodierung \cite{icd10syst}. Diese Hierarchie enthält bis zu fünf Ebenen, diese sind in Kapitel, Gruppen, Kategorien (Kode bis zur dritten Stelle), und Subkategorien (vierstellige oder fünfstellige Kodes) gegliedert \cite{icd10systauf}.
+
+Für die Durchführung und Zwecke dieses Projekts wird mit dem systematischen Verzeichnis gearbeitet.
+
+\subsubsection{Kapitel} \label{subsubsec:chapters}
+
+Der thematische Bereich aller Diagnosen ist in 22 Kapiteln, von I bis XXII, abgedeckt. Der Kern davon sind die organspezifischen Krankheiten von Kapiteln III bis XIV. Die nicht organspezifischen Krankheiten werden in den reichlichen Kapiteln zusammengefasst. Jeder dargestellte Kodebereich wird durch einen bis vier Buchstaben gekennzeichnet, diese Buchstaben sind das erste Zeichen einer Kodierung \cite{icd10systauf}. Die Tabelle~\ref{tab:chapter} zeigt drei Beispiele von Kapiteln.
+
+\begin{table}[ht]
+	\centering
+	\small
+	\caption{Beispiele von Kapiteln.}
+	\label{tab:chapter}
+	\begin{tabular}{|l|l|p{8cm}|}
+		\hline
+		\rowcolor{lightgray} Kapitel & Kodebereich & Titel \\
+		\hline 
+		I &  \textsf{A09-B99} & Infektiöse Darmkrankheiten \\ \hline
+		II &  \textsf{C00-D48} & Neubildungen \\ \hline
+		XX &  \textsf{V01-Y98} & Äußere Ursachen von Morbidität und Mortalität \\ \hline
+	\end{tabular}
+\end{table}
+
+\subsubsection{Gruppen} \label{subsubsec:groups}
+
+Jede Gruppe besteht aus einem unteren und oberen Kodebereich, somit werden ca. 241 Gruppen aufgebaut. Die Bereiche werden durch einen dreistelligen alphanumerischen Kode repräsentiert. Der Buchstabe der unteren und oberen Kodebereichen ist immer derselbe \cite{icd10systauf}. Die Tabelle~\ref{tab:group} stellt Beispiele von drei Gruppen dar.
+
+%\clearpage
+
+\begin{table}[ht]
+	\centering
+	\small
+	\caption{Beispiele von Gruppen.}
+	\label{tab:group}
+	\begin{tabular}{|l|l|l|p{8cm}|}
+		\hline
+		\rowcolor{lightgray} Gruppe von & Gruppe bis & Kapitel & Titel \\
+		\hline 
+		\textsf{A00} &  \textsf{A09} & I & Infektiöse Darmkrankheiten \\ \hline
+		\textsf{F99} &  \textsf{F99} & V & Nicht näher bezeichnete psychische Störungen \\ \hline
+		\textsf{U98} &  \textsf{U99} & XXII & Belegte und nicht belegte Schlüsselnummern \\ \hline
+	\end{tabular}
+\end{table}
+
+\subsubsection{Kategorien und Subkategorien} \label{subsubsec:categorysubcat}
+
+Kategorien oder \ac{icd10gm} Kodierungen haben in der Regel Subkategorien und sind maximal fünfstellig. Jeder Kodierung beginn mit einem Großbuchstabe gefolgt von zwei Ziffern, die sogenannten dreistelligen Kodes. Andere haben einen Punkt direkt nach den zwei Ziffern gefolgt von einer oder zwei weiteren Ziffern, die vier- und fünfstellige Kodes. Manche dreistellige Kodes stehen für einzelne Diagnosen und stellen somit eine Kategorie dar. Andere besitzen Subkategorien, deren Kodes vier oder fünf Stellen haben können, und  mehrere Krankheiten mit gemeinsamen Merkmalen zusammenfassen \cite{icd10systauf, icd10kateg}. 
+
+Einige vier- oder fünfstellige Subkategorien sind postkombinierte Kodes, das heißt, der Kode wird mit Hilfe einer Liste mit möglichen Werten für die restlichen Stellen gebildet \cite{icd10kateg}. Es gib weitere Merkmale der Kategorie und Kodierung, aber diese werden nicht in diesem Projekt behandelt. Die Tabelle~\ref{tab:catsubcat} illustriert Beispiele von Kategorien und Subkategorien.
+
+%\clearpage
+
+\begin{table}[ht]
+	\centering
+	\small
+	\caption{Beispiele von Kategorien und Subkategorien.}
+	\label{tab:catsubcat}
+	\begin{tabular}{|l|l|l|p{8cm}|}
+		\hline
+		\rowcolor{lightgray} Ebene & Stellen & Kode & Titel \\
+		\hline 
+		Kategorie &  drei & \textsf{B25} & Zytomegalie \\ \hline
+		Subkategorie &  vier & \textsf{B25.0} & Pneumonie durch Zytomegalieviren \\ \hline
+		Subkategorie &  fünf & \textsf{B25.80} & Infektion des Verdauungstraktes durch Zytomegalieviren \\ \hline
+	\end{tabular}
+\end{table}
 
 \section{Metadaten} \label{sec:metadata}
 
 Das \ac{bfarm} veröffentlicht zwischen September und Dezember eines Jahres die Metadaten der neuen Fassung der \ac{icd10gm} in einem komprimierten Ordner in einem \ac{zip}-Datei mit Unterordnern  mit Kodierungsdateien und weiteren Informationen. Der Unterordner Klassifikationsdateien enthält die Dateien der aktuellen Fassung der \ac{icd10gm} wie in der Tabelle~\ref{tab:classfiles} dargestellt wird. Diese Dateien sind in \ac{csv}-Format mit \glqq ;\grqq{} als Trendzeichen. Die \ac{zip}-Datei enthält auch eine Liesmich-Datei unter der Name \textsf{icd10gmJJJJsyst\_metadaten\_liesmich.txt}, wobei \textsf{JJJJ} das Jahr der Fassung darstellt, mit der Beschreibung aller \ac{csv}-Dateien, Information der vorkommenden Erneuerungen in der Struktur dieser Dateien, und \ac{sql}-Statements für den Aufbau einer \ac{db}. Die \ac{zip}-Dateien der Version des laufenden Jahres und der Vorgängerversionen befinden sich auf der Seite \href{https://www.dimdi.de/dynamic/de/klassifikationen/downloads/}{Downloads} der Klassifikationen der \ac{bfarm} Webseite in der Sektion \ac{icd10gm}. Die Namen der Links zu den \ac{zip}-Dateien haben die Struktur \textsf{\ac{icd10gm} Version JJJJ} und die Struktur der Namen der \ac{zip}-Dateien ist \textsf{\ac{icd10gm}JJJJ.zip}.
+
+%\clearpage
 
 \begin{table}[ht]
 	\centering

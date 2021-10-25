@@ -32,7 +32,7 @@ Die Tabelle \textsf{icd10gm\_history} enthält die Information der \ac{icd10gm},
 
 Mit Hilfe einer \ac{etl}-Strecke werden die Daten aus der \ac{zip}-Dateien in der \ac{db} importiert. Die Information der Veröffentlichung der \ac{icd10gm} wird in der Tabelle \textsf{icd10gm\_release \_info} eingefügt. Bei jeder Ladung wird die Information der Tabelle \textsf{kodes} vorher gelöscht und mit neuen Datensätzen geladen. 
 
-Die Codes, die vorher nicht in der Tabelle \textsf{icd10gm} vorhanden waren, werden in dieser und in der Tabelle \textsf{icd10gm\_history} kopiert. Diese Datensätze werden in \textsf{icd10gm\_history} als eingefügt markiert. 
+Die Kodes, die vorher nicht in der Tabelle \textsf{icd10gm} vorhanden waren, werden in dieser und in der Tabelle \textsf{icd10gm\_history} kopiert. Diese Datensätze werden in \textsf{icd10gm\_history} als eingefügt markiert. 
 
 Nicht in \textsf{kodes} existierende \ac{icd10gm} werden aus \textsf{icd10gm} in \textsf{icd10gm\_history} kopiert. Diese Kopie wird als gelöscht markiert, und enthält die Indikatoren der Fassung der Insertion oder der letzten Änderung in der Spalte \textsf{oldver}, und der Fassung der Löschung in der Spalte \textsf{ver}. 
 
