@@ -44,7 +44,7 @@ Nach dem Durchlauf der \ac{etl} sind insgesamt 16520 \ac{icd10gm} von 2007 bis 2
 
 \section{Zeitliche Entwicklung der \acs{icd10gm}} \label{sec:timeicd}
 
-Die Darstellung der Besonderheiten eines Lebenszyklus der historischen \ac{icd10gm} Auffassungen ist in der Tabelle~\ref{tab:IUDDI} exemplarisch dargestellt. Das Beispiel zeigt die chronologische Entwicklung der \ac{icd10gm} in der Tabelle \textsf{icd10gm\_history} der \ac{db}. Die Spalte Fassung, \textsf{ver} in der Tabelle \textsf{icd10gm\_history}, zeigt die Version der Einführung, Änderung, Löschung oder Wiederverwendung einer \ac{icd10gm}. Das Feld Alte Fassung, \textsf{oldver} in der vorher genannten Tabelle, beinhaltet den Identifikator der vorherigen Fassung einer Schlüsselnummer. In der Spalte Ereignis, \textsf{verevent} in der Tabelle \textsf{icd10gm\_history}, sind die Ereignisse Einführung, Änderung, Löschung und Wiederverwendung, wie in der Subsektion~\ref{subsec:newtables} beschrieben wurden, kodiert. Eine wichtige Anmerkung in der Darstellung ist, dass die gezeigte alte Fassung bei der wiederverwendete Klassifikationen, die Version der Insertion oder der letzten Änderung ist, weil dieser Kode in der Fassung der Löschung nicht vorhanden war.
+Die Darstellung der Besonderheiten eines Lebenszyklus der historischen \ac{icd10gm} Auffassungen ist in der Tabelle~\ref{tab:IUDDI} exemplarisch dargestellt. Das Beispiel zeigt die chronologische Entwicklung der \ac{icd10gm} in der Tabelle \textsf{icd10gm\_history} der \ac{db}. Die Spalte Fassung, \textsf{ver} in der Tabelle \textsf{icd10gm\_history}, zeigt die Version der Einführung, Änderung, Löschung oder Wiederverwendung einer \ac{icd10gm}. Das Feld Alte Fassung, \textsf{oldver} in der vorher genannten Tabelle, beinhaltet den Identifikator der vorherigen Fassung einer Schlüsselnummer. In der Spalte Ereignis, \textsf{verevent} in der Tabelle \textsf{icd10gm\_history}, sind die Ereignisse Einführung, Änderung, Löschung und Wiederverwendung, wie in der Subsektion~\ref{subsec:newtables} beschrieben wurden, kodiert. Eine wichtige Anmerkung in der Darstellung ist, dass die gezeigte alte Fassung bei der wiederverwendeten Klassifikationen, die Version der Insertion oder der letzten Änderung ist, weil dieser Kode in der Fassung der Löschung nicht vorhanden war.
 
 Somit könnten wir erkennen, dass unsere Implementierung die Lebenszyklus von \ac{icd10gm} Klassifikationen darstellen kann, sodass jede Modifikation in der Semantik zwischen 2007 und 2021 dokumentiert ist. In den weiteren Sektionen werden die verschiedenen Änderungen in dem semantischen Verzeichnis und einigen Sonderverzeichnissen gezeigt und deren Gründe erklärt.
 %\clearpage
@@ -52,7 +52,7 @@ Somit könnten wir erkennen, dass unsere Implementierung die Lebenszyklus von \a
 \begin{table}[ht]
 	\centering
 	\small
-	\caption[Beispiel der Historisierung einer \acs{icd10gm} Klassifikation]{Beispiel der Historisierung einer \acs{icd10gm} Klassifikation. Dieses stellt eine, nach der Einführung, veränderte, gelöschte, und wieder benutzte Schlüsselnummer dar.}
+	\caption[Beispiel der Historisierung einer \acs{icd10gm} Klassifikation]{Beispiel der Historisierung einer \acs{icd10gm} Klassifikation. Diese stellt eine, nach der Einführung, veränderte, gelöschte, und wieder benutzte Schlüsselnummer dar.}
 	\label{tab:IUDDI}
 	\begin{tabular}{|l|l|p{6cm}|l|l|}
 		\hline
@@ -172,13 +172,13 @@ Jedes Jahr werden Änderungen in den Metadaten der \ac{icd10gm} vorgenommen. Sol
 	\end{tabular}
 \end{table}
 
-Ein interessantes Aspekt an der Stelle des Geschlechtsbezugs ist, dass \textsf{52} Diagnosen mit Geschlechtsbezug der \textsf{68} an dieser Stelle geänderten Schlüsselnummer, Krankheiten der Brustdrüse sind. Diese \ac{icd10gm} waren frühe auf das weibliche Geschlecht bezogen, jetzt ist der Geschlechtsbezug dieser Kodierungen irrelevant. Viele dieser Änderungen wurden in den Jahren 2008 und 2016 vorgenommen. An dieser Stelle können wir nicht erklären, wieso diese Art von Krankheiten nicht immer ohne Geschlechtsbezug waren, denn seit 1930 existieren medizinische Publikationen über Brustdrüse Anomalien bei Männer~\cite{bcm}, in der heutigen Tagen gib es eine leichte Zuname an Männer mit Brustkrebs beobachtet~\cite{giobcm} und die erste Fassung der \ac{icd10gm} für die Zwecke des \ac{sgb} V wurde schon in 1996 erarbeitet~\cite{icdgmhistory}.
+Ein interessantes Aspekt an der Stelle des Geschlechtsbezugs ist, dass 52 Diagnosen mit Geschlechtsbezug der 68 an dieser Stelle geänderten Schlüsselnummer, Krankheiten der Brustdrüse sind. Diese \ac{icd10gm} waren frühe auf das weibliche Geschlecht bezogen, jetzt ist der Geschlechtsbezug dieser Kodierungen irrelevant. Viele dieser Änderungen wurden in den Jahren 2008 und 2016 vorgenommen. An dieser Stelle können wir nicht erklären, wieso diese Art von Krankheiten nicht immer ohne Geschlechtsbezug waren, denn seit 1930 existieren medizinische Publikationen über Brustdrüsen Anomalien bei Männer~\cite{bcm}. In den heutigen Tagen gibt es eine leichte Zunahme an Männern mit Brustkrebs~\cite{giobcm} und die erste Fassung der \ac{icd10gm} für die Zwecke des \ac{sgb} V wurde schon 1996 erarbeitet~\cite{icdgmhistory}.
 
 \clearpage
 
 \begin{table}[ht]
 	\centering
-	\caption[Beispiel von seltenen Krankheiten in Mitteleuropa (Diphtherie und Poliomyelitis)]{Beispiel von seltenen Krankheiten in Mitteleuropa anhand von \ac{icd10gm} der Bereiche \textsf{A36.-} \textsf{Diphtherie} und \textsf{A80.-} \textsf{Akute Poliomyelitis [Spinale Kinderlähmung]}. Die alten und neuen Werte sind in der Spalte \glqq Alt\grqq{} bzw. \glqq Neu\grqq{}. \textsf{N} Nein, \textsf{J} Ja}
+	\caption[Beispiel von seltenen Krankheiten in Mitteleuropa (Diphtherie und Poliomyelitis)]{Beispiel von seltenen Krankheiten in Mitteleuropa anhand von \ac{icd10gm} der Bereiche \textsf{A36.-} \textsf{Diphtherie} und \textsf{A80.-} \textsf{Akute Poliomyelitis [Spinale Kinderlähmung]}. Die alten und neuen Werte sind in der Spalte \glqq Alt\grqq{} bzw. \glqq Neu\grqq{}. \glqq\textsf{N}\grqq{} Nein, \glqq\textsf{J}\grqq{}\grqq{} Ja.}
 	\label{tab:icdeuropa}
 	\begin{tabular}{|p{1.6cm}|l|p{7cm}|l|l|}
 		\hline
@@ -200,17 +200,17 @@ Ein interessantes Aspekt an der Stelle des Geschlechtsbezugs ist, dass \textsf{5
 	\end{tabular}
 \end{table}
 
-Von den sehr seltenen Krankheiten in Mitteleuropa sind \textsf{20} der \textsf{31} Diagnosen belegte Schlüsselnummer, also Kodierungen ohne Unterkategorien und somit in dem alltäglichen  Gebrauch. Davon gehören \textsf{12} zu den Bereichen \textsf{A36.-} \textsf{Diphtherie} und \textsf{A80.-} \textsf{Akute Poliomyelitis [Spinale Kinderlähmung]}. Diese sind in der Tabelle~\ref{tab:icdeuropa} ausgelistet. Diese Diagnosen sind heutzutage selten, die Ursache davon sind die erfolgreiche Impfkampagne in Deutschland, sodass die vom \ac{rki} jährlich selten gemeldeten Fällen in den heutigen Tagen importiert sind~\cite{dippol1}.
+Von den sehr seltenen Krankheiten in Mitteleuropa sind 20 der 31 Diagnosen belegte Schlüsselnummern, also Kodierungen ohne Unterkategorien und somit im alltäglichen  Gebrauch. Davon gehören 12 zu den Bereichen \textsf{A36.-} \textsf{Diphtherie} und \textsf{A80.-} \textsf{Akute Poliomyelitis [Spinale Kinderlähmung]}. Diese sind in der Tabelle~\ref{tab:icdeuropa} ausgelistet. Diese Diagnosen sind heutzutage selten, Ursache ist die erfolgreiche Impfkampagne in Deutschland, sodass die vom \ac{rki} jährlich selten gemeldeten Fällen in den heutigen Tagen importiert sind~\cite{dippol1}.
 
 \section{Gelöschte \acs{icd10gm}} \label{sec:deletedicd}
 
-In jeder Fassung von 2008 bis 2021 werden \ac{icd10gm} gelöscht. Dieses Verhalten ist in der Abbildung~\ref{fig:newdeleteoldicdyear} repräsentiert. Die meiste Schlüsselnummer wurden im Jahr 2013 gelöscht, da eine umfangreiche Umstrukturierung in der Semantik in diesem Jahr vorgenommen wurde. Die Kapitel, die in diesem Jahr am meisten betroffen wurden, sind in der Abbildung~\ref{fig:kap13} dargestellt. Bei der semantischen Umstrukturierung im Jahr 2013 wurden bestimmte Kodebereiche im Kapitel \textsf{Krankheiten des Kreislaufsystems} umfänglich überarbeitet, viele fünfstellige Klassifizierungen wurden von Kapitel \textsf{Krankheiten des Muskel-Skelett-Systems und des Bindegewebes} entnommen, und im Kapitel \textsf{Schlüsselnummern für besondere Zwecke} wurden zahlreiche \ac{icd10gm} umgebaut~\cite{dele13}.
+In jeder Fassung von 2008 bis 2021 werden \ac{icd10gm} gelöscht. Dieses Verhalten ist in der Abbildung~\ref{fig:newdeleteoldicdyear} repräsentiert. Die meisten Schlüsselnummern wurden im Jahr 2013 gelöscht, da eine umfangreiche Umstrukturierung in der Semantik in diesem Jahr vorgenommen wurde. Die Kapitel, die in diesem Jahr am meisten betroffen waren, sind in der Abbildung~\ref{fig:kap13} dargestellt. Bei der semantischen Umstrukturierung im Jahr 2013 wurden bestimmte Kodebereiche im Kapitel \textsf{Krankheiten des Kreislaufsystems} umfänglich überarbeitet, viele fünfstellige Klassifizierungen wurden vom Kapitel \textsf{Krankheiten des Muskel-Skelett-Systems und des Bindegewebes} entnommen, und im Kapitel \textsf{Schlüsselnummern für besondere Zwecke} wurden zahlreiche \ac{icd10gm} umgebaut~\cite{dele13}.
 
 %\clearpage
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=6cm]{figures/neuVersionDelete}
-	\caption[Gelöschte \acs{icd10gm} pro Jahr]{Anzahl gelöschten \acs{icd10gm} zwischen den Jahren 2008 und 2021}
+	\caption[Gelöschte \acs{icd10gm} pro Jahr]{Anzahl gelöschter \acs{icd10gm} zwischen den Jahren 2008 und 2021}
 	\label{fig:newdeleteoldicdyear}
 \end{figure} 
 
@@ -224,14 +224,14 @@ In jeder Fassung von 2008 bis 2021 werden \ac{icd10gm} gelöscht. Dieses Verhalt
 \end{figure}
 
 
-Die Abbildung \ref{fig:oldicdort} zeigt, dass die meisten Kodes, nämlich \textsf{295} der \textsf{321} gelöschten Kodierungen, terminale Schlüsselnummer waren, also \ac{icd10gm} ohne Subkategorien. Davon wurden \textsf{115} erweitert, wie in der Sektion \ref{sec:newicd} Anhang des Beispiel von \textsf{U81!} \textsf{Bakterien mit Multiresistenz gegen Antibiotika} erläutert wurde. Von der nicht terminalen Kodierungen wurden dann \textsf{11} erweitert. Ein Beispiel davon ist \textsf{Z75.2-} \textsf{Wartezeit auf eine Untersuchung oder Behandlung}. Diese nicht terminale Kodierung wurde gelöscht und von dem terminalen Kode \textsf{Z75.2} mit demselben Titel ersetzt. 
+Die Abbildung \ref{fig:oldicdort} zeigt, dass die meisten Kodes, nämlich \textsf{295} der \textsf{321} gelöschten Kodierungen, terminale Schlüsselnummer waren, also \ac{icd10gm} ohne Subkategorien. Davon wurden \textsf{115} erweitert, wie in der Sektion \ref{sec:newicd} Anhang des Beispiel von \textsf{U81!} \textsf{Bakterien mit Multiresistenz gegen Antibiotika} erläutert wurde. Von den nicht terminalen Kodierungen wurden dann \textsf{11} erweitert. Ein Beispiel davon ist \textsf{Z75.2-} \textsf{Wartezeit auf eine Untersuchung oder Behandlung}. Diese nicht terminale Kodierung wurde gelöscht und von dem terminalen Kode \textsf{Z75.2} mit demselben Titel ersetzt. 
 
 %\clearpage
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=6cm]{figures/ortoldYear}
-	\caption{Hierarchie der gelöschte \acs{icd10gm}}
+	\caption{Hierarchie der gelöschten \acs{icd10gm}}
 	\label{fig:oldicdort}
 \end{figure}
 
@@ -239,12 +239,12 @@ Die Abbildung \ref{fig:oldicdort} zeigt, dass die meisten Kodes, nämlich \texts
 
 \section{Wiederverwendete \acs{icd10gm}} \label{sec:delinicd}
 
-Die Tabelle \ref{tab:wieder} zeigt die \textsf{4} Schlüsselnummer, die wiederverwendet wurden.
+Die Tabelle~\ref{tab:wieder} zeigt die 4 Schlüsselnummern, die wiederverwendet wurden.
 
 \begin{table}[ht]
 	\centering
 	\small
-	\caption[Wieder benutzte \acs{icd10gm}]{Liste der wieder benutzten Schlüsselnummer.}
+	\caption[Wieder benutzte \acs{icd10gm}]{Liste der wieder benutzten Schlüsselnummern.}
 	\label{tab:wieder}
 	\begin{tabular}{|l|l|l|p{6cm}|}
 		\hline
@@ -257,12 +257,12 @@ Die Tabelle \ref{tab:wieder} zeigt die \textsf{4} Schlüsselnummer, die wiederve
 \end{tabular}
 \end{table}
 
-Die Schlüsselnummer \textsf{M21.6-} und \textsf{M21.60} wurden in 2013 entnommen, da im Kodebereich \textsf{M20-M25} zahlreiche Schlüssel zu keine sinnvolle Kombinationen führten~\cite{dele13}. Andererseits in 2015 wurde die Kategorie \textsf{M21.6} mit den genannten Schlüsselnummer wieder aufgenommen, um eine bessere Spezifikation der Diagnosen in dem \ac{gdrg}-System~\cite{komm15}. 
+Die Schlüsselnummern \textsf{M21.6-} und \textsf{M21.60} wurden 2013 entnommen, da im Kodebereich \textsf{M20-M25} zahlreiche Schlüssel zu keinen sinnvollen Kombinationen führten~\cite{dele13}. Andererseits wurde 2015 die Kategorie \textsf{M21.6} mit den genannten Schlüsselnummern wieder aufgenommen, um eine bessere Spezifikation der Diagnosen in dem \ac{gdrg}-System zu erreichen~\cite{komm15}. 
 
-Die \ac{icd10gm} \textsf{N90.8} wurde in 2014 entnommen und stattdessen wurde \textsf{N90.8-} \textsf{Sonstige näher bezeichnete nichtentzündliche Krankheiten der Vulva und des Perineums} mit weiteren Subklassifikationen zur spezifischen Kodierung eingeführt~\cite{komm14}. Zwei Jahre später in 2016 wurde der Kode \textsf{N90.8-} und deren Unterkategorien wieder entnommen und zu anderem Kapitel mit neuen Kodierungen verlagert, und die Schlüsselnummer \textsf{N90.8} wurde wieder eingeführt~\cite{komm16}.
+Die \ac{icd10gm} \textsf{N90.8} wurde 2014 entnommen und stattdessen wurde \textsf{N90.8-} \textsf{Sonstige näher bezeichnete nichtentzündliche Krankheiten der Vulva und des Perineums} mit weiteren Subklassifikationen zur spezifischen Kodierung eingeführt~\cite{komm14}. Zwei Jahre später 2016 wurde der Kode \textsf{N90.8-} und deren Unterkategorien wieder entnommen und zu einem anderen Kapitel mit neuen Kodierungen verlagert, und die Schlüsselnummer \textsf{N90.8} wurde wieder eingeführt~\cite{komm16}.
 
-Die Kodierungsschlüssel \textsf{K55.8} wurde in 2010 gelöscht und die Kodierung \textsf{K55.8-} \textsf{Sonstige Gefäßkrankheiten des Darmes} mit weiteren Stellen eingeführt, um einige Diagnosen des Dünndarms bessern abgrenzen zu können~\cite{komm10}. In 2019 wurde die \ac{icd10gm} \textsf{K55.3-}   \textsf{Angiodysplasie des Dünndarmes} mit weiteren fünfstelligen Kodes eingeführt und die, in 2010, eingeführte Klassifikationen wurden auf dem neuen Kodeberich verlagert, sodass die Kodierungen von 2010 obsolet wurden, und \textsf{K55.8} wieder benutzt wurde~\cite{komm19}.
+Die Kodierungsschlüssel \textsf{K55.8} wurden 2010 gelöscht und die Kodierung \textsf{K55.8-} \textsf{Sonstige Gefäßkrankheiten des Darmes} mit weiteren Stellen eingeführt, um einige Diagnosen des Dünndarms bessern abgrenzen zu können~\cite{komm10}. 2019 wurde die \ac{icd10gm} \textsf{K55.3-} \textsf{Angiodysplasie des Dünndarmes} mit weiteren fünfstelligen Kodes eingeführt und die, 2010, eingeführten Klassifikationen wurden auf dem neuen Kodebereich verlagert, sodass die Kodierungen von 2010 obsolet wurden, und \textsf{K55.8} wieder benutzt wurden~\cite{komm19}.
 
 \section{Strukturelle Änderungen} \label{sec:strucmodif}
 
-Wie in der Subsektion \ref{subsec:transf} genannt wurde, es gab auch Änderungen in der Struktur des semantischen Verzeichnisses. Im Jahr 2013 wurde die Spalte \textsf{titel} für den Klassentitel der Tabelle \textsf{kodes} aus dem Dreisteller-, Viersteller- und gegebenenfalls Fünfstellertitel zusammengesetzt. Auch in diesem Jahr wurden drei neue Felder für die einzelnen Bestandteile des zusammengesetzten Klassentitels eingefügt~\cite{readme13}. Eine weitere Änderung in der Tabelle \textsf{kodes}, die schon sei 2015 geplant wurde, und im Jahr 2018 vorgenommen wurde, war die Entnahme der Felder der Altersklassenformaten für die untere und obere Grenze des Altenbezuges mit Angabe von Tagen, Wochen, Monaten und Jahren; und damit blieben nur die Felder mit dem Format in Tagen und Jahren, nämlich  \textsf{altunt} für die untere Grenze und \textsf{altob} für die obere Grenze des Altenbezuges~\cite{readme17}.
+Wie in der Subsektion \ref{subsec:transf} genannt wurde, gab es auch Änderungen in der Struktur des semantischen Verzeichnisses. Im Jahr 2013 wurde die Spalte \textsf{titel} für den Klassentitel der Tabelle \textsf{kodes} aus dem Dreisteller-, Viersteller- und gegebenenfalls Fünfstellertitel zusammengesetzt. Auch in diesem Jahr wurden drei neue Felder für die einzelnen Bestandteile des zusammengesetzten Klassentitels eingefügt~\cite{readme13}. Eine weitere Änderung in der Tabelle \textsf{kodes}, die schon seit 2015 geplant wurde, und im Jahr 2018 vorgenommen wurde, war die Entnahme der Felder der Altersklassenformate für die untere und obere Grenze des Altenbezuges mit Angabe von Tagen, Wochen, Monaten und Jahren; und damit blieben nur die Felder mit dem Format in Tagen und Jahren, nämlich  \textsf{altunt} für die untere Grenze und \textsf{altob} für die obere Grenze des Altenbezuges~\cite{readme17}.
