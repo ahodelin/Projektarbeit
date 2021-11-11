@@ -8,7 +8,7 @@ Der Anfangspunkt für die Durchführung der \ac{etl} sind die \ac{zip}-Dateien d
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=14cm]{figures/etl}
-	\caption[\acs{etl}-Strecke]{Flussdiagramm der \acs{etl}-Strecke für den Import der Information der \ac{icd10gm} aus den \ac{zip}-Dateien in der \ac{db}.}
+	\caption[\acs{etl}-Strecke]{Flussdiagramm der \acs{etl}-Strecke für den Import der Informationen der \ac{icd10gm} aus den \ac{zip}-Dateien in der \ac{db}.}
 	\label{fig:etl}
 \end{figure} 
 
@@ -22,11 +22,11 @@ Zuerst werden die Ordner der \ac{zip}-Dateien entpackt und ein neuer Ordner für
 
 Die Kode-Dateien von 2007 bis 2009 haben den Windows-Standardzeichensatz \acl{iso}, \acsu{iso}-8859-15 als Zeichenkodierung. Das verursacht Probleme bei dem Datenaustausch zwischen Plattformen, da die PostgreSQL Instanz in \acl{utf}, \acsu{utf}-8 konfiguriert ist. Aus diesem Grund wird das Format dieser Kode-Dateien von \ac{iso}-8859-15 in \ac{utf}-8 umgewandelt.
 
-Im Laufe der Zeit sind neue Spalten in der \ac{csv}-Dateien der Klassifizierungen entstanden und andere Felder werden veraltet und entnommen \cite{readme13, readme17}. Deswegen werden die aktuell benutzte Spalten ausgewählt, leere Felder werden an den Positionen der Spalten die vorher nicht vorhanden waren eingefügt, ein neues Feld mit der Version am Anfang jede Zeile ist eingeführt, und der Datensatz mit den Änderungen in einer neuen generierten \ac{csv}-Dateien gespeichert.
+Im Laufe der Zeit sind neue Spalten in der \ac{csv}-Dateien der Klassifizierungen entstanden und andere Felder werden veraltet und entnommen \cite{readme13, readme17}. Deswegen werden die aktuell benutzten Spalten ausgewählt, leere Felder werden an den Positionen der Spalten die vorher nicht vorhanden waren eingefügt, ein neues Feld mit der Version am Anfang jede Zeile ist eingeführt, und der Datensatz mit den Änderungen in einer neuen generierten \ac{csv}-Datei gespeichert.
 %Die Kode-Dateien von 2007 bis 2009 haben den Windows-Standardzeichensatz (ISO-8859-15) als Zeichenkodierung. Das verursacht Probleme bei dem Datenaustausch zwischen Plattformen. Aus diesem Grund wandelt das Skript \textsf{iso\_2\_utf8.sh} das Format dieser Kode-Dateien von ISO-8859-15 in UTF-8 um.
 
 %Mit der Laufe der Zeit sind neue Spalten in der \ac{csv}-Dateien entstanden und andere Felder werden veraltet und entnommen \cite{readme13, readme17}. Deswegen das Skript \textsf{select\_columns.sh}, wählt die aktuell benutzte Spalten aus, fügt leere Felder an der Positionen die vorher nicht vorhanden waren ein, fügt ein neues Feld mit der Version an Anfang jede Zeile ein, und importiert der Datensatz einer neuen generierten \ac{csv}-Dateien.
 
 \subsection{Laden} \label{subsec:load}
 
-Am Ende der Transformation wird die Information der zuletzt generierten \ac{csv}-Dateien mit Kodes in der Tabelle \textsf{kodes} der \ac{db}. Der interne Datenfluss in der \ac{db} ist in der Sektion~\ref{sec:dbrun} beschrieben.
+Am Ende der Transformation wird die Information der zuletzt generierten \ac{csv}-Dateien mit Kodes in der Tabelle \glqq\textsf{kodes}\grqq{} der \ac{db}. Der interne Datenfluss in der \ac{db} ist in der Sektion~\ref{sec:dbrun} beschrieben.

@@ -4,13 +4,13 @@
 
 Für die Durchführung dieses Projekts wurde ein relationales \ac{db} Schema in PostgreSQL entwickelt. Die Nutzung von PostgreSQL in diesem Projekt basiert sich darauf, dass dies ein weitverbreitetes \ac{rdbms} im \ac{miracum} Konsortium ist. Andererseits ist PostgreSQL ein freies Open Source \ac{rdbms} mit vielen Features \cite{postgres}.
 
-Für die Implementierung der \ac{db} wurden die \ac{sql}-Anweisungen, nach Empfehlung in der Liesmich-Dateie der Fassungen, angepasst \cite{readmel}. Außerhalb von den vorher genannten Anpassungen wurde die Tabelle \glqq\textsf{kodes}\grqq{} auch erweitert und modifiziert. In dieser Tabelle wurde die Spalte \glqq\textsf{ver}\grqq{} für die Speicherung der Auffassungen oder Versionen eingefügt und die Spalte \glqq\textsf{fünfsteller}\grqq{} wurde zu \glqq\textsf{fuenfsteller}\grqq{} umbenannt, um Probleme mit Zeichen-Kodierung zu verhindern. Diese Veränderungen sind schwarz in der Tabelle \glqq\textsf{kodes}\grqq{} der Abbildung~\ref{fig:reldb2} gekennzeichnet. Noch dazu wurden drei neuen Tabellen eingefügt, um die Veröffentlichung Daten (\glqq\textsf{icd10gm\_release\_info}\grqq{}), Speicherung (\glqq\textsf{icd10gm}\grqq{}) und Historisierung (\glqq\textsf{icd10gm\_history}\grqq{}) aller verfügbaren Schlüsselnummern von 2007 bis 2021 zu steuern. Solche Tabellen sind mit gelben Kopfzeilen in der Abbildung~\ref{fig:reldb2} repräsentiert.
+Für die Implementierung der \ac{db} wurden die \ac{sql}-Anweisungen, nach Empfehlung in der Liesmich-Datei der Fassungen, angepasst \cite{readmel}. Außerhalb von den vorher genannten Anpassungen wurde die Tabelle \glqq\textsf{kodes}\grqq{} auch erweitert und modifiziert. In dieser Tabelle wurde die Spalte \glqq\textsf{ver}\grqq{} für die Speicherung der Auffassungen oder Versionen eingefügt und die Spalte \glqq\textsf{fünfsteller}\grqq{} wurde zu \glqq\textsf{fuenfsteller}\grqq{} umbenannt, um Probleme mit der Zeichen-Kodierung zu verhindern. Diese Veränderungen sind schwarz in der Tabelle \glqq\textsf{kodes}\grqq{} der Abbildung~\ref{fig:reldb2} gekennzeichnet. Noch dazu wurden drei neue Tabellen eingefügt, um die Veröffentlichung Daten (\glqq\textsf{icd10gm\_release\_info}\grqq{}), Speicherung (\glqq\textsf{icd10gm}\grqq{}) und Historisierung (\glqq\textsf{icd10gm\_history}\grqq{}) aller verfügbaren Schlüsselnummern von 2007 bis 2021 zu steuern. Solche Tabellen sind mit gelben Kopfzeilen in der Abbildung~\ref{fig:reldb2} repräsentiert.
 
 \section{Funktion der Tabellen} \label{sec:functab}
 
 \subsection{Tabelle \glqq\textsf{kodes}\grqq{} von \acs{bfarm}} \label{subsec:bfarmtables}
 
-Die Tabelle \glqq\textsf{kodes}\grqq{} vom \ac{bfarm}-Schema beinhalten die semantische Information der \ac{csv}-Dateien von nur einer Fassung und enthält damit die Anfangsdaten für die Tabellen \glqq\textsf{icd10gm}\grqq{} und \glqq\textsf{icd10gm\_history}\grqq{}.
+Die Tabelle \glqq\textsf{kodes}\grqq{} vom \ac{bfarm}-Schema beinhaltet die semantische Information der \ac{csv}-Dateien von nur einer Fassung und enthält damit die Anfangsdaten für die Tabellen \glqq\textsf{icd10gm}\grqq{} und \glqq\textsf{icd10gm\_history}\grqq{}.
 
 \clearpage	
 
@@ -21,9 +21,9 @@ Die Tabelle \glqq\textsf{kodes}\grqq{} vom \ac{bfarm}-Schema beinhalten die sema
 	\label{fig:reldb2}
 \end{figure}
 
-\subsection{Neuen Tabellen} \label{subsec:newtables}
+\subsection{Neue Tabellen} \label{subsec:newtables}
 
-Für die Erfassung der Datierung der Veröffentlichungen der Versionen wurde die Tabelle \glqq\textsf{icd10gm\_release\_info}\grqq{} erstellt. Diese speichert den Identifikator oder das Jahr der Version in der Spalte \glqq\textsf{icd10gm\_version}\grqq{} als Hauptschlüssel und das Datum der Veröffentlichung in der Spalte \glqq\textsf{icd10gm\_release}\grqq{}. Diese hat das Format \glqq\textsf{JJJJ-MM-TT}\grqq{}. Wobei \glqq J\grqq{} das Jahr, \glqq M\grqq{} der Monat und \glqq T\grqq{} der Tag darstellen.
+Für die Erfassung der Datierung der Veröffentlichungen der Versionen wurde die Tabelle \glqq\textsf{icd10gm\_release\_info}\grqq{} erstellt. Diese speichert den Identifikator oder das Jahr der Version in der Spalte \glqq\textsf{icd10gm\_version}\grqq{} als Hauptschlüssel und das Datum der Veröffentlichung in der Spalte \glqq\textsf{icd10gm\_release}\grqq{}. Diese hat das Format \glqq\textsf{JJJJ-MM-TT}\grqq{}. Wobei \glqq J\grqq{} das Jahr, \glqq M\grqq{} den Monat und \glqq T\grqq{} den Tag darstellen.
 
 Die \ac{icd10gm} von 2007 bis 2021, werden in der Tabelle \glqq\textsf{icd10gm}\grqq{} gespeichert. In dieser Tabelle wird die Information der noch gültigen \ac{icd10gm} aktualisiert. Die gelöschten \ac{icd10gm} beinhalten die Information der letzten Aktualisierung. Die Spalte \textsf{code}\grqq{} dieser Tabelle ist der Hauptschlüssel, genau wie in der Tabelle \glqq\textsf{kodes}\grqq{} vom \ac{bfarm}-Schema. Das Feld \glqq\textsf{ver}\grqq{} speichert den Identifikator der Version der Insertion oder der letzten Änderung und ist ein Fremdschlüssel, der zu der Spalte \glqq\textsf{icd10gm\_version}\grqq{} der Tabelle \glqq\textsf{icd10gm\_release\_info}\grqq{} zeigt.
 
@@ -35,7 +35,7 @@ Mit Hilfe einer \ac{etl}-Strecke werden die Daten aus der \ac{zip}-Datei in der 
 
 Die Kodes, die vorher nicht in der Tabelle \glqq\textsf{icd10gm}\grqq{} vorhanden waren, werden in dieser und in der Tabelle \glqq\textsf{icd10gm\_history}\grqq{} kopiert. Diese Datensätze werden in \glqq\textsf{icd10gm\_history}\grqq{} als eingefügt markiert. 
 
-Nicht in \glqq\textsf{kodes}\grqq{} existierende \ac{icd10gm} werden aus \glqq\textsf{icd10gm}\grqq{} in \glqq\textsf{icd10gm\_history}\grqq{} kopiert. Diese Kopie wird als gelöscht markiert, und enthält die Indikatoren der Fassung der Insertion oder der letzten Änderung in der Spalte \textsf{oldver}\grqq{}, und der Fassung der Löschung in der Spalte \glqq\textsf{ver}\grqq{}. 
+Nicht in \glqq\textsf{kodes}\grqq{} existierende \ac{icd10gm} werden aus \glqq\textsf{icd10gm}\grqq{} in \glqq\textsf{icd10gm\_history}\grqq{} kopiert. Diese Kopie wird als gelöscht markiert, und enthält die Indikatoren der Fassung der Insertion oder der letzten Änderung in der Spalte \glqq\textsf{oldver}\grqq{}, und der Fassung der Löschung in der Spalte \glqq\textsf{ver}\grqq{}. 
 
 Existierende Kodierungen mit modifizierten Informationen werden in der Tabelle \glqq\textsf{icd10gm}\grqq{} aktualisiert und nachher in \glqq\textsf{icd10gm\_history}\grqq{} hinzugefügt.In diesem Fall werden auch die Indikatoren der alten und neuen Fassung registriert und der Datensatz als modifiziert markiert.
 
@@ -44,6 +44,6 @@ Dieser Fluss der Information ist im Datenflussdiagramm der Abbildung~\ref{fig:db
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=10cm]{figures/dbflow}
-	\caption[Datenfluss des Prozesses]{Datenflussdiagramm der Information von den \ac{zip}-Dateien bis zum Import in der \ac{db}.}
+	\caption[Datenfluss des Prozesses]{Datenflussdiagramm der Informationen von den \ac{zip}-Dateien bis zum Import in der \ac{db}.}
 	\label{fig:dbflow}
 \end{figure} 
