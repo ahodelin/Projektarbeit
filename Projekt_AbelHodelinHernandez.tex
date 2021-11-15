@@ -2,15 +2,11 @@
 \usepackage[a4paper, total={6in, 8in}]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
-%\usepackage{math}
-%\usepackage{amsmath}
 \usepackage{version}
 \usepackage{hyperref}
 \usepackage{graphicx}
-%\usepackage{svg}
 \usepackage{longtable}
 \usepackage[nohyperlinks]{acronym}
-%\usepackage{acro}
 \usepackage{fancyhdr}
 \usepackage[type={CC}, modifier={by-sa},version={4.0}]{doclicense}
 \usepackage{listings}
@@ -21,7 +17,6 @@
 \usepackage{float}
 \usepackage{amssymb}
 \usepackage{scalerel}
-%\usepackage{apacite}
 \usepackage{ragged2e}
 \usepackage{orcidlink}
 \usepackage{pdflscape}
@@ -36,8 +31,6 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-%\fancyhead[R]{\thepage}
-%\fancyhead[L]{\leftmark}
 \fancyfoot[R]{\thepage}
 \fancyfoot[C]{\href{https://creativecommons.org/licenses/by-sa/4.0/}{\ccbysa}}
 \renewcommand{\headrulewidth}{0pt}
@@ -51,7 +44,6 @@
 
 \renewcommand{\footrulewidth}{0pt}
 \setlength\headheight{90.0pt}
-%\chead{\includegraphics[width=\textwidth]{figures/master_bild.png}}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -59,8 +51,6 @@
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
 \definecolor{maroon}{cmyk}{0,0.87,0.68,0.32}
-
-%\include{0acro}
 
 \begin{document} 
 	\include{titelpage}
@@ -88,11 +78,10 @@
 	\input{5data}
 
 	\input{6schluss}
-	%\newpage
+
 	\nocite{*}           %  Die gesamte Literaturbibliothek wird eingefügt
 		\printbibliography 
 		
 	\appendix
-	%\input{Aappendix}
 
 \end{document}

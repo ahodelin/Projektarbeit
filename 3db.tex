@@ -31,7 +31,7 @@ Die Tabelle \glqq\textsf{icd10gm\_history}\grqq{} enthält die Information der \
 
 \section{Fluss der Information} \label{sec:dbrun}
 
-Mit Hilfe einer \ac{etl}-Strecke werden die Daten aus der \ac{zip}-Datei in der \ac{db} importiert. Die Information der Veröffentlichung der \ac{icd10gm} wird in der Tabelle \glqq\textsf{icd10gm\_release \_info}\grqq{} eingefügt. Bei jedem Laden wird die Information der Tabelle \glqq\textsf{kodes}\grqq{} vorher gelöscht und mit neuen Datensätzen geladen. 
+Mit Hilfe einer \ac{etl}-Strecke werden die Daten aus der ZIP-Datei in der \ac{db} importiert. Die Information der Veröffentlichung der \ac{icd10gm} wird in der Tabelle \glqq\textsf{icd10gm\_release \_info}\grqq{} eingefügt. Bei jedem Laden wird die Information der Tabelle \glqq\textsf{kodes}\grqq{} vorher gelöscht und mit neuen Datensätzen geladen. 
 
 Die Kodes, die vorher nicht in der Tabelle \glqq\textsf{icd10gm}\grqq{} vorhanden waren, werden in diese und in die Tabelle \glqq\textsf{icd10gm\_history}\grqq{} kopiert. Diese Datensätze werden in \glqq\textsf{icd10gm\_history}\grqq{} als eingefügt markiert. 
 
@@ -44,6 +44,6 @@ Dieser Fluss der Information ist im Datenflussdiagramm der Abbildung~\ref{fig:db
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=10cm]{figures/dbflow}
-	\caption[Datenfluss des Prozesses]{Datenflussdiagramm der Informationen von den \ac{zip}-Dateien bis zum Import in der \ac{db}.}
+	\caption[Datenfluss des Prozesses]{Datenflussdiagramm der Informationen von den ZIP-Dateien bis zum Import in der \ac{db}.}
 	\label{fig:dbflow}
 \end{figure} 
