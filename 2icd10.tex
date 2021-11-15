@@ -6,7 +6,7 @@ Diese Klassifikation ist alphanumerisch, monohierarchisch strukturiert mit bis z
 
 \subsection{Alphabetisches Verzeichnis (Alphabet)} \label{subsec:alphabetic}
 
-Die alphabetische Zuordnung des Kodes entsteht aus den gewohnten Texten für die Diagnosen. Die Systematik enthält nicht alle Diagnosen des Alphabets. Deswegen dient die semantische Bezeichnung als Verzugsbezeichnung, sodass das Alphabet auch andere veraltete oder ungenaue Diagnosenbezeichnungen enthält \cite{icd10alpha}. Die Tabelle~\ref{tab:difbe} illustriert ein Beispiel dieser Ungenauigkeit Anhang von der Diagnose \acl{covid} (\acs{covid}-19). Aus diesem Grund existiert der \ac{alphaid}. Der nutzt die Bezeichnungen als Basis für einen nicht klassifizierenden Kode \cite{icd10alpha}.
+Die alphabetische Zuordnung des Kodes entsteht aus den gewohnten Texten für die Diagnosen. Die Systematik enthält nicht alle Diagnosen des Alphabets. Deswegen dient die semantische Bezeichnung als Verzugsbezeichnung, sodass das Alphabet auch andere veraltete oder ungenaue Diagnosenbezeichnungen enthält \cite{icd10alpha}. Die Tabelle~\ref{tab:difbe} illustriert ein Beispiel dieser Ungenauigkeit anhand von der Diagnose \acl{covid} (\acs{covid}-19). Aus diesem Grund existiert der \ac{alphaid}. Der nutzt die Bezeichnungen als Basis für einen nicht klassifizierenden Kode \cite{icd10alpha}.
 
 \begin{table}[ht]
 	\centering
@@ -33,7 +33,7 @@ Für die Durchführung und Zwecke dieses Projekts wird mit dem systematischen Ve
 
 \subsubsection{Kapitel} \label{subsubsec:chapters}
 
-Der thematische Bereich aller Diagnosen ist in 22 Kapiteln, von I bis XXII, abgedeckt. Der Kern davon sind die organspezifischen Krankheiten von Kapiteln III bis XIV. Die nicht organspezifischen Krankheiten werden in den reichlichen Kapiteln zusammengefasst. Jeder dargestellte Kodebereich wird durch ein bis vier Buchstaben gekennzeichnet, diese Buchstaben sind das erste Zeichen einer Kodierung \cite{icd10systauf}. Die Tabelle~\ref{tab:chapter} zeigt drei Beispiele von Kapiteln.
+Der thematische Bereich aller Diagnosen ist in 22 Kapiteln, von I bis XXII, abgedeckt. Der Kern davon sind die organspezifischen Krankheiten von Kapiteln III bis XIV. Die nicht organspezifischen Krankheiten werden in den restlichen Kapiteln zusammengefasst. Jeder dargestellte Kodebereich wird durch ein bis vier Buchstaben gekennzeichnet, diese Buchstaben sind das erste Zeichen einer Kodierung \cite{icd10systauf}. Die Tabelle~\ref{tab:chapter} zeigt drei Beispiele von Kapiteln.
 
 \begin{table}[ht]
 	\centering
@@ -96,7 +96,7 @@ Einige vier- oder fünfstellige Subkategorien sind postkombinierte Kodes, das he
 
 \section{Metadaten} \label{sec:metadata}
 
-Das \ac{bfarm} veröffentlicht zwischen September und Dezember eines Jahres die Metadaten der neuen Fassung der \ac{icd10gm} in einem komprimierten Ordner in einer \ac{zip}-Datei mit Unterordnern  mit Kodierungsdateien und weiteren Informationen. Der Unterordner Klassifikationsdateien enthält die Dateien der aktuellen Fassung der \ac{icd10gm} wie in der Tabelle~\ref{tab:classfiles} dargestellt wird. Diese Dateien sind in \ac{csv}-Format mit \glqq ;\grqq{} als Trendzeichen. Die \ac{zip}-Datei enthält auch eine Liesmich-Datei unter dem Namen \glqq\textsf{icd10gmJJJJsyst\_metadaten\_liesmich.txt}\grqq{}, wobei \glqq\textsf{JJJJ}\grqq{} das Jahr der Fassung darstellt, mit der Beschreibung aller \ac{csv}-Dateien, Information der vorkommenden Erneuerungen in der Struktur dieser Dateien, und \ac{sql}-Statements für den Aufbau einer \ac{db}. Die \ac{zip}-Dateien der Version des laufenden Jahres und der Vorgängerversionen befinden sich auf der Seite \href{https://www.dimdi.de/dynamic/de/klassifikationen/downloads/}{Downloads} der Klassifikationen der \ac{bfarm} Webseite in der Sektion \ac{icd10gm}. Die Namen der Links zu den \ac{zip}-Dateien haben die Struktur \glqq\textsf{\ac{icd10gm} Version JJJJ}\grqq{} und die Struktur der Namen der \ac{zip}-Dateien ist \glqq\textsf{\ac{icd10gm}JJJJ.zip}\grqq{} .
+Das \ac{bfarm} veröffentlicht zwischen September und Dezember eines Jahres die Metadaten der neuen Fassung der \ac{icd10gm} in einem komprimierten Ordner in einer \ac{zip}-Datei mit Unterordnern  mit Kodierungsdateien und weiteren Informationen. Der Unterordner Klassifikationsdateien enthält die Dateien der aktuellen Fassung der \ac{icd10gm} wie in der Tabelle~\ref{tab:classfiles} dargestellt wird. Diese Dateien nutzen das \ac{csv}-Format mit Semikolon als Trendzeichen. Die \ac{zip}-Datei enthält auch eine Liesmich-Datei unter dem Namen \glqq\textsf{icd10gmJJJJsyst\_metadaten\_liesmich.txt}\grqq{}, wobei \glqq\textsf{JJJJ}\grqq{} das Jahr der Fassung darstellt, mit der Beschreibung aller \ac{csv}-Dateien, Information der vorkommenden Erneuerungen in der Struktur dieser Dateien, und \ac{sql}-Statements für den Aufbau einer \ac{db}. Die \ac{zip}-Dateien der Version des laufenden Jahres und der Vorgängerversionen befinden sich auf der Seite \href{https://www.dimdi.de/dynamic/de/klassifikationen/downloads/}{Downloads} der Klassifikationen der \ac{bfarm} Webseite in der Sektion \ac{icd10gm}. Die Namen der Links zu den \ac{zip}-Dateien haben die Struktur \glqq\textsf{\ac{icd10gm} Version JJJJ}\grqq{} und die Struktur der Namen der \ac{zip}-Dateien ist \glqq\textsf{\ac{icd10gm}JJJJ.zip}\grqq{} .
 
 %\clearpage
 
