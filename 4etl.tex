@@ -2,7 +2,7 @@
 
 Für den Import der Information der \ac{icd10gm} in der \ac{db} wurde eine \ac{etl}-Strecke entwickelt. Dazu wurden \ac{bash}-Skripts unter Ubuntu 20.04 programmiert und durchgeführt. Die Entscheidung von \ac{bash} basiert sich darauf, dass \ac{bash} die Standard interaktive Shell und Skript Sprache von Linux-Betriebssystemen ist und ermöglicht auch die Automatisierung einer Reihenfolge von Kommandos des Betriebssystems \cite{bash}. Da die Interaktion mit den Befehlen des Betriebssystems via \ac{bash} effizienter und leichter ist, ist es möglich in einer sicheren Art die Zugangsdaten für die \ac{db} zu nutzen, ohne diese Information in Klartext in den Skripten oder in anderen Dateien sichtbar zu platzieren.
 
-Der Anfangspunkt für die Durchführung der \ac{etl} sind die ZIP-Dateien der \ac{icd10gm} Metadaten von 2007 bis 2021 aus der Download Seite vom \ac{bfarm} für die Klassifikationen. Diese Dateien wurden zuerst manuell heruntergeladen. Der Abruf und die Reihenfolge der Skripts für den Durchlauf jedes Schritts der \ac{etl} werden von einem zentralen \ac{bash}-Skript definiert. Die Abbildung~\ref{fig:etl} stellt das Flussdiagramm der \ac{etl}-Strecke dar.
+Der Anfangspunkt für die Durchführung der \ac{etl} sind die ZIP-Dateien der Metadaten von 2007 bis 2021 aus der Download Seite vom \ac{bfarm} für die Klassifikationen. Diese Dateien wurden zuerst manuell heruntergeladen. Der Abruf und die Reihenfolge der Skripts für den Durchlauf jedes Schritts der \ac{etl} werden von einem zentralen \ac{bash}-Skript definiert. Die Abbildung~\ref{fig:etl} stellt das Flussdiagramm der \ac{etl}-Strecke dar.
 
 \clearpage
 \begin{figure}[ht]
